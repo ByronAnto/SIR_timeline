@@ -1,0 +1,2233 @@
+{
+    "headers": [
+      {
+        "text": "TIPO",
+        "value": "type"
+      },
+      {
+        "text": "RAMA",
+        "value": "branch"
+      },
+      {
+        "text": "DESCRIPCIÓN",
+        "value": "description"
+      },
+      {
+        "text": "OBSERVACIÓN",
+        "value": "observation"
+      },
+      {
+        "text": "PROYECTO",
+        "value": "proyect"
+      },
+      {
+        "text": "QA REGIONAL",
+        "value": "qaRegional"
+      }
+    ],
+    "data": [
+      {
+        "version": "1.5.8",
+        "date": "22/08/2023",
+        "description": " ",
+        "details": [
+          {
+            "branch": "21085",
+            "description": "Reporte Credito SC ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20990",
+            "description": "Pantalla Reportes Bodegas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20987",
+            "description": "Imprimir modulo Bodegas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20667",
+            "description": "Articulos por Restaurante ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20600",
+            "description": "Reporte Proyecciones VEN - COL",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20756",
+            "description": "Reporte Proyeccion Excel Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          },
+          {
+            "branch": "20764",
+            "description": "Generación de cupones - SIR Legacy QA",
+            "observation": "s/n",
+            "proyect": "Sir Legacy"
+          }
+        ]
+      },
+      {
+        "version": "1.5.9",
+        "date": "24/08/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "21058",
+            "description": "Depositos ARG",
+            "observation": "s/n",
+            "proyect": "SIR Legacy"
+          },
+          {
+            "type": "Bug",
+            "branch": "21136",
+            "description": "Reporte Clientes ECU",
+            "observation": "Conflictos Superados",
+            "proyect": "SIR Legacy"
+          },
+          {
+            "type": "Bug",
+            "branch": "21054",
+            "description": "Solicitud de Cupones Fecha",
+            "observation": "s/n",
+            "proyect": "SIR Legacy"
+          },
+          {
+            "type": "Bug",
+            "branch": "21250",
+            "description": "Reporte Poryeccion VEN",
+            "observation": "s/n",
+            "proyect": "SIR Legacy"
+          },
+          {
+            "type": "Bug",
+            "branch": "21253",
+            "description": "Pantalla Reportes Bodegas",
+            "observation": "s/n",
+            "proyect": "SIR Legacy"
+          }
+        ]
+      },
+      {
+        "version": "1.5.10",
+        "date": "29/08/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "20566R",
+            "description": "Códigos Cupón duplicados ECU",
+            "observation": "s/n",
+            "proyect": "SIR Integration",
+            "qaRegional": "Superada, EN EL SIR LEGACY Cupón 35-S100263/Y50183/00 EN EL SIR INTEGRATION Cupón 35-S100234/Y50183/00:"
+          },
+          {
+            "type": "Bug",
+            "branch": "21151",
+            "description": "Localización API Restaurante ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Ya se visualiza el listado de localizaciones API requerido."
+          },
+          {
+            "type": "Bug",
+            "branch": "21368",
+            "description": "Buscar clientes para la Solicitud de Cupones ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21379",
+            "description": "Importación de Guías de Remisión - ERP - SIR - Version 2",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "Se guardó correctamente la Información en BD."
+          },
+          {
+            "type": "Bug",
+            "branch": "21535",
+            "description": "Validacion Logistica Pedidos",
+            "observation": "Commit: edecade0f4bf567cd33d1467e129074dde0e9b54",
+            "proyect": "Sir Back",
+            "qaRegional": ""
+          }
+        ]
+      },
+      {
+        "version": "1.5.11",
+        "date": "31/08/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "21209",
+            "description": "Cambio de Tipografía COL",
+            "observation": "n/a",
+            "proyect": "Sir Back y Sir Legacy",
+            "qaRegional": "Superada con Observaciones, Tomar en cuenta la revisión de estilos del Título de la pantalla."
+          },
+          {
+            "type": "Bug",
+            "branch": "21383",
+            "description": "Reporte Devoluciones Consolidadas Sin Detalle ECU",
+            "observation": "s/n",
+            "proyect": "SIR Back",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21380",
+            "description": "Reporte Devoluciones Consolidadas Estados",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "Superada, En el Archivo de Excel de Devoluciones consolidado, encontramos estados como los que fueron indicados en la tarjeta."
+          },
+          {
+            "type": "Bug",
+            "branch": "21150",
+            "description": "Excel Devoluciones Consolidadas Con Detalle",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "Superada, se efectua varias validaciones"
+          }
+        ]
+      },
+      {
+        "version": "1.5.12",
+        "date": "05/09/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "21579",
+            "description": "Proveedores Caja chica ARG",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "Superada, Recibe 10 registros y se muestran 10 registros"
+          },
+          {
+            "type": "Bug",
+            "branch": "21607",
+            "description": "API Clientesax Sirback",
+            "observation": "s/n",
+            "proyect": "Sir Back, Sir Legacy",
+            "qaRegional": "Superada, Api arroja la información requerida en ambas pantallas, así como directamente en el postman."
+          },
+          {
+            "type": "Bug",
+            "branch": "21563",
+            "description": "Informacion Reporte Credito SC ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada, Reporte genera solo para el cliente seleccionado y cuando es todo también genera correctamente."
+          },
+          {
+            "type": "Bug",
+            "branch": "21187",
+            "description": "Informacion Reporte Clientes ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada, Reporte genera solo para el cliente seleccionado y cuando es Todo también genera correctamente."
+          },
+          {
+            "type": "Bug",
+            "branch": "21308",
+            "description": "Eliminar bodega sin seleccionar ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21753",
+            "description": "Habilitar boton eliminar Inventarios Fisicos por Area ECU",
+            "observation": "s/n",
+            "proyect": "Base de Datos",
+            "qaRegional": "Superada, Se realizó el paso a producción en QA y se muestra la información."
+          },
+          {
+            "type": "Bug",
+            "branch": "21851",
+            "description": "Bloqueo Pantalla Inventarios Final (Fisico) para la cadena El Español ECU",
+            "observation": "Commit Hash: a993c412b011944df164a98b4dd1f564bd937366 , 0a5acaba9585a93172ebafbbedc03022c2f6f5ee",
+            "proyect": "Sir Legacy",
+            "qaRegional": ""
+          }
+        ]
+      },
+      {
+        "version": "1.5.13",
+        "date": "07/09/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "21906",
+            "description": "Ordenes de Suministro ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada, Se genera la data correctamente"
+          },
+          {
+            "type": "Bug",
+            "branch": "21904",
+            "description": "Ordenes de Pedido para proveedores externos ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada, Se genera la data correctamente"
+          },
+          {
+            "type": "Bug",
+            "branch": "21784",
+            "description": "Permisos Inventarios Fisicos Area ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21830",
+            "description": "Ordenes de Pedidos de Proveedores externos CHI",
+            "observation": "s/n",
+            "proyect": "SIR legacy y SIR Back ",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21739",
+            "description": "Centro Costo Restaurante ECU",
+            "observation": "s/n",
+            "proyect": "SIR legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "21840",
+            "description": "Editar Ajustes ECU",
+            "observation": "s/n",
+            "proyect": "SIR legacy",
+            "qaRegional": "Superada"
+          }
+        ]
+      },
+      {
+        "version": "1.5.14",
+        "date": "19/09/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "22162",
+            "description": "Compras ESP",
+            "observation": "s/n",
+            "proyect": "Base de Datos",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "22167",
+            "description": "Ordenes de Pedido Configuraciones ESP",
+            "observation": "s/n",
+            "proyect": "Base de Datos",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "22152",
+            "description": "Administracion Proveedores ESP",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "Superada"
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "26/09/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "21818, numeroFactura",
+            "description": "Revision y correccion reportes Compras campo Numero Factura - SL",
+            "observation": "s/n",
+            "proyect": "Sir Legacy, Sir Back",
+            "qaRegional": "Superada, con los errores reportados que fueron corregidos en su totalidad."
+          },
+          {
+            "type": "Bug",
+            "branch": "22676",
+            "description": "Bodegas Direccionamiento",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada, con observaciones."
+          },
+          {
+            "type": "Bug",
+            "branch": "22831",
+            "description": "Validacion para pedidos ECU",
+            "observation": "Commit Hash: d903ccf4b0dde49ca653134ec77486cdb2ecab2e, f42f985e140c484ebe17d3a25b44f2cf4204d29c",
+            "proyect": "Sir Integration",
+            "qaRegional": ""
+          },
+          {
+            "type": "Bug",
+            "branch": "22119",
+            "description": " Mayores CAR",
+            "observation": "Cambios en las conecciones en el .env para mayores CAR",
+            "proyect": "Sir Integration",
+            "qaRegional": ""
+          },
+          {
+            "type": "Bug",
+            "branch": "22026",
+            "description": "Mensajes de Diarios Inventarios",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "22025",
+            "description": "Timeout Diarios Inventarios",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          },
+          {
+            "type": "Bug",
+            "branch": "22023",
+            "description": "Configuracion Restaurante ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          },
+          {
+            "type": "Bug",
+            "branch": "22193",
+            "description": "Reporte Usos y Consumos ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          }
+        ]
+      },
+      {
+        "version": "1.6.1",
+        "date": "28/09/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "22199",
+            "description": "Reporte Facturas ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          },
+          {
+            "type": "Bug",
+            "branch": "22198",
+            "description": "Administracion Grupo Mermas ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          },
+          {
+            "type": "Bug",
+            "branch": "22194",
+            "description": "Reporte Usos y Consumos Merma ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones."
+          },
+          {
+            "type": "Bug",
+            "branch": "22501",
+            "description": "Check Proveedores Externos VEN",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada."
+          },
+          {
+            "type": "Bug",
+            "branch": "22937",
+            "description": "Recetas Plus ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones."
+          }
+        ]
+      },
+      {
+        "version": "1.6.2",
+        "date": "05/10/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "22174",
+            "description": "Mix por Departamento ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!, con observaciones "
+          },
+          {
+            "type": "Bug",
+            "branch": "22175 ",
+            "description": "Mix por Departamento Plus ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23034 ",
+            "description": "Ajustes ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23035 ",
+            "description": "Compras ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!, con observaciones "
+          },
+          {
+            "type": "Bug",
+            "branch": "23037 ",
+            "description": "Ordenes de Pedido ESP",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado! "
+          },
+          {
+            "type": "Bug",
+            "branch": "23038",
+            "description": "Ordenes de Pedido Correo ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones "
+          },
+          {
+            "type": "Bug",
+            "branch": "23039 ",
+            "description": "Imprimir Subrecetas - Todos ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado! "
+          },
+          {
+            "type": "Bug",
+            "branch": "23114",
+            "description": " Ordenes de Pedido ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡Superado! "
+          },
+          {
+            "type": "Bug",
+            "branch": "22954",
+            "description": "Reporte Usos y Consumo Limpieza ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones "
+          },
+          {
+            "type": "Bug",
+            "branch": "23040",
+            "description": " Imprimir Subrecetas - Personalizado ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado "
+          },
+          {
+            "type": "Bug",
+            "branch": "22796",
+            "description": "Eliminar Bodegas ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado "
+          },
+          {
+            "type": "Bug",
+            "branch": "22192 ",
+            "description": "Carga Masiva Precios ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          }
+        ]
+      },
+      {
+        "version": "1.6.3",
+        "date": "10/10/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "23261",
+            "description": "Reporte Usos y Consumos Limpieza",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!, con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "23144",
+            "description": "Reporte CHI",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "22500",
+            "description": "Ordenes de Pedidos VEN",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Aprobado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23002",
+            "description": "Centro Costo PLT - Restaurante Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado! "
+          }
+        ]
+      },
+      {
+        "version": "1.6.4",
+        "date": "12/10/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "23606",
+            "description": "Activos Fijos ECU",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!, con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "23523",
+            "description": "Numero Request Cupones COL",
+            "observation": "s/n",
+            "proyect": " Sir Integration, Base de Datos",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23530 ",
+            "description": "Correccion Logistica Pedidos ECU",
+            "observation": "Commit Hash: 0eb060a812b6e518a7d48d6ce3fdc08b337df06e, 37293d3edf2e4f0a3d04a9712d3695c2d718494e, 13109c4e3290f47ec01ef735a93318ba18b1caeb",
+            "proyect": "Sir Back",
+            "qaRegional": ""
+          },
+          {
+            "type": "Bug",
+            "branch": "23251",
+            "description": "Transferencias",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23001",
+            "description": "Restaurante ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "22188",
+            "description": "Sobres ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado ARG y ECU"
+          }
+        ]
+      },
+      {
+        "version": "1.6.5",
+        "date": "26/10/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "23344",
+            "description": "Perfiles Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "23505",
+            "description": "Reporte Usos y Consumos Limpieza Cabeceras Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "24026",
+            "description": "Gastos Generales CHI",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "23345",
+            "description": "Perfiles imagenes Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "23614",
+            "description": "Reporte Usos y Consumos ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "23616",
+            "description": "Reporte Usos y Consumo Limpieza ARG",
+            "observation": "Aplicado el cambio en reportes de usos y consumos",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24093",
+            "description": "Compras ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada"
+          },
+          {
+            "type": "Bug",
+            "branch": "24128",
+            "description": "Administracion Unidades ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "fixBugEsp",
+            "description": "Ajustes de version 1.6 España",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "ordenesPedidos20231020",
+            "description": "Correcciones para módulo de pedidos",
+            "observation": "Commit Hash: 495910e8e78a4f856a9dfac15775abf7d8d371aa, 98bc41b793714ae8e1f1d63514bbaaacf5978664",
+            "proyect": "Sir Back",
+            "qaRegional": ""
+          },
+          {
+            "type": "Bug",
+            "branch": "24049",
+            "description": "Administración Proveedores de caja chica. ARG",
+            "observation": "s/n",
+            "proyect": "Sir Back y Bases de Datos ",
+            "qaRegional": "Superado con observaciones"
+          }
+        ]
+      },
+      {
+        "version": "1.6.6",
+        "date": "07/11/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "23507",
+            "description": "Uso y Consumos Limpieza Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "23504",
+            "description": "Reporte Usos y Consumos de Limpieza - Fechas Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24147",
+            "description": "Ordenes de Pedidos Imagenes ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24146",
+            "description": " Ordenes de Pedido Estilo Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado! "
+          },
+          {
+            "type": "Bug",
+            "branch": "22267",
+            "description": "Reporte Venta Plus Paises",
+            "observation": "s/n",
+            "proyect": "Base de Datos",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "22266",
+            "description": "Reporte Venta Diaria Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superada con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24303",
+            "description": "Reporte Relacion Caja VEN ",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24331",
+            "description": "Compras ECU - ESP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24405",
+            "description": "Compras ESP",
+            "observation": "Integrado en 24331",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones"
+          }
+        ]
+      },
+      {
+        "version": "1.6.7",
+        "date": "09/11/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "23653",
+            "description": "Localizacion Restaurante Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "24312",
+            "description": "Numero Plus Recetas COL ",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "23508",
+            "description": "Usuarios Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado"
+          },
+          {
+            "type": "Bug",
+            "branch": "23255",
+            "description": "Mix por Departamento Países",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con Observaciones"
+          },
+          {
+            "type": "Bug",
+            "branch": "24479",
+            "description": "Cantidades negativas o en 0 compras Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.7.0",
+        "date": "14/11/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "24534",
+            "description": "Costos y Cantidades en 0 Compras",
+            "observation": "Deuda tecnica con las cantidades en las compras",
+            "proyect": "Sir Legacy",
+            "qaRegional": "Superado con observaciones "
+          },
+          {
+            "type": "Bug",
+            "branch": "23840",
+            "description": "Perfiles en el módulo de Seguridades",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "24528",
+            "description": "Configuración de Fecha de Entrega en Ordenes de Pedido",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "17609",
+            "description": "Toma Fisica en el Sir Movil",
+            "observation": "s/n",
+            "proyect": "SirMobilFront - SirMobilBack - SirIntegration",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.7.1",
+        "date": "20/11/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "24822",
+            "description": "Editar Proveedors",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.7.3",
+        "date": "06/12/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "24983",
+            "description": "Maestro_cod_articulo en nulo ECU",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "24641",
+            "description": "Reporte Auditoria Cierre Mes COL",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "24535 ",
+            "description": "Cierre inventario Mensual COL",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡Superado con observaciones!"
+          }
+        ]
+      },
+      {
+        "version": "1.7.4",
+        "date": "18/12/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "25401",
+            "description": "Compras",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25477",
+            "description": "Consolidado Horneados",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25262 ",
+            "description": "Asentar devoluciones",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.7.5",
+        "date": "27/12/2023",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "25479",
+            "description": "Cambio de logo MDN",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25478",
+            "description": "Cambio de logo AMCA",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25605 ",
+            "description": "Ingreso de horneados",
+            "observation": "s/n",
+            "proyect": " Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.8.1",
+        "date": "11/01/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "sirSapColFase2",
+            "description": "Integración SIR-SAP Colombia",
+            "observation": "Puesto en producción desde el 01/01/2024",
+            "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+            "qaRegional": "¡Superado con Observaciones!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "regionalArticle",
+            "description": "Administración Artículos Regionales",
+            "observation": "Puesto en producción desde el 01/01/2024",
+            "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+            "qaRegional": "¡Superado con Observaciones!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "19284",
+            "description": "Órdenes de Pedidos V2",
+            "observation": "Puesto en producción desde el 01/01/2024",
+            "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+            "qaRegional": "¡Superado con Observaciones!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26045",
+            "description": "Administración PyG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25861",
+            "description": "Imagen botón Asentar",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26004",
+            "description": "Exportación Diarios Inventarios",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "25232",
+            "description": "Importación Mayores Contables Tiendas",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.8.2",
+        "date": "16/01/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "25984",
+            "description": "Doble botón devoluciones",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26105",
+            "description": "Modificar restaurante COL",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26195",
+            "description": "PyG Paises",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26196",
+            "description": "Transferencias Positivas y Negativas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26262",
+            "description": "Validaciones Inventario Mensual Países",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26193",
+            "description": "Devoluciones Países",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26261",
+            "description": "Reporte Movimientos Pendientes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.8.3",
+        "date": "23/01/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "26317",
+            "description": "Soporte Integraciones",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26333",
+            "description": "Botones Menú Devoluciones",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26311",
+            "description": "Ordenes de Pedido Tipo 1",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26198",
+            "description": "Email Pedidos Diarios",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26192",
+            "description": "Ordenes Pedidos Países",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26341",
+            "description": "Configuracionxpais ARG",
+            "observation": "s/n",
+            "proyect": "BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "correcciones2023",
+            "description": "Incluir Cambios del 2023 a Production",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26320",
+            "description": "Limpiar Artículos Pedidos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.9.0",
+        "date": "30/01/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "AjustesVenezuela",
+            "description": "Ajustes Venezuela",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "comprasEspana",
+            "description": "Modificación Costos Compras España",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Back - BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26578",
+            "description": "Asentar Devoluciones CHILE",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26560",
+            "description": "Reporte Diario Pedidos",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26626",
+            "description": "Creación de Artículos",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.9.1",
+        "date": "06/02/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "26640",
+            "description": "Menú Clientes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26650",
+            "description": "Imprimir Recetas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26641",
+            "description": "Proveedores Cajas Chicas",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.9.2",
+        "date": "09/02/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "26483",
+            "description": "Reporte Pedidos Excel",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26609",
+            "description": "Administración de Artículos Creación para las 2 Plantas",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26816",
+            "description": "Reporte Mayores Contables",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26834",
+            "description": "Cierre de Cajas ARG",
+            "observation": "s/n",
+            "proyect": "BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26864",
+            "description": "Reporte Cierre Cajas ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26868",
+            "description": "Informe Cierre Mes Excel ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26869",
+            "description": "Lotes tarjetas ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26921",
+            "description": "Reporte Pedidos ESP",
+            "observation": "s/n",
+            "proyect": "Sir Back - BDD",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.9.3",
+        "date": "22/02/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "26835",
+            "description": "Cierre caja - Insertar caja chica ARG",
+            "observation": "s/n",
+            "proyect": "BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26865",
+            "description": "Reporte Tarjetas de Crédito ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26818",
+            "description": "Reporte Remitos Recalculados",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26903",
+            "description": "Cuentas ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26870",
+            "description": "Libro ventas ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26675",
+            "description": "Reporte de Movimientos Pendientes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26866",
+            "description": "Reporte Switch",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26962",
+            "description": "Reporte Pedidos Diarios",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26867",
+            "description": "Informe Cierre Mes ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26975",
+            "description": "Imagen Cañas y Tapas Legacy",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26988",
+            "description": "Mantenimiento Responsables",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26990",
+            "description": "Movimiento ARG",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "26991",
+            "description": "Varios tipos - Movimiento",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27051",
+            "description": "MDI Reportes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27062",
+            "description": "Responsables",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27102",
+            "description": "Reporte de Excel en Administración de Artículos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "In production",
+            "description": "Mostrar en Cambio de Artículos Sir",
+            "observation": "SHA 1cf1237a8abbc54d2c41576809119f4598fb8863",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡Sin QA!"
+          }
+        ]
+      },
+      {
+        "version": "1.9.4",
+        "date": "27/02/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "27088",
+            "description": "Users BDD Dinámicas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27169",
+            "description": "Proveedores y Artículos Pedidos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27195",
+            "description": "Reporte PDF MDI",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27196",
+            "description": "Subtotal MDI",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27219",
+            "description": "Niveles PyG",
+            "observation": "s/n",
+            "proyect": "BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27220",
+            "description": "Usos y Consumos Reportes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27174",
+            "description": "Proveedores Cajas Chicas",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.10.1",
+        "date": "29/02/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "usosConsumosGruposV2",
+            "description": "Usos y Consumos V2",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27074",
+            "description": "Administración Proveedores Paginador",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27232",
+            "description": "Reportes Usos y Consumos PDF",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27072",
+            "description": "Administración Clientes",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27310",
+            "description": "Administración Stock",
+            "observation": "s/n",
+            "proyect": "BDD",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "production",
+            "description": "Direccionamiento BDD Nacional Mayores Contables",
+            "observation": "617926777996274f267e7143eeed3400aadb34f3",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡Sin QA!"
+          },
+          {
+            "type": "Bug",
+            "branch": "production",
+            "description": "Timeout Cambio Artículos",
+            "observation": "47c4d30fc015c0b147de51fe5cac3e813bbc3948",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡Sin QA!"
+          }
+        ]
+      },
+      {
+        "version": "1.10.2",
+        "date": "07/03/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "27360",
+            "description": "Ajuste Reporte Usos y Consumos",
+            "observation": "60e2679b10c4613d574d29869594563d2fb4f8b1",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27376",
+            "description": "Actualizar Costos",
+            "observation": "79c3ff014601d9b501459d6e8b3eaa9e8e7df298",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27396",
+            "description": "Reporte Usos y Consumos V2",
+            "observation": "e3996af97ce3a5d32fc2d8da69ef303ba98064e3",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27076",
+            "description": "Paginador Artículos por Cadena",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27318",
+            "description": "Inicio",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.11.1",
+        "date": "21/03/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "controlAuditoria",
+            "description": "Auditoria Compras",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27430",
+            "description": "Artículos por Cadena",
+            "observation": "74eb06b7085ebc81fb3bfa60ffe1a740dbeae38b",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27444",
+            "description": "Proveedores Auditoría Compras",
+            "observation": "c8f5ca9bf8446f06b6a9648fe04a743f15cb4cac",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "27446",
+            "description": "Reporte Pedidos Suministro",
+            "observation": "0f07581fa4f9640b2b554d8c22f4b54090a96698",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "bugs1103,monitorIntegracion",
+            "description": "Monitor de Integración ERP",
+            "observation": "s/n",
+            "proyect": "Sir Legacy, Sir Front, Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "production",
+            "description": "Compras",
+            "observation": "28f5cffdeafcaa2a2423b3019bbe9e21f845c04c",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "bugLogisticaPedidos",
+            "description": "Logística de pedidos",
+            "observation": "s/n",
+            "proyect": "Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bugs",
+            "branch": "correccionBugs",
+            "description": "Bugs Regionales",
+            "observation": "s/n",
+            "proyect": "Sir Back, Sir Legacy, Sir Front",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.12.1",
+        "date": "04/04/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "27311",
+            "description": "Importación Mayores Contables",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front - Sir Back - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "bug_mantenimiento",
+            "description": "Ordenes de Mantenimiento",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.12.2",
+        "date": "18/04/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Defecto",
+            "branch": "4176_Bug",
+            "description": "Usos y Consumos PDF",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "4175",
+            "description": "Transferencias Administración",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "4498",
+            "description": "API Créditos Sin Cupón",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.12.3",
+        "date": "29/04/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Defecto",
+            "branch": "4174",
+            "description": "Día 30 Inventario Diario",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "2291",
+            "description": "Totales Generales Usos y Consumos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "2294",
+            "description": "Imágenes en Botones Cuentas Mayores Contables",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.12.4",
+        "date": "06/05/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Defecto",
+            "branch": "production",
+            "description": "Monitor Integración Pedidos",
+            "observation": "87de6794dad9fa435b0fb5e67443d311e83a932d",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "4922",
+            "description": "Control Facturas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "production",
+            "description": "Carga Masiva de Precios - Permisos",
+            "observation": "3aff7eb33f0f760d5993d79adee9d12eb6062c2f",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.13.0",
+        "date": "14/05/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "1922_LogisticaPedidos",
+            "description": "Logística de Pedidos VEN",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "production",
+            "description": "Logo Cañas y Tapas",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "6648",
+            "description": "Actualizar Costos - Administración Artículos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "BDD VEN",
+            "description": "Ajustes de Venezuela",
+            "observation": "s/n",
+            "proyect": "BDD VEN",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.14.0",
+        "date": "28/05/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "s/n",
+            "description": "Interface España",
+            "observation": "s/n",
+            "proyect": "BDD SP - Tabla",
+            "qaRegional": "¡!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "6808-costoArticulo",
+            "description": "Administración Artículos VEN",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "8010_CrearRestaurante",
+            "description": "Localización Países - Crear Restaurante",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "7617_ActualizarCostosArticulos",
+            "description": "Actualizar Costos Artículos",
+            "observation": "s/n",
+            "proyect": "Sir Legacy - Sir Front - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "7969_ReporteTarjetas",
+            "description": "Reporte PDF Tarjetas Crédito",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.15.0",
+        "date": "06/06/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "8768_MejoraConsumosSAP",
+            "description": "Mejoras Consumo SAP",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "2269",
+            "description": "Importación Mayores Contables COL",
+            "observation": "s/n",
+            "proyect": "Sir Front - Sir Integration - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "5811",
+            "description": "Importación de artículos",
+            "observation": "s/n",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "8296",
+            "description": "Devoluciones estado asentado",
+            "observation": "s/n",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.16.0",
+        "date": "15/07/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "CuponPlus",
+            "description": "Libro Plus",
+            "observation": "Colombia",
+            "proyect": "Sir Front - Sir Back - Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "CuponEmpleados",
+            "description": "Cupones Empleados",
+            "observation": "Colombia",
+            "proyect": "Sir Front - Sir Integration - Sir Back - Sir Legacy - Sir Cupones",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "CuponDinero",
+            "description": "Cupones de Dinero",
+            "observation": "Colombia",
+            "proyect": "Sir Front - Sir Legacy - Sir Integration - Sir Back - Sir Cupones",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "CuponNomina",
+            "description": "Cupones Nómina",
+            "observation": "Chile",
+            "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back - Sir Cupones",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "fixDevolucionesV2 - 1906_DevolucionesObservaciones",
+            "description": "Devoluciones VEN",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy - Sir Integration - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "fixDevolucionesV2 - 1906_DevolucionesObservaciones",
+            "description": "Devoluciones - Agregar observaciones planta",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Integration - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Defecto",
+            "branch": "bug15705",
+            "description": "Reporte Usos y Consumo Título",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "nuevologo_Esp",
+            "description": "Imágen para nueva cadena España",
+            "observation": "España",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "1918 - 8408",
+            "description": "Integración Mayores Contables",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy - Sir Back - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "1918_MayoresContablesMoney",
+            "description": "Reporte Mayores Contables",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.17.0",
+        "date": "07/08/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "5247_SageIntegrationDailySales",
+            "description": "SAGE Ventas Diarias",
+            "observation": "España",
+            "proyect": "Sir Front - Sir Integration - Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },{
+            "type": "Requerimiento",
+            "branch": "5247_SageIntegrationDailySales",
+            "description": "SAGE Asientos Mensuales",
+            "observation": "España",
+            "proyect": "Sir Front - Sir Integration - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "bug16728",
+            "description": "Filtro Creación Cadena",
+            "observation": "España",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.18.0",
+        "date": "12/08/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "16604_ModificacionReporteRelacionCaja",
+            "description": "Modificación Reporte Relación de Caja",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "16565_pygColombiaDiferencias",
+            "description": "PyG Colombia Diferencias",
+            "observation": "Colombia",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "8222_CHI_IntegracionMayoresContables - 8222_integracion_mayores_contables",
+            "description": "Integración Mayores Contables",
+            "observation": "Chile",
+            "proyect": "Sir Front - Sir Integration - Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "1917_Diarios_VentasV2 - 1917",
+            "description": "SAP Venezuela Diario Formas Pago",
+            "observation": "Venezuela",
+            "proyect": "Sir Legacy - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      },
+      {
+        "version": "1.19.0",
+        "date": "27/08/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Bug",
+            "branch": "16604_ModificacionReporteRelacionCaja",
+            "description": "Abrir el administrador de cupones",
+            "observation": "Regional",
+            "proyect": "Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "21571_Memory Limit Recetas(plus)",
+            "description": "Cargaar del reporte de PLUS",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "16827_Cupones de Dinero - Envío de Excel con links",
+            "description": "Al generar los cupones de dinero, se debe de enviar en el correo un excel adjunto con la información de los links generados de los cupones. ",
+            "observation": "Colombia",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "21051_Respuesta API Cupon Dinero",
+            "description": "Se espera que al dar click en el botón de detalles de un registro se visualize el detalle correspondiente del cupón. ",
+            "observation": "Colombia",
+            "proyect": "Sir Legacy - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "1904_Control de modificación de movimientos - Mermas, Lunch y Ajustes",
+            "description": "Controles cuando el inventario esta asentado no se se modifique mermas, lunch y ajustes",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "2017_Ordenes de Mantenimiento",
+            "description": "Evitar la duplicidad de ordenes de mantenimiento, las cuales ya se crearon anteriormente.",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "Ingreso de Proyección Ventas 52 Semanas",
+            "description": "Se debe mostrar en el reporte de 52 semanas",
+            "observation": "Regional",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      }
+   
+    ]
+  }
