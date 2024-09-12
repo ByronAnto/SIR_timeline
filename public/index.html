@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ea">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,6 +51,19 @@
     .vis-timeline .vis-background {
       border-top: 3px solid red !important; /* Cambia el grosor y color de la línea principal */
     }
+    #search-results {
+      margin-top: 10px;
+      border: 1px solid lightgray;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .search-result {
+      padding: 5px;
+      cursor: pointer;
+    }
+    .search-result:hover {
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
@@ -67,6 +80,8 @@
     <input type="date" id="end-date">
     <button id="filter-dates">Filtrar</button>
   </div>
+  <input type="text" id="search-input" placeholder="Buscar...">
+  <div id="search-results"></div>
   <div id="timeline"></div>
   <div id="summary"></div>
     <h3>Tipos de implementaciones</h3>
@@ -78,7 +93,7 @@
     <div id="details-content">Seleccione una versión para ver los detalles.</div>
     <button id="export-pdf">Exportar a PDF</button>
   </div>
-    <script>
+  <script>
     // URL del archivo JSON
     const jsonUrl = '/data/document.json';
 
@@ -185,6 +200,22 @@
 
           itemsDataSet.clear();
           itemsDataSet.add(filteredItems);
+        });
+
+        // Search functionality
+        document.getElementById('search-input').addEventListener('input', function () {
+          const query = this.value.toLowerCase();
+          const results = items.filter(item => item.title.toLowerCase().includes(query));
+          const resultsContainer = document.getElementById('search-results');
+          resultsContainer.innerHTML = results.map(result => `<div class="search-result" data-id="${result.id}">${result.title}</div>`).join('');
+        });
+
+        document.getElementById('search-results').addEventListener('click', function (event) {
+          if (event.target.classList.contains('search-result')) {
+            const itemId = event.target.getAttribute('data-id');
+            timeline.setSelection(itemId);
+            timeline.focus(itemId);
+          }
         });
 
         // Export to PDF
