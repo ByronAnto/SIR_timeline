@@ -1759,7 +1759,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Bugs",
+            "type": "Bug",
             "branch": "correccionBugs",
             "description": "Bugs Regionales",
             "observation": "s/n",
@@ -2227,7 +2227,53 @@
             "qaRegional": "¡QA Superado!"
           }
         ]
-      }
-   
+      },
+      {
+        "version": "1.20.0",
+        "date": "16/09/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "tomafisicaArea",
+            "description": "Habilitar SIR Mobil - Inventario por área",
+            "observation": "Ecuador"  ,
+            "proyect": "SIR Integration - SIR Mobile Back - Sir Mobile Front",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "Integración Tesalia",
+            "description": "Pedidos de Tesalia desde la pantalla  de ordenes de pedidos",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "Articulos Padres / Hijos",
+            "description": "Artículos Padres e Hijos",
+            "observation": "Ecuador",
+            "proyect": "Sir Integration - Sir Legacy - Sir Front - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "22607_España- Bug Agregar tomas fisicas ",
+            "description": "Correccion en Articulos por Restaurante",
+            "observation": "España",
+            "proyect": "Sir Legacy - Sir Integration",
+            "qaRegional": "¡QA Superado!"
+          },
+          {
+            "type": "Bug",
+            "branch": "22981_ErrorEditarMermasV2 ",
+            "description": "Correcion se genera una nueva merma, se ingresan todos los registros en ese momento y se asienta no se genera el error ",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "¡QA Superado!"
+          }
+        ]
+      }   
     ]
   }
