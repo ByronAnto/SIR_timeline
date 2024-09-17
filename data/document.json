@@ -1797,7 +1797,7 @@
         "description": " ",
         "details": [
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "4176_Bug",
             "description": "Usos y Consumos PDF",
             "observation": "s/n",
@@ -1805,7 +1805,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "4175",
             "description": "Transferencias Administración",
             "observation": "s/n",
@@ -1813,7 +1813,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "4498",
             "description": "API Créditos Sin Cupón",
             "observation": "s/n",
@@ -1828,7 +1828,7 @@
         "description": " ",
         "details": [
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "4174",
             "description": "Día 30 Inventario Diario",
             "observation": "s/n",
@@ -1836,7 +1836,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "2291",
             "description": "Totales Generales Usos y Consumos",
             "observation": "s/n",
@@ -1844,7 +1844,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "2294",
             "description": "Imágenes en Botones Cuentas Mayores Contables",
             "observation": "s/n",
@@ -1859,7 +1859,7 @@
         "description": " ",
         "details": [
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "production",
             "description": "Monitor Integración Pedidos",
             "observation": "87de6794dad9fa435b0fb5e67443d311e83a932d",
@@ -1867,7 +1867,7 @@
             "qaRegional": "¡!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "4922",
             "description": "Control Facturas",
             "observation": "s/n",
@@ -1875,7 +1875,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "production",
             "description": "Carga Masiva de Precios - Permisos",
             "observation": "3aff7eb33f0f760d5993d79adee9d12eb6062c2f",
@@ -1893,7 +1893,7 @@
             "type": "Requerimiento",
             "branch": "1922_LogisticaPedidos",
             "description": "Logística de Pedidos VEN",
-            "observation": "s/n",
+            "observation": "Venezuela",
             "proyect": "Sir Legacy - Sir Front - Sir Back",
             "qaRegional": "¡QA Superado!"
           },
@@ -1901,12 +1901,12 @@
             "type": "Requerimiento",
             "branch": "production",
             "description": "Logo Cañas y Tapas",
-            "observation": "s/n",
+            "observation": "España",
             "proyect": "Sir Legacy",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "6648",
             "description": "Actualizar Costos - Administración Artículos",
             "observation": "s/n",
@@ -1914,10 +1914,10 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "BDD VEN",
             "description": "Ajustes de Venezuela",
-            "observation": "s/n",
+            "observation": "Venezuela",
             "proyect": "BDD VEN",
             "qaRegional": "¡QA Superado!"
           }
@@ -1932,7 +1932,7 @@
             "type": "Requerimiento",
             "branch": "s/n",
             "description": "Interface España",
-            "observation": "s/n",
+            "observation": "España",
             "proyect": "BDD SP - Tabla",
             "qaRegional": "¡!"
           },
@@ -1940,31 +1940,31 @@
             "type": "Requerimiento",
             "branch": "6808-costoArticulo",
             "description": "Administración Artículos VEN",
-            "observation": "s/n",
+            "observation": "Venezuela",
             "proyect": "Sir Legacy - Sir Front - Sir Back",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "8010_CrearRestaurante",
             "description": "Localización Países - Crear Restaurante",
-            "observation": "s/n",
+            "observation": "Colombia",
             "proyect": "Sir Legacy",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "7617_ActualizarCostosArticulos",
             "description": "Actualizar Costos Artículos",
-            "observation": "s/n",
+            "observation": "Ecuador",
             "proyect": "Sir Legacy - Sir Front - Sir Back",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "7969_ReporteTarjetas",
             "description": "Reporte PDF Tarjetas Crédito",
-            "observation": "s/n",
+            "observation": "Ecuador",
             "proyect": "Sir Legacy",
             "qaRegional": "¡QA Superado!"
           }
@@ -1979,31 +1979,31 @@
             "type": "Requerimiento",
             "branch": "8768_MejoraConsumosSAP",
             "description": "Mejoras Consumo SAP",
-            "observation": "s/n",
+            "observation": "Ecuador",
             "proyect": "Sir Integration",
             "qaRegional": "¡!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "2269",
             "description": "Importación Mayores Contables COL",
-            "observation": "s/n",
+            "observation": "Colombia",
             "proyect": "Sir Front - Sir Integration - Sir Back",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "5811",
             "description": "Importación de artículos",
-            "observation": "s/n",
+            "observation": "Ecuador",
             "proyect": "Sir Integration",
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "8296",
             "description": "Devoluciones estado asentado",
-            "observation": "s/n",
+            "observation": "Colombia",
             "proyect": "Sir Legacy",
             "qaRegional": "¡QA Superado!"
           }
@@ -2063,7 +2063,7 @@
             "qaRegional": "¡QA Superado!"
           },
           {
-            "type": "Defecto",
+            "type": "Bug",
             "branch": "bug15705",
             "description": "Reporte Usos y Consumo Título",
             "observation": "Venezuela",
@@ -2167,7 +2167,7 @@
       },
       {
         "version": "1.19.0",
-        "date": "27/08/2024",
+        "date": "02/09/2024",
         "description": " ",
         "details": [
           {
