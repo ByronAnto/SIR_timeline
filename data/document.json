@@ -2239,23 +2239,23 @@
             "description": "Habilitar SIR Mobil - Inventario por área",
             "observation": "Ecuador"  ,
             "proyect": "SIR Integration - SIR Mobile Back - Sir Mobile Front",
-            "qaRegional": "¡QA Superado!"
+            "qaRegional": "En Producción"
           },
           {
             "type": "Requerimiento",
-            "branch": "Integración Tesalia",
+            "branch": "13973-Integración Tesalia",
             "description": "Pedidos de Tesalia desde la pantalla  de ordenes de pedidos",
             "observation": "Ecuador",
-            "proyect": "Sir Legacy - Sir Back - Sir Integration",
-            "qaRegional": "¡QA Superado!"
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "En Producción"
           },
           {
             "type": "Requerimiento",
-            "branch": "Articulos Padres / Hijos",
+            "branch": "8224 - Articulos Padres / Hijos",
             "description": "Artículos Padres e Hijos",
             "observation": "Ecuador",
-            "proyect": "Sir Integration - Sir Legacy - Sir Front - Sir Back",
-            "qaRegional": "¡QA Superado!"
+            "proyect": "Sir Legacy",
+            "qaRegional": "En Producción"
           },
           {
             "type": "Bug",
@@ -2267,11 +2267,19 @@
           },
           {
             "type": "Bug",
+            "branch": "22980_Error al asentar Devoluciones ",
+            "description": "Correcion se genera una nueva merma, se ingresan todos los registros en ese momento y se asienta no se genera el error ",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
             "branch": "22981_ErrorEditarMermasV2 ",
             "description": "Correcion se genera una nueva merma, se ingresan todos los registros en ese momento y se asienta no se genera el error ",
             "observation": "Ecuador",
             "proyect": "Sir Legacy - Sir Back",
-            "qaRegional": "¡QA Superado!"
+            "qaRegional": "En Producción"
           }
         ]
       }   
