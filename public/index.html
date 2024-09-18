@@ -41,28 +41,28 @@
       background-color: #f1f1f1;
     }
     .kfc {
-      color: red;
+      color: rgb(109, 21, 21);
     }
     .vis-item.vis-selected {
-      border-color: rgb(119, 12, 12) !important;
-      background-color: rgba(119, 12, 12, 0.2) !important;
+      border-color: rgb(105, 5, 5) !important;
+      background-color: rgba(134, 223, 18, 0.582) !important;
     }
     .vis-item {
-      background-color: rgb(255, 165, 0); /* Cambia el color aquí */
-      border-color: rgb(255, 140, 0); /* Cambia el color aquí */
+      background-color: rgb(230, 172, 86); /* Cambia el color aquí */
+      border-color: rgb(88, 87, 87); /* Cambia el color aquí */
     }
     .vis-timeline .vis-time-axis .vis-grid.vis-vertical {
-      border-left: 2px solid blue !important; /* Cambia el grosor y color de la línea vertical */
+      border-left: 2px solid rgb(32, 32, 32) !important; /* Cambia el grosor y color de la línea vertical */
     }
     .vis-timeline .vis-time-axis .vis-grid.vis-horizontal {
-      border-top: 2px solid blue !important; /* Cambia el grosor y color de la línea horizontal */
+      border-top: 2px solid rgb(54, 54, 54) !important; /* Cambia el grosor y color de la línea horizontal */
     }
     .vis-timeline .vis-time-axis .vis-text {
       font-weight: bold; /* Cambia el grosor del texto */
-      color: blue; /* Cambia el color del texto */
+      color: rgb(0, 0, 0); /* Cambia el color del texto */
     }
     .vis-timeline .vis-background {
-      border-top: 3px solid red !important; /* Cambia el grosor y color de la línea principal */
+      border-top: 3px solid rgb(109, 21, 21)!important; /* Cambia el grosor y color de la línea principal */
     }
     #search-results {
       margin-top: 10px;
@@ -100,12 +100,15 @@
   <div id="search-results"></div>
   <div id="timeline"></div>
   <div id="summary" class="right-align">
-    <h3>Tipos de implementaciones</h3>
-    <p id="requirements-count">Requerimientos: 0 📋</p>
-    <p id="bugs-count">Bugs: 0 🪲</p>
-  </div>
-  <div id="country-summary" class="left-align"></div>
-  <div id="details">
+    <h3 style="float: left;">Tipos de implementaciones por País</h3>
+    <h3 style="float: right;">Tipos de implementaciones</h3>
+    <div style="clear: both;"></div> 
+    <div id="country-summary" class="left-align"></div>
+    <div  id="requirements-count" style="float: right;">Requerimientos: 0 📋</div>
+    <div  id="bugs-count" style="float: right;">Bugs: 0 🪲</div>
+    <div style="clear: both;"></div>
+    </div>
+     <div id="details">
     <h3>Detalles</h3>
     <div id="details-content">Seleccione una versión para ver los detalles.</div>
     <button id="export-pdf">Exportar a PDF</button>
