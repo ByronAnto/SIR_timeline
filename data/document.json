@@ -2282,6 +2282,61 @@
             "qaRegional": "En Producción"
           }
         ]
+      },
+      {
+        "version": "1.20.1",
+        "date": "18/09/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "17772",
+            "description": "17772-Compras Artículos Maestros",
+            "observation": "Ecuador"  ,
+            "proyect": "SIR Legacy",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "17230",
+            "description": "Logistica de Pedidos - Habilitar proveedores externos",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Front",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "8224 - Articulos Padres / Hijos",
+            "description": "Artículos Padres e Hijos",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "13973",
+            "description": "Integración Tesalia - Envío de correos con excel adjunto",
+            "observation": "Ecuador",
+            "proyect": "Sir Back",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "21383",
+            "description": "Mejoras Proyección de Ventas",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy - Sir Back",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": "26116_correcuibfechamerma",
+            "description": "Corrección de fecha de merma ",
+            "observation": "Ecuador",
+            "proyect": "Sir Legacy ",
+            "qaRegional": "En Producción"
+          }
+        ]
       }   
     ]
   }
