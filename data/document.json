@@ -2337,6 +2337,76 @@
             "qaRegional": "En Producción"
           }
         ]
-      }   
+      },
+      {
+        "version": "1.21.0",
+        "date": "25/09/2024",
+        "description": "Cupones Colombia",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "16827",
+            "description": "16827-Envío de Excel con links",
+            "observation": "Colombia"  ,
+            "proyect": "SIR Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "18564",
+            "description": "18564-Fecha de caducidad en el canje",
+            "observation": "Colombia",
+            "proyect": "Sir Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": "16565",
+            "description": "PyG Colombia - Diferencias",
+            "observation": "Colombia",
+            "proyect": "Sir Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": "21688",
+            "description": "Costos Articulos",
+            "observation": "Venezuela",
+            "proyect": "Base de Datos",
+            "qaRegional": "En Producción"
+          }
+        ]
+      },
+      {
+        "version": "1.22.0",
+        "date": "03/10/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "1920 -2021",
+            "description": "Compras V2 - Automáticas",
+            "observation": "Regional",
+            "proyect": "SIR Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "22624",
+            "description": "API Depósitos S.I. - Campo Banco opcional",
+            "observation": "Chile",
+            "proyect": "Sir Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "5232",
+            "description": "52 Semanas - Añadir proyección de Venta",
+            "observation": "Ecuador",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "En Producción"
+          }
+        ]
+      } 
     ]
   }
