@@ -2407,6 +2407,61 @@
             "qaRegional": "En Producción"
           }
         ]
+      },
+      {
+        "version": "1.23.0.1",
+        "date": "15/10/2024",
+        "description": " ",
+        "details": [
+          {
+            "type": "Requerimiento",
+            "branch": "23861 - 1668",
+            "description": "Reporte Stock v2 / API SAP",
+            "observation": "Regional",
+            "proyect": "SIR Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "17699",
+            "description": "Integration SAGE",
+            "observation": "España",
+            "proyect": "Sir Integration",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Requerimiento",
+            "branch": "20307",
+            "description": "Reportes SAGE",
+            "observation": "España",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": " ",
+            "description": "Asentar Devoluciones",
+            "observation": "Venenzuela",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": " ",
+            "description": "Activos Fijos",
+            "observation": "Ecuador",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "En Producción"
+          },
+          {
+            "type": "Bug",
+            "branch": " ",
+            "description": "Crear Restaurante",
+            "observation": "Venezuela",
+            "proyect": "Sir Integration - Sir Legacy",
+            "qaRegional": "En Producción"
+          }
+        ]
       } 
     ]
   }
