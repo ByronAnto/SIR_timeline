@@ -2462,6 +2462,85 @@
             "qaRegional": "En Producción"
           }
         ]
-      } 
+      },
+          {
+            "version": "1.24.1.1",
+            "date": "21/10/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "1667",
+                "description": "Reporte Compras Consolidadas",
+                "observation": "Ecuador",
+                "proyect": "SIR Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "17411",
+                "description": "Filtro Empresa Compras Conolidadas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "27452",
+                "description": "Campaña Solidaria",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": " ",
+                "description": "EC-Transferencias (Activos) exportadas",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.24.2.1",
+            "date": "28/10/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "20308",
+                "description": "Mejoras en email de Orden de pedido",
+                "observation": "España",
+                "proyect": "SIR Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "13972",
+                "description": "Integración de Cupones Digitales (CCC)",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "32567",
+                "description": "Error en el reporte de Tesalia",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "30837",
+                "description": "Copia de correos Tesalia Ecuador",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
+          }
+     
     ]
   }
