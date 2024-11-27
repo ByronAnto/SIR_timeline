@@ -2540,6 +2540,187 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.25.1.1",
+            "date": "18/11/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "24795",
+                "description": "Mejoras Reporte Facturas Manuales",
+                "observation": "Ecuador",
+                "proyect": "SIR legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "1669",
+                "description": "Modificación Reporte: Administración de facturas manuales",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "31492",
+                "description": "EC-Mejoras Reporte Facturas Manuales",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "25318",
+                "description": "CO-Integración AxionLog",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "32731",
+                "description": "RE-Calculo de subtotal en Compras (CO-CL-VE-AR-VE)",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "0",
+                "description": "Cambio de claves en ENV",
+                "observation": "Regional",
+                "proyect": "Sir Integration - Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.26.1.1",
+            "date": "26/11/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "28632",
+                "description": "Administración de Gavetas",
+                "observation": "Chile",
+                "proyect": "Sir Legacy - Sir Front - Sir Back - Sir Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "34435",
+                "description": "Horneados: Mejoras en el proceso",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "34410",
+                "description": "Integración Tesalia - Bloqueo de artículos Padres en pedidos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "36168",
+                "description": "Integración AxionLog Validar cantidad total",
+                "observation": "Colombia",
+                "proyect": "Sir Front - Sir Back - Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "31593",
+                "description": "Error en reporte Usos y Consumos",
+                "observation": "Venenzuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "35929",
+                "description": "52Semanas",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.26.2.1",
+            "date": "27/11/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "22911",
+                "description": "Devoluciones - Relacionar Áreas, Motivos y Observaciones",
+                "observation": "Ecuador",
+                "proyect": "SIR Back  - SIR Legacy  - SIR Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "8220",
+                "description": "Pantalla de Administración de Devoluciones",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "26974",
+                "description": "VE-Integración Cupones Empresariales",
+                "observation": "Venenzuela",
+                "proyect": "Sir Integration - Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "26976",
+                "description": "Libro Plu /Cupones de empleado ",
+                "observation": "Venenzuela",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "26975",
+                "description": "Cupones de Dinero ",
+                "observation": "Venenzuela",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "34405",
+                "description": "Cupones Empresariales Digitales - Ocultar Cliente",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "17803",
+                "description": "Control de modificación de movimientos - Compras Cajas Chicas y Degustaciones",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "34781",
+                "description": "Cambio DNS ",
+                "observation": "Venenzuela",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
      
     ]
