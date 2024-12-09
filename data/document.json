@@ -2721,6 +2721,69 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.27.1.1",
+            "date": "09/12/2024",
+            "description": " ",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "17766",
+                "description": "CO-SAP : Diario de Inventarios",
+                "observation": "Colombia",
+                "proyect": "SIR legacy - SIR Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "36058",
+                "description": "Error en el logo de Federer",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "24544",
+                "description": "EC-Actualización de campo Importado Cierre Cajas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "38627",
+                "description": "Creación de inventarios El Español",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "30775",
+                "description": "VE-Conversion moneda Mayores contables",
+                "observation": "Venenzuela",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "33088",
+                "description": "RE-Asentar devoluciones (CO-VE-CL)",
+                "observation": "Regional",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "39702",
+                "description": "Cambiar la fecha de las ordenes de horneados",
+                "observation": "Ecuador",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
      
     ]
