@@ -2441,7 +2441,7 @@
             "type": "Bug",
             "branch": " ",
             "description": "Asentar Devoluciones",
-            "observation": "Venenzuela",
+            "observation": "Venezuela",
             "proyect": "Sir Integration - Sir Legacy",
             "qaRegional": "En Producción"
           },
@@ -2637,7 +2637,7 @@
                 "type": "Bug",
                 "branch": "31593",
                 "description": "Error en reporte Usos y Consumos",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               },
@@ -2676,7 +2676,7 @@
                 "type": "Requerimiento",
                 "branch": "26974",
                 "description": "VE-Integración Cupones Empresariales",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Integration - Sir Legacy - Sir Back",
                 "qaRegional": "En Producción"
               },
@@ -2684,7 +2684,7 @@
                 "type": "Requerimiento",
                 "branch": "26976",
                 "description": "Libro Plu /Cupones de empleado ",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Integration - Sir Back",
                 "qaRegional": "En Producción"
               },
@@ -2692,7 +2692,7 @@
                 "type": "Requerimiento",
                 "branch": "26975",
                 "description": "Cupones de Dinero ",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Integration - Sir Back",
                 "qaRegional": "En Producción"
               },
@@ -2716,7 +2716,7 @@
                 "type": "Bug",
                 "branch": "34781",
                 "description": "Cambio DNS ",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Legacy - Sir Integration - Sir Back - Sir Front",
                 "qaRegional": "En Producción"
               }
@@ -2725,7 +2725,7 @@
           {
             "version": "1.27.1.1",
             "date": "09/12/2024",
-            "description": " ",
+            "description": "1111",
             "details": [
               {
                 "type": "Requerimiento",
@@ -2763,7 +2763,7 @@
                 "type": "Bug",
                 "branch": "30775",
                 "description": "VE-Conversion moneda Mayores contables",
-                "observation": "Venenzuela",
+                "observation": "Venezuela",
                 "proyect": "Sir Back",
                 "qaRegional": "En Producción"
               },
