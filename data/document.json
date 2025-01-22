@@ -2784,7 +2784,116 @@
                 "qaRegional": "En Producción"
               }
             ]
-          }
-     
+          },
+          {
+            "version": "1.27.3.2",
+            "date": "09/12/2024",
+            "description": "1111",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "17766",
+                "description": "CO-SAP : Diario de Inventarios",
+                "observation": "Colombia",
+                "proyect": "SIR legacy - SIR Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "36058",
+                "description": "Error en el logo de Federer",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "24544",
+                "description": "EC-Actualización de campo Importado Cierre Cajas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "38627",
+                "description": "Creación de inventarios El Español",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "30775",
+                "description": "VE-Conversion moneda Mayores contables",
+                "observation": "Venezuela",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "33088",
+                "description": "RE-Asentar devoluciones (CO-VE-CL)",
+                "observation": "Regional",
+                "proyect": "Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "39702",
+                "description": "Cambiar la fecha de las ordenes de horneados",
+                "observation": "Ecuador",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.28.1.1",
+            "date": "21/01/2025",
+            "description": "1111",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "38860",
+                "description": "Cupones Empresariales  - Subir a SIR contenerizado",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - BDD",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "38861",
+                "description": "Cupones Empresariales - Pantalla para subir información de facturas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "38864",
+                "description": "Cupones Empresariales - Correo información de Facturas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - BDD",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "32779",
+                "description": "EC-Error al guardar formas de pago SIR",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "30775",
+                "description": "Timeout - Reporte de compras Consolidado",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
+          }     
     ]
   }
