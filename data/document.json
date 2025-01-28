@@ -2965,7 +2965,7 @@
                 "qaRegional": "En Producción"
               },
               {
-                "type": "Requerimiento",
+                "type": "Bug",
                 "branch": "42378",
                 "description": "Mayores contables",
                 "observation": "Ecuador",
