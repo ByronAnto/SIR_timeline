@@ -2894,6 +2894,85 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.29.1.1",
+            "date": "28/01/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "34412",
+                "description": "EC-SIR Movile- Inventarios: Mejoras en toma de inventarios",
+                "observation": "Ecuador",
+                "proyect": "SirMobilFront - SirMobilBack - SirIntegration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "5226",
+                "description": "EC-Refactorización - Relación de Caja",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Front - Sir Back - Sir Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "1912",
+                "description": "Pedidos Sugeridos -Modulo de Pedidos: Incluir proyección",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - BDD",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "15023",
+                "description": "EC-Refactorización - Pantalla de Pedidos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "13983",
+                "description": "EC-Refactorización - Depósitos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "8229",
+                "description": "EC-Hoja de Proyección de Producción",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "26979",
+                "description": "EC-Pantalla de Cuadre de fondo de Caja Chica",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47960",
+                "description": "Reporte de excel cupones",
+                "observation": "Ecuador",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "42378",
+                "description": "Mayores contables",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
           }     
     ]
   }
