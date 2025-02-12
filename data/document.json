@@ -2973,6 +2973,76 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.29.2.2",
+            "date": "04/02/2025",
+            "description": "04/02/2025",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "34412",
+                "description": "Cambio de Areas Español de 2 a 67",
+                "observation": "Ecuador",
+                "proyect": "SirIntegration",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.30.1.1",
+            "date": "11/02/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "42504",
+                "description": "Plus y Recetas - Integración y Estabilización",
+                "observation": "Ecuador",
+                "proyect": "SirMobilFront - SirMobilBack - SirIntegration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "1990",
+                "description": "Refactorización - Gastos de Cajas Chicas",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Front - Sir Back - Sir Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "38862",
+                "description": "Plus y Recetas - API creación MXP",
+                "observation": "Ecuador",
+                "proyect": "Sir integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47601",
+                "description": "Error en decimales a recuperar compra",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "48391",
+                "description": "Error en reporte del Mix",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47968",
+                "description": "Error al generar transferencias negativas SIR",
+                "observation": "Ecuador",
+                "proyect": "BDD",
+                "qaRegional": "En Producción"
+              }
+            ]
           }     
     ]
   }
