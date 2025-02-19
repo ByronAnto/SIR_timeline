@@ -3043,6 +3043,42 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.31.1.1",
+            "date": "19/02/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "48889",
+                "description": "Fondo de Cajas Chicas - Monedas Tevcol",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+
+              {
+                "type": "Bug",
+                "branch": "51206",
+                "description": "Creación de inventario por áreas B001 Y F003",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47617",
+                "description": "Cambio de moneda en el reporte de concialiacion bancaria",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+              
+              
+              
+              
+            ]
           }     
     ]
   }
