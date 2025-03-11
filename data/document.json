@@ -3079,6 +3079,45 @@
               
               
             ]
+          },
+          {
+            "version": "1.32.1.1",
+            "date": "27/02/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "34431",
+                "description": "EC-Mayores Contables CAR - Diferentes Grupos",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration",
+                "qaRegional": "En Producción"
+              },
+
+              {
+                "type": "Requerimiento",
+                "branch": "2005",
+                "description": "Separación de los Diarios de Venta",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Integration",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.32.2.1",
+            "date": "11/03/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "51132",
+                "description": "Devoluciones Consolidado - Exportar Excel - Error (Venezuela)",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy - Sir Front - Sir Back",
+                "qaRegional": "En Producción"
+              }
+            ]
           }     
     ]
   }
