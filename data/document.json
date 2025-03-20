@@ -3118,6 +3118,46 @@
                 "qaRegional": "En Producción"
               }
             ]
-          }     
+          },
+          {
+            "version": "1.33.1.1",
+            "date": "20/03/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "54522",
+                "description": "Control Fondo CCH - Monedas Tevcol V2",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "54061",
+                "description": "Sir-Móvil Mejoras Inventarios",
+                "observation": "Ecuador",
+                "proyect": "SIR Integration - SIR Mobile Back - Sir Mobile Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47555",
+                "description": "Reporte de Transferencia +/- ITEMS",
+                "observation": "Regional",
+                "proyect": "SIR Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "53432",
+                "description": "Ingreso de lunch Venezuela",
+                "observation": "Venezuela",
+                "proyect": "Base de Datos",
+                "qaRegional": "En Producción"
+              }
+              
+            ]
+          }    
     ]
   }
