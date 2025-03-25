@@ -3158,6 +3158,29 @@
               }
               
             ]
+          },
+          {
+            "version": "1.34.1.1",
+            "date": "25/03/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "54060",
+                "description": "Mejoras Devoluciones",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "54015",
+                "description": "Mejoras en Reportes",
+                "observation": "Ecuador",
+                "proyect": "SIR legacy",
+                "qaRegional": "En Producción"
+              }              
+            ]
           }    
     ]
   }
