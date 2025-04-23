@@ -3220,6 +3220,61 @@
                 "qaRegional": "En Producción"
               }              
             ]
+          },
+          {
+            "version": "1.36.1.1",
+            "date": "23/04/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "56977",
+                "description": "Bloqueo pedidos Tesalia",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "54063",
+                "description": "Reporte Cupones: Por cadena",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Back - Sir Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57237",
+                "description": "Cierre de Cajas: Bloqueo por Faltantes",
+                "observation": "Venezuela",
+                "proyect": "SIR Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57657",
+                "description": "Cupones Digitales: Mejoras",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back - Sir Cupones",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "36038",
+                "description": "CL-Cupones de Nomina - Subir Excel correos",
+                "observation": "Chile",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "48890",
+                "description": "Cupones Empresariales - Cupones físicos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              }               
+            ]
           }   
     ]
   }
