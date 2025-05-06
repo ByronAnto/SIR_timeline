@@ -3275,6 +3275,69 @@
                 "qaRegional": "En Producción"
               }               
             ]
-          }   
+          },
+          {
+            "version": "1.37.1.1",
+            "date": "07/05/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "63483",
+                "description": "Asentado Automático pedidos SIR no funciona",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "65791",
+                "description": "Cupones Digitales",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "62129",
+                "description": "Recuperar compras",
+                "observation": "Ecuador",
+                "proyect": "SIR Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "62573",
+                "description": "Error en el costo del Lunch",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "49229",
+                "description": "Restructuración Recetas: Mejoras Diseño",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "25320",
+                "description": "Reestructuración de recetas: Reportes - Imprimir Recetas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "64644",
+                "description": "Cambio Endpoint QPM",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }               
+            ]
+          }
     ]
   }
