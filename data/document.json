@@ -3338,6 +3338,29 @@
                 "qaRegional": "En Producción"
               }               
             ]
+          },
+          {
+            "version": "1.37.3.2",
+            "date": "21/05/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "61665",
+                "description": "Horario de importación Mayores C.",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "61400",
+                "description": "Exportacion ventas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }             
+            ]
           }
     ]
   }
