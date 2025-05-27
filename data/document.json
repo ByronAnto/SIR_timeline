@@ -3361,6 +3361,37 @@
                 "qaRegional": "En Producción"
               }             
             ]
+          },
+          {
+            "version": "1.38.1.1",
+            "date": "27/05/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "59600",
+                "description": "Api Depositos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "54011",
+                "description": "Diario de Ventas - Añadir información de cupones dinero",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "62129",
+                "description": "Defecto: Recuperar compras",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
