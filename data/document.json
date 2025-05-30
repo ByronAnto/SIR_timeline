@@ -3392,6 +3392,29 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.39.1.1",
+            "date": "02/06/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "57525",
+                "description": "Registro de Items - Guias Electronicas HARVEST",
+                "observation": "Chile",
+                "proyect": "Sir Legacy - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57238",
+                "description": "Compras: Añadir información de artículo pedido",
+                "observation": "España",
+                "proyect": "SIR legacy - SIR Integration",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
