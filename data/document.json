@@ -3415,6 +3415,101 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.40.1.1",
+            "date": "17/06/2025",
+            "description": "17/06/2025",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "64800",
+                "description": "Cupones de Empleado: Registro de Transferencia",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy - Sir Back - BDD",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "64649",
+                "description": "Plus y Recetas: Mejoras UAT",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "71853",
+                "description": "Modificación Inventario por Áreas",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57778",
+                "description": "Migración Argentina - Correcciones Errores",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "67782",
+                "description": "Solicitud CCC - tipo CCC",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "69054",
+                "description": "Asentado automático de pedidos (Proveedores Externos)",
+                "observation": "Ecuador",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "62119",
+                "description": "Mayores contables CAR",
+                "observation": "Ecuador",
+                "proyect": "Sir Integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "67335",
+                "description": "Recuperar compras automáticas",
+                "observation": "Regional",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "68135",
+                "description": "Conciliación bancaria Venezuela",
+                "observation": "Venezuela",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "47163",
+                "description": "Cupones appsomos",
+                "observation": "Chile",
+                "proyect": "Sir integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "67785",
+                "description": "Solicitud CCC - Boton Eliminar",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
