@@ -3510,6 +3510,68 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.40.2.2",
+            "date": "18/06/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "000",
+                "description": "Reverso Version 1.39.1.1",
+                "observation": "Regional",
+                "proyect": "Sir Legacy - Sir Integration - Sir Back - Sir Front",
+                "qaRegional": "En Producción"
+              }        
+            ]
+          },
+          {
+            "version": "1.41.1.1",
+            "date": "30/06/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "57932",
+                "description": "Refactorización de Cupones - Botón Imprimir",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy - Sir Front - Sir Integration - Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "68442",
+                "description": "Inventario por áreas: Validación Movimientos Pendientes",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "74330",
+                "description": "Conciliadores Chile",
+                "observation": "Chile",
+                "proyect": "Sir integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "75715",
+                "description": "Asentar PyG",
+                "observation": "Regional",
+                "proyect": "Sir integration",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "67783",
+                "description": "Error al crear logisticas I012",
+                "observation": "Ecuador",
+                "proyect": "Sir integration",
+                "qaRegional": "En Producción"
+              }      
+            ]
           }
     ]
   }
