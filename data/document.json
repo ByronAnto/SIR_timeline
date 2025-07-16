@@ -3572,6 +3572,77 @@
                 "qaRegional": "En Producción"
               }      
             ]
+          },
+          {
+            "version": "1.42.1.1",
+            "date": "07/07/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "57725",
+                "description": "Traducción Módulo Configuraciones: Porcentuales",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "76729",
+                "description": "Inventarios - Cambio de coma por punto",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74855",
+                "description": "Traducción Pantalla Inicio",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57735",
+                "description": "Traducción Módulo Plus y Recetas: Cambiar Artículos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "75151",
+                "description": "Error al crear cabeceras de Pedidos",
+                "observation": "Colombia",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "74140",
+                "description": "Reporte Transferencias Positivas CHI",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "74925",
+                "description": "Asentar depositos Ecu",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "67417",
+                "description": "Error al canjear Cupones Digitales",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }     
+            ]
           }
     ]
   }
