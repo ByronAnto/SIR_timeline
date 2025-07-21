@@ -3643,6 +3643,109 @@
                 "qaRegional": "En Producción"
               }     
             ]
+          },
+          {
+            "version": "1.43.1.1",
+            "date": "21/07/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "57736",
+                "description": "Traducción Módulo Plus y Recetas: Reporte Contribuciones",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57730",
+                "description": "Traducción Módulo Configuraciones: Varios Tipos",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "62296",
+                "description": "Administración de Artículos: Cambios ingreso de datos",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "67694",
+                "description": "Ajuste Administración de Artículos - Iniciales crear nuevo",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57732",
+                "description": "Traducción Módulo Plus y Recetas: Configuración Categorías/Departamentos",
+                "observation": "Brasil",
+                "proyect": "Sir Back",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57733",
+                "description": "Traducción Módulo Plus y Recetas: Recetas (Plus)",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57734",
+                "description": "Traducción Módulo Plus y Recetas: Subrecetas",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "69363",
+                "description": "Integración Sistema Estadio de Liga",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57537",
+                "description": "Interfaz de Ventas Horizont",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57737",
+                "description": "Traducción Módulo Plus y Recetas: Reportes Imprimir",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "75682",
+                "description": "Distribucion de pedidos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "77915",
+                "description": "Abrir inventario fisico por areas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
