@@ -3746,6 +3746,45 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.44.1.1",
+            "date": "30/07/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "68443",
+                "description": "Generar Guías de Despacho HARVEST",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74045",
+                "description": "Cajas Chicas - añadir comprobante",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "69247",
+                "description": "Migración Argentina - Corrección Errores",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "80756",
+                "description": "Reporte PyG",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
