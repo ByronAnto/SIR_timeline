@@ -3785,6 +3785,77 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.45.1.1",
+            "date": "12/08/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "57528",
+                "description": "Reporte Consolidado de Aceite Quemado",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74160",
+                "description": "Mejoras Cupones",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74531",
+                "description": "Imprimir cupones QR en PDF",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "79976",
+                "description": "Mejoras Cajas chicas",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74825",
+                "description": "Guías de Despacho - Activos Fijos",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "80854",
+                "description": "Error al crear Control de Aceite quemado",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "83572",
+                "description": "Pantalla QPM",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "83725",
+                "description": "Rubros en Pantalla CCH V2",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
