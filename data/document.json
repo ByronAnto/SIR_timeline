@@ -3856,6 +3856,77 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.46.1.1",
+            "date": "19/08/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "78113",
+                "description": "Correcciones SIR Brasil",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80851",
+                "description": "Mejoras Interfaz Horizont",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57519",
+                "description": "Diario de Ventas SAP: Agregar IGTF",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "75033",
+                "description": "Diario de Inventario Venezuela",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74160",
+                "description": "Mejoras Cupones",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80848",
+                "description": "Cupones Digitales CCC - Anular + Mejoras Reportes",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "68440",
+                "description": "Pedidos Sugeridos - Mejoras",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85520",
+                "description": "Correcciones Argentina - Depositos + Lotes",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
