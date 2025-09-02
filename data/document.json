@@ -3927,6 +3927,77 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.47.1.1",
+            "date": "02/09/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Bug",
+                "branch": "85047",
+                "description": "Mermas asentadas permiten editar",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "83570",
+                "description": "API Depositos Conciliador Chile - Fechas  y estado",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "64689",
+                "description": "Validacion Creación de usuarios Pasaporte",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "86608",
+                "description": "Exportar Solicitud Cupones a SAP - Cupones V2",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "74160",
+                "description": "Mejoras Cupones",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85326",
+                "description": "Guías Harvest - Observación Guía",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "25321",
+                "description": "Plus y Recetas - Generación MIX",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57538",
+                "description": "Modificar Interfaz MXP Delivery - MXP v2 - Recetas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }         
+            ]
           }
     ]
   }
