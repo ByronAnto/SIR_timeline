@@ -3998,6 +3998,53 @@
                 "qaRegional": "En Producción"
               }         
             ]
+          },
+          {
+            "version": "1.48.1.1",
+            "date": "10/09/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "89156",
+                "description": "BR- Api Cajas Chicas Brasil para SI",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "86307",
+                "description": "Guías Harvest - Añadir Costo",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80849",
+                "description": "Pedidos Sugeridos - Añadir artículos en 0",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80880",
+                "description": "Pedidos Sugeridos - Logistica Eventual",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85490",
+                "description": "Cupones - Añadir leyendas y correo",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }           
+            ]
           }
     ]
   }
