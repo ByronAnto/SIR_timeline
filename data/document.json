@@ -4045,6 +4045,165 @@
                 "qaRegional": "En Producción"
               }           
             ]
+          },
+          {
+            "version": "1.49.1.1",
+            "date": "24/09/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "80059",
+                "description": "Administración Cajas Chicas",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "84977",
+                "description": "Cambios en Proyeccion Producción",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "84974",
+                "description": "Mejoras en 52 Semanas - Venta Neta",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "86095",
+                "description": "Vue - mejoras look & feel",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80131",
+                "description": "Interfaz Venta Por Medio - Añadir venta Z",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80876",
+                "description": "BR - Impresión de compras, incluir valores de impuesto y flete",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85490",
+                "description": "Cupones - Añadir leyendas y correo",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57572",
+                "description": "Reporte Compras - Pedidos (Padres/hijos)",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "80850",
+                "description": "BR - Cambios MIX - Descuento",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "69461",
+                "description": "Actualizacion Vue - Primera Salida",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57726",
+                "description": "BR - Traducción Módulo Configuraciones: Ubicación Física",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "84968",
+                "description": "Compras - Añadir estados de integración",
+                "observation": "España",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85867",
+                "description": "Devoluciones - Añadir estados de integración",
+                "observation": "España",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57742",
+                "description": "BR - Traducción Módulo Diarios ERP: Ventas",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "84582",
+                "description": "Mejoras en servicio QPM",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "84978",
+                "description": "Mejoras en Inventario SIR Movile - Grupos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "85872",
+                "description": "BR - Error al traer el valor estimado del depósito V2",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "90348",
+                "description": "Reporte Compras Consolidado",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "90336",
+                "description": "Revisar Consulta CambioDolar - Pantalla de depositos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }             
+            ]
           }
     ]
   }
