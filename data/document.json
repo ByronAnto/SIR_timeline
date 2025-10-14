@@ -4204,6 +4204,85 @@
                 "qaRegional": "En Producción"
               }             
             ]
+          },
+          {
+            "version": "1.51.1.1",
+            "date": "08/10/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "89374",
+                "description": "Cambios en reporte SWT",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89637",
+                "description": "Actualización de Reportes - Conciliación Bancaria",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "85868",
+                "description": "Integración Carvajal - Pedidos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89822",
+                "description": "Impresión cupones QR - Código de Cupon EC",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "75554",
+                "description": "Mix V2 - Top De Ventas",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57753",
+                "description": "Mix V2 - MIX por Fecha (Categoria)",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "86751",
+                "description": "BR - Formato Reporte de Usos y Consumos V2",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89869",
+                "description": "BR - Informe de Cierre de Mes - Decimales",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "89394",
+                "description": "Interfaz loyvers",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }             
+            ]
           }
     ]
   }
