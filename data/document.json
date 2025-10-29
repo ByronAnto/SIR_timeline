@@ -4275,6 +4275,54 @@
                 "qaRegional": "En Producción"
               },
               {
+                "type": "Requerimiento",
+                "branch": "81367",
+                "description": "BR - Reporte de compras consolidado - añadir impuestos y fletes",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89376",
+                "description": "Integración de Pedidos Coca Cola",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "75559",
+                "description": "Mix V2 - Comparativo",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "90529",
+                "description": "BR - Integración MB: Mejoras",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "90383",
+                "description": "52 Semanas - Quitar Proyección",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89867",
+                "description": "Pedido Sugerido - Asentado Automático",
+                "observation": "Ecuador"  ,
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
                 "type": "Bug",
                 "branch": "89394",
                 "description": "Interfaz loyvers",
