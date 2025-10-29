@@ -4331,6 +4331,53 @@
                 "qaRegional": "En Producción"
               }             
             ]
+          },
+          {
+            "version": "1.52.1.1",
+            "date": "29/10/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "89625",
+                "description": "Transferencias Cupones de Cortesía",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "64815",
+                "description": "Administración de artículos regional",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "92760",
+                "description": "Exportar Solicitud Cupones a SAP - Cupones V2",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "94909",
+                "description": "exportacion cajas chicas",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "95132",
+                "description": "Exportacion de Inventarios",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
