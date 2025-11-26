@@ -4378,6 +4378,196 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.53.1.1",
+            "date": "11/11/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "93826",
+                "description": "BR - Interfaz de Ventas: Agregadores como Credito Sin Cupon",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "89391",
+                "description": "Mejoras y Estabilización - Reportes MIX V2",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "95366",
+                "description": "52 Semanas, Proyección Transacciones",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "89823",
+                "description": "Pedidos Sugerido - Adelantar Logistica",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "89868",
+                "description": "BR - Refactorizar PYG - Añadir Decimales",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "90331",
+                "description": "Cupones de Empleado - Seguimiento Correos",
+                "observation": "Venezuela",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "89824",
+                "description": "Pedidos Sugeridos - Añadir Stock",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "57577",
+                "description": "Actualización de reportes - Quitar ceros en reporte Usos y Consumos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "95088",
+                "description": "Generación Archivos Planexware",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "96437",
+                "description": "administración de artículo proveedor VUE3",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "94774",
+                "description": "Reporte Sobres V2",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "94592",
+                "description": "administracion de articulos VUE3",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "96359",
+                "description": "Depositos V2",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "96074",
+                "description": "Ordenes de pedido Externo",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "89703",
+                "description": "BR - Error Venta Liquida MIX",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
+          },
+          {
+            "version": "1.54.2.1",
+            "date": "19/11/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "94470",
+                "description": "Integración Pedidos Coca Cola Embonor",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "57581",
+                "description": "Refactorización Reporte Tarjetas de Crédito",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "96943",
+                "description": "BR - Notificaciones Integración MB",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "102627",
+                "description": "Impresión de Pedidos Sugeridos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "98451",
+                "description": "Reporte Compras Consolidado",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "77918",
+                "description": "Calendario - Creación de Logísticas Anuales SIR",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "100038",
+                "description": "Importación Diario Ventas - Se duplica",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
