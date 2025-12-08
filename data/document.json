@@ -4655,6 +4655,53 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.56.1.1",
+            "date": "08/12/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "64695",
+                "description": "BR - Pantalla Combos",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "101469",
+                "description": "BR - Mejoras Refactorización PyG",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "90753",
+                "description": "Bloqueo de depositos, con cierre cajas asentado",
+                "observation": "Argentina",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "90756",
+                "description": "Compras - Bloqueo de costos por articulos y proveedor",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "99991",
+                "description": "Mejoras: Reporte Aceite Quemado - Excel Andina",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
