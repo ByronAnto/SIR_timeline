@@ -4568,6 +4568,93 @@
                 "qaRegional": "En Producción"
               }
             ]
+          },
+          {
+            "version": "1.55.1.1",
+            "date": "26/11/2025",
+            "description": "",
+            "details": [
+              {
+                "type": "Requerimiento",
+                "branch": "98292",
+                "description": "Pedidos V2 - Reportes",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimientos",
+                "branch": "57581",
+                "description": "Refactorización Reporte Tarjetas de Crédito",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57738",
+                "description": "BR - Traducción Módulo Activos Fijos: Listas",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "99183",
+                "description": "Pantalla Depositos V1 - Optimizar carga inicial",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "95095",
+                "description": "Artículo Proveedor - Añadir campos",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57750",
+                "description": "BR - Traducción Módulo Mayores Contables: Cargar Información",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57749",
+                "description": "BR - Traducción Módulo Mayores Contables: Reportes",
+                "observation": "Brasil",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "89375",
+                "description": "Integración Carvajal - Compras",
+                "observation": "Colombia",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "39753",
+                "description": "Guías Genéricas - Habilitar campos Receptor",
+                "observation": "Chile",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Bug",
+                "branch": "101176",
+                "description": "Interfaz Loyvers",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              }
+            ]
           }
     ]
   }
