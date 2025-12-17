@@ -4767,25 +4767,6 @@
           "qaRegional": "En Producción"
         }
       ]
-    },
-    {
-      "version": "1.58.1.1",
-      "date": "17/12/2025",
-      "year": 2025,
-      "sprint": "Sprint 22",
-      "description": "",
-      "details": [
-        {
-          "id": "103817",
-          "type": "Requerimiento",
-          "branch": "103817",
-          "description": "Mejoras en Pedidos V2",
-          "observation": "Ecuador",
-          "proyect": "Sir Legacy",
-          "qaRegional": "",
-          "sprint": "Sprint 22"
-        }
-      ]
     }
   ]
 }
