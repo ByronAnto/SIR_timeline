@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIR - Timeline de Versiones 2025</title>
-  
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
-  
+  <link rel="icon" type="image/png"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
+
   <!-- External Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+
   <!-- Corporate Header -->
   <header class="header-corporate">
     <div class="header-top">
@@ -25,7 +28,7 @@
         <span>Desarrollo Software Innovación</span>
       </div>
     </div>
-    
+
     <div class="header-title">
       <h1>Versiones SIR Regional 2025</h1>
       <p class="header-subtitle">Sistema de Información de Restaurantes</p>
@@ -44,17 +47,19 @@
       <label for="start-date">Fecha inicio:</label>
       <input type="date" id="start-date" aria-label="Fecha de inicio">
     </div>
-    
+
     <div class="control-group">
       <label for="end-date">Fecha fin:</label>
       <input type="date" id="end-date" aria-label="Fecha de fin">
     </div>
-    
+
     <button id="filter-dates" class="btn btn-primary">Filtrar por Fechas</button>
-    
+    <a href="/sync.html" class="btn btn-secondary" style="text-decoration: none;">🔄 Sincronizar Azure DevOps</a>
+
     <div class="control-group" style="flex: 1; min-width: 250px;">
       <label for="search-input">Buscar:</label>
-      <input type="text" id="search-input" placeholder="Buscar por versión, descripción..." aria-label="Buscar versiones">
+      <input type="text" id="search-input" placeholder="Buscar por versión, descripción..."
+        aria-label="Buscar versiones">
       <div id="search-results" class="search-results">
         <!-- Search results will be rendered by JS -->
       </div>
@@ -67,7 +72,7 @@
       <div class="timeline-label">REGIONAL</div>
       <div class="timeline-label">PRODUCCIÓN</div>
     </div>
-    
+
     <div class="timeline-horizontal">
       <div class="timeline-track"></div>
       <div class="timeline-items" id="timeline-items-container">
@@ -114,4 +119,5 @@
   <script src="js/timeline.js"></script>
 
 </body>
+
 </html>

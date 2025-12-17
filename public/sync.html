@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIR - Sincronización Azure DevOps</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .sync-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: var(--spacing-xl);
+        }
+
+        .sync-form {
+            background: var(--kfc-white);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            color: var(--kfc-black);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 2px solid var(--kfc-gray-lightest);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-base);
+            font-family: var(--font-family);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--kfc-red);
+        }
+
+        .btn-sync {
+            width: 100%;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--kfc-red);
+            color: var(--kfc-white);
+            border: none;
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .btn-sync:hover:not(:disabled) {
+            background: var(--kfc-red-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-sync:disabled {
+            background: var(--kfc-gray-light);
+            cursor: not-allowed;
+        }
+
+        .sync-result {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-sm);
+            display: none;
+        }
+
+        .sync-result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .sync-result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .sync-result.loading {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(0, 0, 0, .1);
+            border-radius: 50%;
+            border-top-color: var(--kfc-red);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-lg);
+            color: var(--kfc-red);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .work-items-list {
+            margin-top: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--kfc-bg-light);
+            border-radius: var(--border-radius-sm);
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .work-item {
+            padding: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+            background: var(--kfc-white);
+            border-left: 3px solid var(--kfc-red);
+            border-radius: var(--border-radius-sm);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sync-container">
+        <a href="/" class="back-link">← Volver al Timeline</a>
+
+        <div class="header-corporate">
+            <div class="header-top">
+                <div class="logo-kfc">KFC</div>
+                <div class="logo-dsi">
+                    DSI
+                    <span>Desarrollo Software Innovación</span>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>Sincronización Azure DevOps</h1>
+                <p class="header-subtitle">Sincroniza work items desde Azure DevOps al Timeline</p>
+            </div>
+        </div>
+
+        <div class="sync-form">
+            <form id="sync-form">
+                <div class="form-group">
+                    <label for="version">Versión a Sincronizar</label>
+                    <input type="text" id="version" name="version" placeholder="Ej: V.1.58.1.1 o 1.58.1.1" required>
+                    <small style="color: var(--kfc-gray-medium);">Ingresa el tag de versión que está en los work items
+                        de Azure DevOps</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Fecha de la Versión</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Año</label>
+                    <input type="number" id="year" name="year" min="2020" max="2030" value="2025" required>
+                </div>
+
+                <button type="submit" class="btn-sync" id="sync-btn">
+                    🔄 Sincronizar desde Azure DevOps
+                </button>
+            </form>
+
+            <div id="sync-result" class="sync-result"></div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('sync-form');
+        const syncBtn = document.getElementById('sync-btn');
+        const resultDiv = document.getElementById('sync-result');
+
+        let foundWorkItems = null; // Store found work items
+
+        // Set default date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').value = today;
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const version = document.getElementById('version').value.trim();
+            const dateInput = document.getElementById('date').value;
+            const year = document.getElementById('year').value;
+
+            // Convert date from YYYY-MM-DD to DD/MM/YYYY
+            const [yyyy, mm, dd] = dateInput.split('-');
+            const date = `${dd}/${mm}/${yyyy}`;
+
+            if (!foundWorkItems) {
+                // STEP 1: Preview - Buscar work items sin sincronizar
+                await previewSync(version, date, year);
+            } else {
+                // STEP 2: Confirm - Sincronizar con confirmación
+                await confirmSync(version, date, year);
+            }
+        });
+
+        // Step 1: Preview work items
+        async function previewSync(version, date, year) {
+            syncBtn.disabled = true;
+            syncBtn.innerHTML = '<span class="loading-spinner"></span> Buscando work items...';
+            resultDiv.className = 'sync-result loading';
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = '🔍 Buscando en Azure DevOps...';
+
+            try {
+                const response = await fetch('/api/sync/preview', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ version })
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    // No se encontraron work items
+                    resultDiv.className = 'sync-result error';
+                    resultDiv.innerHTML = `
+            <strong>⚠️ No se encontraron work items</strong><br><br>
+            ${result.error}<br><br>
+            <strong>Verifica:</strong><br>
+            • ¿Los work items tienen el tag <code>${result.searchedTag || version}</code>?<br>
+            • ¿Están en el proyecto correcto (${result.project || 'SIR'})?<br>
+            • ¿El tag está escrito correctamente?
+          `;
+                    foundWorkItems = null;
+                    syncBtn.disabled = false;
+                    syncBtn.innerHTML = '🔄 Sincronizar desde Azure DevOps';
+                    return;
+                }
+
+                // Se encontraron work items - Mostrar preview
+                foundWorkItems = result;
+
+                resultDiv.className = 'sync-result success';
+
+                let html = `
+          <strong>✅ ¡Encontrados ${result.workItemsCount} work items!</strong><br><br>
+          📊 Versión: ${result.version}<br>
+          📅 Fecha que se asignará: ${date}<br>
+          📆 Año: ${year}<br>
+          📋 Total de detalles a crear: ${result.detailsCount}<br><br>
+        `;
+
+                if (result.workItems && result.workItems.length > 0) {
+                    html += '<div class="work-items-list"><strong>Work Items a sincronizar:</strong><br>';
+                    result.workItems.forEach(wi => {
+                        const icon = wi.type === 'Defect' ? '🐛' : '📋';
+                        const typeName = wi.type === 'Defect' ? 'Defecto' : wi.type;
+                        html += `<div class="work-item">${icon} #${wi.id} - ${wi.title} <small>(${typeName})</small></div>`;
+                    });
+                    html += '</div><br>';
+                }
+
+                html += `
+          <strong style="color: var(--kfc-red);">⚠️ Importante:</strong><br>
+          • Si la versión <code>${result.version}</code> ya existe, será <strong>reemplazada</strong><br>
+          • Se perderán los datos actuales de esa versión<br><br>
+          <button onclick="confirmSyncNow()" class="btn-sync" style="background: var(--kfc-red);">
+            ✅ Confirmar y Sincronizar
+          </button>
+          <button onclick="cancelSync()" class="btn-sync" style="background: var(--kfc-gray-medium); margin-top: 10px;">
+            ❌ Cancelar
+          </button>
+        `;
+
+                resultDiv.innerHTML = html;
+                syncBtn.style.display = 'none'; // Hide original button
+
+            } catch (error) {
+                resultDiv.className = 'sync-result error';
+                resultDiv.innerHTML = `
+          <strong>❌ Error de conexión:</strong><br>
+          ${error.message}<br><br>
+          Verifica que el servidor esté corriendo y que tengas conexión a internet.
+        `;
+                foundWorkItems = null;
+                syncBtn.disabled = false;
+                syncBtn.innerHTML = '🔄 Sincronizar desde Azure DevOps';
+            }
+        }
+
+        // Step 2: Confirm and sync
+        window.confirmSyncNow = async function () {
+            const version = document.getElementById('version').value.trim();
+            const dateInput = document.getElementById('date').value;
+            const year = document.getElementById('year').value;
+            const [yyyy, mm, dd] = dateInput.split('-');
+            const date = `${dd}/${mm}/${yyyy}`;
+
+            resultDiv.className = 'sync-result loading';
+            resultDiv.innerHTML = '<span class="loading-spinner"></span> Sincronizando con el timeline...';
+
+            try {
+                const response = await fetch('/api/sync', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ version, date, year: parseInt(year) })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    resultDiv.className = 'sync-result success';
+
+                    let html = `
+            <strong>🎉 ¡Sincronización completada exitosamente!</strong><br><br>
+            📊 Versión: ${result.version}<br>
+            📅 Fecha: ${result.date}<br>
+            📈 Work items sincronizados: ${result.workItemsCount}<br>
+            📋 Detalles agregados al timeline: ${result.detailsCount}
+          `;
+
+                    if (result.workItems && result.workItems.length > 0) {
+                        html += '<div class="work-items-list">';
+                        html += '<strong>✅ Sincronizados correctamente:</strong><br>';
+                        result.workItems.forEach(wi => {
+                            const icon = wi.type === 'Defect' ? '🐛' : '📋';
+                            html += `<div class="work-item">${icon} #${wi.id} - ${wi.title}</div>`;
+                        });
+                        html += '</div>';
+                    }
+
+                    html += '<br><br><a href="/" class="btn btn-primary" style="background: var(--kfc-red); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: inline-block;">📊 Ver en Timeline →</a>';
+
+                    resultDiv.innerHTML = html;
+
+                    // Reset for next sync
+                    foundWorkItems = null;
+                    form.reset();
+                    document.getElementById('date').value = today;
+                } else {
+                    throw new Error(result.error || 'Error desconocido');
+                }
+            } catch (error) {
+                resultDiv.className = 'sync-result error';
+                resultDiv.innerHTML = `
+          <strong>❌ Error al sincronizar:</strong><br>
+          ${error.message}<br><br>
+          <button onclick="cancelSync()" class="btn-sync">Volver</button>
+        `;
+            }
+        };
+
+        // Cancel sync
+        window.cancelSync = function () {
+            foundWorkItems = null;
+            syncBtn.style.display = 'block';
+            syncBtn.disabled = false;
+            syncBtn.innerHTML = '🔄 Sincronizar desde Azure DevOps';
+            resultDiv.style.display = 'none';
+            resultDiv.innerHTML = '';
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# Ignores
+node_modules/
+.env
+*.log
+.DS_Store
+
+# Backups
+backups/**/*.sql
+backups/**/*.zip
+
+# Secrets
+secrets/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

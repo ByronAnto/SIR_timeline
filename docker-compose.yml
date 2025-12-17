@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  sir-timeline:
+    build: .
+    container_name: sir-timeline
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - AZURE_DEVOPS_ORG=${AZURE_DEVOPS_ORG}
+      - AZURE_DEVOPS_PROJECT=${AZURE_DEVOPS_PROJECT}
+      - AZURE_DEVOPS_TOKEN=${AZURE_DEVOPS_TOKEN}
+    volumes:
+      # Persistir datos
+      - ./data:/app/data
+    restart: unless-stopped
+    networks:
+      - sir-network
+
+networks:
+  sir-network:
+    driver: bridge

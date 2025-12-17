@@ -1,0 +1,28 @@
+# Ignorar en Docker build
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+*.md
+.vscode
+.idea
+
+# Archivos temporales
+*.tmp
+*.log
+*.swp
+
+# Scripts de desarrollo/prueba
+test-connection.js
+sync-direct.js
+sync-auto.js
+sync-v1581.js
+
+# Backups
+*.bak
+backups/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
