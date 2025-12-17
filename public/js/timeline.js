@@ -13,7 +13,8 @@ const TimelineApp = (() => {
     filteredVersions: [],
     selectedVersion: null,
     activeCountry: null,
-    searchQuery: ''
+    searchQuery: '',
+    selectedCountries: [] // For multi-select country filtering
   };
 
   // Configuration
@@ -114,16 +115,20 @@ const TimelineApp = (() => {
       const type = detail.type || 'Sin tipo';
       const country = detail.observation || 'No definido';
 
-      if (type === 'Bug') stats.bugs++;
-      if (type === 'Requerimiento') stats.requirements++;
+      // Handle both 'Bug' and 'Defecto' as bugs
+      const isBug = type === 'Bug' || type === 'Defecto';
+      const isRequirement = type === 'Requerimiento';
+
+      if (isBug) stats.bugs++;
+      if (isRequirement) stats.requirements++;
 
       if (!stats.byCountry[country]) {
         stats.byCountry[country] = { bugs: 0, requirements: 0, total: 0 };
       }
 
       stats.byCountry[country].total++;
-      if (type === 'Bug') stats.byCountry[country].bugs++;
-      if (type === 'Requerimiento') stats.byCountry[country].requirements++;
+      if (isBug) stats.byCountry[country].bugs++;
+      if (isRequirement) stats.byCountry[country].requirements++;
     });
 
     return stats;
@@ -191,17 +196,26 @@ const TimelineApp = (() => {
     if (!container || !state.selectedVersion) return;
 
     const version = state.selectedVersion;
-    const details = version.details;
+    let details = version.details;
+
+    // Filter by selected countries if any
+    if (state.selectedCountries.length > 0) {
+      details = details.filter(d =>
+        state.selectedCountries.includes(d.observation)
+      );
+    }
 
     // Group by functionality and corrections
     const functionalities = details.filter(d => d.type === 'Requerimiento' || !d.type);
-    const corrections = details.filter(d => d.type === 'Bug');
+    const corrections = details.filter(d => d.type === 'Bug' || d.type === 'Defecto');
 
-    const funcPercentage = version.stats.total > 0
-      ? Math.round((functionalities.length / version.stats.total) * 100)
+    // Calculate percentage based on the sum of both categories
+    const totalItems = functionalities.length + corrections.length;
+    const funcPercentage = totalItems > 0
+      ? Math.round((functionalities.length / totalItems) * 100)
       : 0;
-    const corrPercentage = version.stats.total > 0
-      ? Math.round((corrections.length / version.stats.total) * 100)
+    const corrPercentage = totalItems > 0
+      ? Math.round((corrections.length / totalItems) * 100)
       : 0;
 
     let html = '';
@@ -292,8 +306,9 @@ const TimelineApp = (() => {
       const countryStats = stats.byCountry[country];
       if (countryStats.total === 0) return '';
 
+      const isSelected = state.selectedCountries.includes(country);
       return `
-        <div class="country-card">
+        <div class="country-card ${isSelected ? 'selected' : ''}" data-country="${country}">
           <div class="country-name">${country}</div>
           <div class="country-stats">
             Requerimientos: ${countryStats.requirements}<br>
@@ -372,6 +387,38 @@ const TimelineApp = (() => {
     }
 
     renderUI();
+  };
+
+  /**
+   * Toggle country selection for detail filtering
+   */
+  const toggleCountrySelection = (country, isMultiSelect) => {
+    if (!state.selectedVersion) return;
+
+    if (isMultiSelect) {
+      // Multi-select mode (Ctrl+Click)
+      const index = state.selectedCountries.indexOf(country);
+      if (index > -1) {
+        // Deselect
+        state.selectedCountries.splice(index, 1);
+      } else {
+        // Add to selection
+        state.selectedCountries.push(country);
+      }
+    } else {
+      // Single select mode
+      if (state.selectedCountries.length === 1 && state.selectedCountries[0] === country) {
+        // Clicking the same country again - deselect all
+        state.selectedCountries = [];
+      } else {
+        // Select only this country
+        state.selectedCountries = [country];
+      }
+    }
+
+    // Re-render details and summary to reflect filter
+    renderDetails();
+    renderSummary();
   };
 
   /**
@@ -514,10 +561,19 @@ const TimelineApp = (() => {
 
       y += 10;
 
-      // Stats badges
+      // Stats badges - calculate percentages
       const badgeWidth = 50;
       const badgeHeight = 10;
       const badgeSpacing = 5;
+
+      // Calculate percentages
+      const totalItems = version.stats.requirements + version.stats.bugs;
+      const reqPercentage = totalItems > 0
+        ? Math.round((version.stats.requirements / totalItems) * 100)
+        : 0;
+      const bugPercentage = totalItems > 0
+        ? Math.round((version.stats.bugs / totalItems) * 100)
+        : 0;
 
       // Requirements badge
       doc.setFillColor(...lightGray);
@@ -528,15 +584,15 @@ const TimelineApp = (() => {
       doc.setFontSize(10);
       doc.setFont(undefined, 'bold');
       doc.setTextColor(...kfcBlack);
-      doc.text(`Requerimientos: ${version.stats.requirements}`, margin + 3, y + 6.5);
+      doc.text(`Requerimientos: ${version.stats.requirements} (${reqPercentage}%)`, margin + 3, y + 6.5);
 
       // Bugs badge
       doc.setFillColor(...lightGray);
-      doc.roundedRect(margin + badgeWidth + badgeSpacing, y, badgeWidth, badgeHeight, 2, 2, 'F');
+      doc.roundedRect(margin + badgeWidth + badgeSpacing, y, badgeWidth + 15, badgeHeight, 2, 2, 'F');
       doc.setDrawColor(...kfcRed);
       doc.setLineWidth(1);
       doc.line(margin + badgeWidth + badgeSpacing, y, margin + badgeWidth + badgeSpacing, y + badgeHeight);
-      doc.text(`Bugs: ${version.stats.bugs}`, margin + badgeWidth + badgeSpacing + 3, y + 6.5);
+      doc.text(`Bugs: ${version.stats.bugs} (${bugPercentage}%)`, margin + badgeWidth + badgeSpacing + 3, y + 6.5);
 
       y += badgeHeight + 10;
 
@@ -773,6 +829,13 @@ const TimelineApp = (() => {
       if (countryFlag) {
         const country = countryFlag.dataset.country;
         filterByCountry(country);
+      }
+
+      // Country card selection (for detail filtering)
+      const countryCard = e.target.closest('.country-card');
+      if (countryCard) {
+        const country = countryCard.dataset.country;
+        toggleCountrySelection(country, e.ctrlKey || e.metaKey);
       }
 
       // Search results

@@ -132,10 +132,29 @@ app.post('/api/sync', async (req, res) => {
     // Buscar work items
     const workItems = await client.getWorkItemsByVersion(versionTag);
 
+    // Si no se encuentran work items, eliminar la versión del timeline (si existe)
     if (workItems.length === 0) {
-      return res.status(404).json({
-        error: `No se encontraron work items con tag ${versionTag}`
-      });
+      const documentPath = path.join(__dirname, 'data', 'document.json');
+      const documentContent = fs.readFileSync(documentPath, 'utf8');
+      const document = JSON.parse(documentContent);
+      const existingIdx = document.data.findIndex(v => v.version === versionNumber);
+      if (existingIdx >= 0) {
+        document.data.splice(existingIdx, 1);
+        fs.writeFileSync(documentPath, JSON.stringify(document, null, 2), 'utf8');
+        return res.json({
+          success: true,
+          message: `No se encontraron work items con tag ${versionTag}. Versión ${versionNumber} eliminada del timeline.`,
+          version: versionNumber,
+          removed: true
+        });
+      } else {
+        return res.json({
+          success: true,
+          message: `No se encontraron work items con tag ${versionTag}. La versión ${versionNumber} no estaba presente en el timeline.`,
+          version: versionNumber,
+          removed: false
+        });
+      }
     }
 
     // Transformar a versión

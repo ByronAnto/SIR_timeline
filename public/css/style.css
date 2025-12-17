@@ -625,6 +625,25 @@ body {
     padding: var(--spacing-md);
     border-radius: var(--border-radius-sm);
     border-left: 4px solid var(--kfc-red);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    user-select: none;
+}
+
+.country-card:hover {
+    background: #e8e8e8;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.country-card.selected {
+    background: #e3f2fd;
+    border-left: 4px solid #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.country-card.selected:hover {
+    background: #bbdefb;
 }
 
 .country-name {

@@ -129,8 +129,7 @@ class AzureDevOpsClient {
             const response = await this.client.get('/wit/workitems', {
                 params: {
                     ids: idsParam,
-                    fields: fields.join(','),
-                    '$expand': 'all'
+                    fields: fields.join(',')
                 }
             });
 
