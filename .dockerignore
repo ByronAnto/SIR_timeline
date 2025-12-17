@@ -1,7 +1,6 @@
 # Ignorar en Docker build
 node_modules
 npm-debug.log
-.env
 .git
 .gitignore
 *.md
