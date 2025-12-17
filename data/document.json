@@ -4710,41 +4710,65 @@
             "details": [
               {
                 "type": "Requerimiento",
-                "branch": "64695",
-                "description": "BR - Pantalla Combos",
+                "branch": "57743",
+                "description": "BR - Traducción Módulo Diarios ERP: Inventarios",
                 "observation": "Brasil",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               },
               {
                 "type": "Requerimientos",
-                "branch": "101469",
-                "description": "BR - Mejoras Refactorización PyG",
+                "branch": "101463",
+                "description": "Igualar reporte de excel cupones digitales con versión anterior",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "101175",
+                "description": "Servicio RPM - Incluir cantidad de receta",
+                "observation": "Regional",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57739",
+                "description": "BR - Traducción Módulo Activos Fijos: Transferencias",
                 "observation": "Brasil",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               },
               {
                 "type": "Requerimiento",
-                "branch": "90753",
-                "description": "Bloqueo de depositos, con cierre cajas asentado",
-                "observation": "Argentina",
+                "branch": "89870",
+                "description": "BR - Integración Proveedores Externos - Habilitar Correo",
+                "observation": "Brasil",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               },
               {
                 "type": "Requerimiento",
-                "branch": "90756",
-                "description": "Compras - Bloqueo de costos por articulos y proveedor",
-                "observation": "Colombia",
+                "branch": "57518",
+                "description": "Administración Movimientos - Interface",
+                "observation": "Venezuela",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               },
               {
                 "type": "Requerimiento",
-                "branch": "99991",
-                "description": "Mejoras: Reporte Aceite Quemado - Excel Andina",
-                "observation": "Chile",
+                "branch": "57571",
+                "description": "Artículos Padres e Hijos - Copiar Datos",
+                "observation": "Ecuador",
+                "proyect": "Sir Legacy",
+                "qaRegional": "En Producción"
+              },
+              {
+                "type": "Requerimiento",
+                "branch": "57584",
+                "description": "Devoluciones Consolidadas - Edición de áreas, quejas y observaciones",
+                "observation": "Ecuador",
                 "proyect": "Sir Legacy",
                 "qaRegional": "En Producción"
               }

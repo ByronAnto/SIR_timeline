@@ -1,379 +1,117 @@
 <!DOCTYPE html>
-<html lang="ea">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIR - Timeline</title>
-  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <style>
-    .large-text {
-      font-size: 3em;
-      text-align: center;
-    }
-    .medium-text {
-      font-size: 1.5em;
-    }
-    .right-align {
-      text-align: right;
-    }
-    .left-align {
-      text-align: left;
-    }
-    #timeline {
-      width: 100%;
-      height: 400px;
-      border: 1px solid lightgray;
-      overflow: auto; /* Habilita la barra de desplazamiento */
-    }
-    #details {
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid lightgray;
-      background-color: #f9f9f9;
-    }
-    #info {
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid lightgray;
-      background-color: #f1f1f1;
-    }
-    .kfc {
-      color: rgb(109, 21, 21);
-    }
-    .vis-item.vis-selected {
-      border-color: rgb(105, 5, 5) !important;
-      background-color: rgba(134, 223, 18, 0.582) !important;
-    }
-    .vis-item {
-      background-color: rgb(230, 172, 86); /* Cambia el color aquí */
-      border-color: rgb(88, 87, 87); /* Cambia el color aquí */
-    }
-    .vis-timeline .vis-time-axis .vis-grid.vis-vertical {
-      border-left: 2px solid rgb(32, 32, 32) !important; /* Cambia el grosor y color de la línea vertical */
-    }
-    .vis-timeline .vis-time-axis .vis-grid.vis-horizontal {
-      border-top: 2px solid rgb(54, 54, 54) !important; /* Cambia el grosor y color de la línea horizontal */
-    }
-    .vis-timeline .vis-time-axis .vis-text {
-      font-weight: bold; /* Cambia el grosor del texto */
-      color: rgb(0, 0, 0); /* Cambia el color del texto */
-    }
-    .vis-timeline .vis-background {
-      border-top: 3px solid rgb(109, 21, 21)!important; /* Cambia el grosor y color de la línea principal */
-    }
-    #search-results {
-      margin-top: 10px;
-      border: 1px solid lightgray;
-      max-height: 200px;
-      overflow-y: auto;
-    }
-    .search-result {
-      padding: 5px;
-      cursor: pointer;
-    }
-    .search-result:hover {
-      background-color: #f0f0f0;
-    }
-    #country-summary {
-      margin-top: 20px;
-    }
-  </style>
+  <title>SIR - Timeline de Versiones 2025</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
+  
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="info">
-    <h1 class="kfc large-text">Grupo KFC</h1>
-    <p class="medium-text"><strong>Departamento:</strong> DSI</p>
-    <p class="medium-text"><strong>Mesa de Trabajo:</strong> SIR</p>
-    <p class="medium-text"><strong>Control de versiones</strong></p>
-  </div>
-  <div>
-    <label for="start-date">Fecha de inicio:</label>
-    <input type="date" id="start-date">
-    <label for="end-date">Fecha de fin:</label>
-    <input type="date" id="end-date">
-    <button id="filter-dates">Filtrar</button>
-  </div>
-  <input type="text" id="search-input" placeholder="Buscar...">
-  <div id="search-results"></div>
-  <div id="timeline"></div>
-  <div id="summary" class="right-align">
-    <h3 style="float: left;">Tipos de implementaciones por País</h3>
-    <h3 style="float: right;">Tipos de implementaciones</h3>
-    <div style="clear: both;"></div> 
-    <div id="country-summary" class="left-align"></div>
-    <div  id="requirements-count" style="float: right;">Requerimientos: 0 📋</div>
-    <div  id="bugs-count" style="float: right;">Bugs: 0 🪲</div>
-    <div style="clear: both;"></div>
+  
+  <!-- Corporate Header -->
+  <header class="header-corporate">
+    <div class="header-top">
+      <div class="logo-kfc">KFC</div>
+      <div class="logo-dsi">
+        DSI
+        <span>Desarrollo Software Innovación</span>
+      </div>
     </div>
-     <div id="details">
-    <h3>Detalles</h3>
-    <div id="details-content">Seleccione una versión para ver los detalles.</div>
-    <button id="export-pdf">Exportar a PDF</button>
-  </div>
-  <script>
-    // URL del archivo JSON
-    const jsonUrl = '/data/document.json';
+    
+    <div class="header-title">
+      <h1>Versiones SIR Regional 2025</h1>
+      <p class="header-subtitle">Sistema de Información de Restaurantes</p>
+      <div class="badge-sprint">CONTROL DE VERSIONES</div>
+    </div>
 
-    fetch(jsonUrl)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Transform JSON data to timeline items
-        const items = data.data.map((version, versionIndex) => ({
-          id: versionIndex + 1,
-          content: `Version ${version.version}`,
-          start: new Date(version.date.split('/').reverse().join('-')).toISOString(), // Convert date to ISO format
-          title: version.description,
-          details: version.details, // Store details for later use
-          date: version.date // Store date for hover display
-        }));
+    <!-- Country Flags -->
+    <div class="countries-section" id="countries-container">
+      <!-- Countries will be rendered by JS -->
+    </div>
+  </header>
 
-        // Create a DataSet (allows two way data-binding)
-        const itemsDataSet = new vis.DataSet(items);
+  <!-- Controls Section -->
+  <section class="controls-section">
+    <div class="control-group">
+      <label for="start-date">Fecha inicio:</label>
+      <input type="date" id="start-date" aria-label="Fecha de inicio">
+    </div>
+    
+    <div class="control-group">
+      <label for="end-date">Fecha fin:</label>
+      <input type="date" id="end-date" aria-label="Fecha de fin">
+    </div>
+    
+    <button id="filter-dates" class="btn btn-primary">Filtrar por Fechas</button>
+    
+    <div class="control-group" style="flex: 1; min-width: 250px;">
+      <label for="search-input">Buscar:</label>
+      <input type="text" id="search-input" placeholder="Buscar por versión, descripción..." aria-label="Buscar versiones">
+      <div id="search-results" class="search-results">
+        <!-- Search results will be rendered by JS -->
+      </div>
+    </div>
+  </section>
 
-        // Configuration for the Timeline
-        const options = {
-          horizontalScroll: true, // Habilita el desplazamiento horizontal
-          verticalScroll: true,   // Habilita el desplazamiento vertical
-          zoomKey: 'ctrlKey',     // Permite hacer zoom con la tecla Ctrl
-          maxHeight: '400px'      // Establece la altura máxima del timeline
-        };
+  <!-- Timeline Section -->
+  <section class="timeline-wrapper">
+    <div class="timeline-labels">
+      <div class="timeline-label">REGIONAL</div>
+      <div class="timeline-label">PRODUCCIÓN</div>
+    </div>
+    
+    <div class="timeline-horizontal">
+      <div class="timeline-track"></div>
+      <div class="timeline-items" id="timeline-items-container">
+        <!-- Timeline items will be rendered by JS -->
+      </div>
+    </div>
+  </section>
 
-        // Create a Timeline
-        const timeline = new vis.Timeline(document.getElementById('timeline'), itemsDataSet, options);
+  <!-- Version Details -->
+  <section class="details-container" id="details-container">
+    <!-- Details cards will be rendered by JS -->
+  </section>
 
-        let selectedItem = null;
+  <!-- Summary Section -->
+  <section class="summary-section">
+    <div class="summary-header">
+      <h2 class="summary-title">Resumen de Versión</h2>
+      <div class="summary-stats" id="summary-stats">
+        <div class="stat-badge">Selecciona una versión</div>
+      </div>
+    </div>
 
-        // Add click event listener
-        timeline.on('select', function (properties) {
-          selectedItem = itemsDataSet.get(properties.items[0]);
-          if (selectedItem) {
-            const detailsHtml = selectedItem.details.map(detail => {
-              let detailHtml = '';
-              if (detail.type) {
-                const icon = detail.type === 'Bug' ? '🪲' : detail.type === 'Requerimiento' ? '📋' : '';
-                detailHtml += `<p><strong>Tipo:</strong> ${detail.type} ${icon}</p>`;
-              }
-              if (detail.branch) detailHtml += `<p><strong>Rama:</strong> ${detail.branch}</p>`;
-              if (detail.description) detailHtml += `<p><strong>Descripción:</strong> ${detail.description}</p>`;
-              if (detail.observation) detailHtml += `<p><strong>Observación:</strong> ${detail.observation}</p>`;
-              if (detail.proyect) detailHtml += `<p><strong>Proyecto:</strong> ${detail.proyect}</p>`;
-              if (detail.qaRegional) detailHtml += `<p><strong>QA Regional:</strong> ${detail.qaRegional}</p>`;
-              detailHtml += '<hr>';
-              return detailHtml;
-            }).join('');
-            document.getElementById('details-content').innerHTML = `<p><strong>Fecha:</strong> ${selectedItem.date}</p>${detailsHtml}`;
+    <h3 style="margin-bottom: 16px; color: #333;">Distribución por País</h3>
+    <div class="country-summary" id="country-summary">
+      <p class="text-center" style="width: 100%; color: #666;">Selecciona una versión para ver los detalles por país</p>
+    </div>
 
-            // Update summary counts
-            const requirements = selectedItem.details.filter(detail => detail.type === 'Requerimiento').length;
-            const bugs = selectedItem.details.filter(detail => detail.type === 'Bug').length;
+    <div style="margin-top: 24px; text-align: center;">
+      <button id="export-pdf" class="btn btn-secondary">📄 Exportar a PDF</button>
+    </div>
+  </section>
 
-            const countryCounts = {
-              Ecuador: { Requerimiento: 0, Bug: 0 },
-              Colombia: { Requerimiento: 0, Bug: 0 },
-              Chile: { Requerimiento: 0, Bug: 0 },
-              España: { Requerimiento: 0, Bug: 0 },
-              Venezuela: { Requerimiento: 0, Bug: 0 },
-              Regional: { Requerimiento: 0, Bug: 0 },
-              'No definido': { Requerimiento: 0, Bug: 0 }
-            };
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 32px; color: #666; font-size: 14px;">
+    <p style="margin-bottom: 8px;">
+      <strong>Grupo KFC</strong> | Departamento DSI | Mesa de Trabajo SIR
+    </p>
+    <p style="font-size: 12px; opacity: 0.8;">
+      Sistema de Control de Versiones - © 2025
+    </p>
+  </footer>
 
-            selectedItem.details.forEach(detail => {
-              const country = detail.observation;
-              const type = detail.type;
-              if (countryCounts.hasOwnProperty(country)) {
-                countryCounts[country][type]++;
-              } else {
-                countryCounts['No definido'][type]++;
-              }
-            });
+  <!-- JavaScript -->
+  <script src="js/timeline.js"></script>
 
-            document.getElementById('requirements-count').innerText = `Requerimientos: ${requirements} 📋`;
-            document.getElementById('bugs-count').innerText = `Bugs: ${bugs} 🪲`;
-
-            const countrySummary = document.getElementById('country-summary');
-            countrySummary.innerHTML = ''; // Clear previous content
-
-            Object.keys(countryCounts).forEach(country => {
-              if (countryCounts[country].Requerimiento > 0 || countryCounts[country].Bug > 0) {
-                countrySummary.innerHTML += `<p>${country} Requerimientos: ${countryCounts[country].Requerimiento}</p>`;
-                countrySummary.innerHTML += `<p>${country} Bugs: ${countryCounts[country].Bug}</p>`;
-              }
-            });
-          } else {
-            document.getElementById('details-content').innerHTML = 'Seleccione un elemento para ver los detalles.';
-            document.getElementById('requirements-count').innerText = 'Requerimientos: 0 📋';
-            document.getElementById('bugs-count').innerText = 'Bugs: 0 🪲';
-            document.getElementById('country-summary').innerHTML = '';
-          }
-        });
-
-        // Add hover event listener
-        timeline.on('itemover', function (properties) {
-          const hoveredItem = itemsDataSet.get(properties.item);
-          if (hoveredItem) {
-            timeline.setOptions({
-              tooltip: {
-                followMouse: true,
-                template: function (item) {
-                  return `Fecha: ${hoveredItem.date}`;
-                }
-              }
-            });
-          }
-        });
-
-        // Remove tooltip on mouse out
-        timeline.on('itemout', function () {
-          timeline.setOptions({
-            tooltip: {
-              followMouse: false,
-              template: null
-            }
-          });
-        });
-
-        // Filter by date range
-        document.getElementById('filter-dates').addEventListener('click', function () {
-          const startDate = new Date(document.getElementById('start-date').value);
-          const endDate = new Date(document.getElementById('end-date').value);
-
-          const filteredItems = items.filter(item => {
-            const itemDate = new Date(item.start);
-            return itemDate >= startDate && itemDate <= endDate;
-          });
-
-          itemsDataSet.clear();
-          itemsDataSet.add(filteredItems);
-        });
-
-        // Search functionality
-        document.getElementById('search-input').addEventListener('input', function () {
-          const query = this.value.toLowerCase();
-          const results = items.filter(item => item.title.toLowerCase().includes(query));
-          const resultsContainer = document.getElementById('search-results');
-          resultsContainer.innerHTML = results.map(result => `<div class="search-result" data-id="${result.id}">${result.title}</div>`).join('');
-        });
-
-        document.getElementById('search-results').addEventListener('click', function (event) {
-          if (event.target.classList.contains('search-result')) {
-            const itemId = event.target.getAttribute('data-id');
-            timeline.setSelection(itemId);
-            timeline.focus(itemId);
-          }
-        });
-
-        // Export to PDF
-        document.getElementById('export-pdf').addEventListener('click', function () {
-          if (selectedItem) {
-            html2canvas(document.getElementById('timeline')).then(canvas => {
-              const { jsPDF } = window.jspdf;
-              const doc = new jsPDF();
-
-              // Add titles first
-              let y = 20; // Start at the top of the page
-              doc.text("Grupo KFC", 10, y);
-              y += 10;
-              doc.text("Mesa SIR", 10, y);
-              y += 10;
-              doc.text("Control de versiones", 10, y);
-              y += 20; // Add some space before the version details
-
-              // Add timeline image
-              const imgData = canvas.toDataURL('image/png');
-              const imgWidth = 190; // Width in mm
-              const pageHeight = 295; // Height in mm
-              const imgHeight = canvas.height * imgWidth / canvas.width;
-              let heightLeft = imgHeight;
-
-              doc.addImage(imgData, 'PNG', 10, y, imgWidth, imgHeight);
-              heightLeft -= pageHeight;
-
-              // Set y to be just below the image
-              y += imgHeight + 20; // Add some space after the image
-
-              // Count requirements and bugs
-              const requirements = selectedItem.details.filter(detail => detail.type === 'Requerimiento').length;
-              const bugs = selectedItem.details.filter(detail => detail.type === 'Bug').length;
-
-              const countryCounts = {
-                Ecuador: { Requerimiento: 0, Bug: 0 },
-                Colombia: { Requerimiento: 0, Bug: 0 },
-                Chile: { Requerimiento: 0, Bug: 0 },
-                España: { Requerimiento: 0, Bug: 0 },
-                Venezuela: { Requerimiento: 0, Bug: 0 },
-                Regional: { Requerimiento: 0, Bug: 0 },
-                'No definido': { Requerimiento: 0, Bug: 0 }
-              };
-
-              selectedItem.details.forEach(detail => {
-                const country = detail.observation;
-                const type = detail.type;
-                if (countryCounts.hasOwnProperty(country)) {
-                  countryCounts[country][type]++;
-                } else {
-                  countryCounts['No definido'][type]++;
-                }
-              });
-
-              doc.text(`Requerimientos: ${requirements}`, 10, y);
-              y += 10;
-              doc.text(`Bugs: ${bugs}`, 10, y);
-              y += 10;
-
-              Object.keys(countryCounts).forEach(country => {
-                if (countryCounts[country].Requerimiento > 0 || countryCounts[country].Bug > 0) {
-                  doc.text(`${country} Requerimientos: ${countryCounts[country].Requerimiento}`, 10, y);
-                  y += 10;
-                  doc.text(`${country} Bugs: ${countryCounts[country].Bug}`, 10, y);
-                  y += 10;
-                }
-              });
-
-              y += 20; // Add some space before the version details
-
-              // Add details
-              doc.text(`Version ${selectedItem.content}`, 10, y);
-              y += 10;
-              doc.text(`Fecha: ${selectedItem.date}`, 10, y);
-              y += 10;
-              selectedItem.details.forEach((detail, index) => {
-                if (y > pageHeight - 18) { // Check if we need to add a new page
-                  doc.addPage();
-                  y = 18; // Reset y position for new page
-                }
-                const icon = detail.type === 'Bug' ? '' : detail.type === 'Requerimiento' ? '' : '';
-                if (detail.type) doc.text(`Tipo: ${detail.type} ${icon}`, 10, y);
-                if (detail.branch) doc.text(`Rama: ${detail.branch}`, 10, y + 10);
-                if (detail.description) doc.text(`Descripción: ${detail.description}`, 10, y + 20);
-                if (detail.observation) doc.text(`Observación: ${detail.observation}`, 10, y + 30);
-                if (detail.proyect) doc.text(`Proyecto: ${detail.proyect}`, 10, y + 40);
-                if (detail.qaRegional) doc.text(`QA Regional: ${detail.qaRegional}`, 10, y + 50);
-
-                y += 60; // Incrementar y para la siguiente descripción
-
-                // Añadir un salto de línea antes de la línea
-                y += 10;
-                doc.setLineWidth(1.5); // Set line width to 1.5
-                doc.setDrawColor(0, 0, 0); // Set line color to red
-                doc.line(10, y - 10, 200, y - 10); // Añadir línea
-              });
-
-              doc.save('timeline-details-SIR.pdf');
-            });
-          } else {
-            alert('Seleccione una versión para exportar.');
-          }
-        });
-      })
-      .catch(error => console.error('Error fetching data:', error));
-  </script>
 </body>
 </html>
