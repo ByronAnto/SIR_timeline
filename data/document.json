@@ -4826,6 +4826,16 @@
           "sprint": "Sprint 22"
         },
         {
+          "id": "106407",
+          "type": "Requerimiento",
+          "branch": "106407",
+          "description": "BR - Control Aceite Quemado Versión CL",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
           "id": "106883",
           "type": "Defecto",
           "branch": "106883",
