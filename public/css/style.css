@@ -325,30 +325,61 @@ body {
 .timeline-horizontal {
     position: relative;
     min-width: 800px;
-    padding: var(--spacing-xxl) 0;
+    padding: 60px 0;
 }
 
 .timeline-track {
-    height: 12px;
+    height: 30px;
     background: linear-gradient(90deg,
             var(--kfc-red) 0%,
-            var(--kfc-black) 20%,
-            var(--kfc-black) 80%,
+            var(--kfc-black) 10%,
+            var(--kfc-red) 20%,
+            var(--kfc-black) 30%,
+            var(--kfc-red) 40%,
+            var(--kfc-black) 50%,
+            var(--kfc-red) 60%,
+            var(--kfc-black) 70%,
+            var(--kfc-red) 80%,
+            var(--kfc-black) 90%,
             var(--kfc-red) 100%);
-    border-radius: 4px;
-    position: relative;
-    margin: 0 var(--spacing-xl);
+    background-size: 200% 100%;
+    animation: progressFlow 3s linear infinite;
+    position: absolute;
+    bottom: 20px;
+    left: var(--spacing-xl);
+    right: 60px;
+    z-index: 1;
+}
+
+@keyframes progressFlow {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.timeline-track::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid var(--kfc-red);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
 }
 
 .timeline-items {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0 var(--spacing-xl);
-    transform: translateY(-50%);
 }
 
 .timeline-item {
@@ -358,8 +389,7 @@ body {
     align-items: center;
     cursor: pointer;
     transition: transform var(--transition-base);
-    flex: 1;
-    max-width: 200px;
+    z-index: 2;
 }
 
 .timeline-item:hover {
@@ -382,7 +412,8 @@ body {
     font-size: var(--font-size-lg);
     transition: all var(--transition-base);
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    margin-bottom: var(--spacing-md);
 }
 
 .timeline-item:hover .timeline-circle {
@@ -403,36 +434,12 @@ body {
 }
 
 .timeline-date {
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-sm);
     font-size: var(--font-size-base);
     color: var(--kfc-black);
     font-weight: 700;
     text-align: center;
     white-space: nowrap;
-}
-
-/* Timeline Arrows */
-.timeline-arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    height: 2px;
-    background: var(--kfc-gray-light);
-    transform: translate(-50%, -50%);
-}
-
-.timeline-arrow::after {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 6px solid var(--kfc-gray-light);
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
 }
 
 /* ================================================

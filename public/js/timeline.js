@@ -37,12 +37,48 @@ const TimelineApp = (() => {
   const init = async () => {
     try {
       await loadData();
+
+      // Set default date filter: last 30 days
+      setDefaultDateFilter();
+
       renderUI();
       attachEventListeners();
       console.log('✅ Timeline App initialized successfully');
     } catch (error) {
       console.error('❌ Error initializing app:', error);
       showError('Error al cargar la aplicación. Por favor, recarga la página.');
+    }
+  };
+
+  /**
+   * Set default date filter to last 30 days
+   */
+  const setDefaultDateFilter = () => {
+    const today = new Date();
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(today.getDate() - 30);
+
+    // Set end date to tomorrow to ensure today's versions are included
+    const tomorrow = new Date();
+    tomorrow.setDate(today.getDate() + 1);
+
+    // Format dates as YYYY-MM-DD for input fields
+    const formatDateForInput = (date) => {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    };
+
+    const startDateInput = document.getElementById('start-date');
+    const endDateInput = document.getElementById('end-date');
+
+    if (startDateInput && endDateInput) {
+      startDateInput.value = formatDateForInput(thirtyDaysAgo);
+      endDateInput.value = formatDateForInput(tomorrow);
+
+      // Apply the filter
+      filterByDateRange(formatDateForInput(thirtyDaysAgo), formatDateForInput(tomorrow));
     }
   };
 
@@ -85,7 +121,10 @@ const TimelineApp = (() => {
   const parseDate = (dateString) => {
     const parts = dateString.split('/');
     if (parts.length === 3) {
-      return new Date(parts[2], parts[1] - 1, parts[0]);
+      // Create date at noon to avoid timezone issues
+      const date = new Date(parts[2], parts[1] - 1, parts[0]);
+      date.setHours(12, 0, 0, 0);
+      return date;
     }
     return new Date();
   };
@@ -183,7 +222,6 @@ const TimelineApp = (() => {
           <div class="timeline-version">${version.version}</div>
         </div>
         <div class="timeline-date">${version.date}</div>
-        ${index < versions.length - 1 ? '<div class="timeline-arrow"></div>' : ''}
       </div>
     `).join('');
   };
@@ -344,7 +382,10 @@ const TimelineApp = (() => {
       state.filteredVersions = [...state.allVersions];
     } else {
       const start = new Date(startDate);
+      start.setHours(0, 0, 0, 0); // Start of day
+
       const end = new Date(endDate);
+      end.setHours(23, 59, 59, 999); // End of day
 
       state.filteredVersions = state.allVersions.filter(version => {
         return version.dateObj >= start && version.dateObj <= end;
@@ -529,7 +570,7 @@ const TimelineApp = (() => {
       doc.setFontSize(12);
       doc.setFont(undefined, 'normal');
       doc.setTextColor(...gray);
-      doc.text('Sistema de Información de Restaurantes', pageWidth / 2, y, { align: 'center' });
+      doc.text('Sistema Integrado de Restaurantes', pageWidth / 2, y, { align: 'center' });
 
       y += 15;
 
@@ -677,7 +718,7 @@ const TimelineApp = (() => {
 
       // Group by type
       const functionalities = version.details.filter(d => d.type === 'Requerimiento' || !d.type);
-      const corrections = version.details.filter(d => d.type === 'Bug');
+      const corrections = version.details.filter(d => d.type === 'Bug' || d.type === 'Defecto');
 
       // Functionalities
       if (functionalities.length > 0) {

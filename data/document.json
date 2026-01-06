@@ -4767,6 +4767,85 @@
           "qaRegional": "En Producción"
         }
       ]
+    },
+    {
+      "version": "1.59.1.1",
+      "date": "06/01/2026",
+      "year": 2026,
+      "sprint": "Sprint 22",
+      "description": "",
+      "details": [
+        {
+          "id": "47331",
+          "type": "Defecto",
+          "branch": "47331",
+          "description": "Error exportación Inventarios",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "90752",
+          "type": "Requerimiento",
+          "branch": "90752",
+          "description": "52 Semanas - Cambio de formato y migración a devextreme",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "90752",
+          "type": "Requerimiento",
+          "branch": "90752",
+          "description": "52 Semanas - Cambio de formato y migración a devextreme",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "103817",
+          "type": "Requerimiento",
+          "branch": "103817",
+          "description": "Mejoras en Pedidos V2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "105688",
+          "type": "Defecto",
+          "branch": "105688",
+          "description": "Administración de Proveedor",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "106883",
+          "type": "Defecto",
+          "branch": "106883",
+          "description": "Pantalla de Bancos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "106889",
+          "type": "Defecto",
+          "branch": "106889",
+          "description": "Reporte de Relación de Cajas V2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        }
+      ]
     }
   ]
 }
