@@ -4770,7 +4770,7 @@
     },
     {
       "version": "1.59.1.1",
-      "date": "06/01/2026",
+      "date": "07/01/2026",
       "year": 2026,
       "sprint": "Sprint 22",
       "description": "",
@@ -4781,6 +4781,16 @@
           "branch": "47331",
           "description": "Error exportación Inventarios",
           "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "57595",
+          "type": "Requerimiento",
+          "branch": "57595",
+          "description": "Reporte Consolidado Restaurantes",
+          "observation": "Ecuador",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 22"
@@ -4806,10 +4816,50 @@
           "sprint": "Sprint 22"
         },
         {
+          "id": "93825",
+          "type": "Requerimiento",
+          "branch": "93825",
+          "description": "BR - Reportes Control de CCH",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "99181",
+          "type": "Requerimiento",
+          "branch": "99181",
+          "description": "Metricas Pantalla Inicial",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
           "id": "103817",
           "type": "Requerimiento",
           "branch": "103817",
           "description": "Mejoras en Pedidos V2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "105572",
+          "type": "Requerimiento",
+          "branch": "105572",
+          "description": "Reporte de Activos Fijos Chile",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "105577",
+          "type": "Requerimiento",
+          "branch": "105577",
+          "description": "Mejoras Pedidos Sugeridos",
           "observation": "Ecuador",
           "proyect": "Sir Legacy",
           "qaRegional": "",
@@ -4830,7 +4880,7 @@
           "type": "Requerimiento",
           "branch": "106407",
           "description": "BR - Control Aceite Quemado Versión CL",
-          "observation": "No definido",
+          "observation": "Brasil",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 22"
@@ -4854,6 +4904,233 @@
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 22"
+        }
+      ]
+    },
+    {
+      "version": "1.60.1.1",
+      "date": "14/01/2026",
+      "year": 2026,
+      "sprint": "Sprint 22",
+      "description": "",
+      "details": [
+        {
+          "id": "57522",
+          "type": "Requerimiento",
+          "branch": "57522",
+          "description": "Diario de Ventas: Individuales por tipo",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "98747",
+          "type": "Requerimiento",
+          "branch": "98747",
+          "description": "BR - Interfaz de Ventas diferenciar medios en PluTrans  y VentaXMedio",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "101087",
+          "type": "Requerimiento",
+          "branch": "101087",
+          "description": "Artículos RPM - Habilitar Paises",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "102533",
+          "type": "Requerimiento",
+          "branch": "102533",
+          "description": "Mejoras MIX SIR",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "107235",
+          "type": "Requerimiento",
+          "branch": "107235",
+          "description": "QA: Inventario SIR Mobile en AKS",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "107707",
+          "type": "Requerimiento",
+          "branch": "107707",
+          "description": "Correos de Coca Cola Andina y Embonor a más de 1 destinatario",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "109850",
+          "type": "Defecto",
+          "branch": "109850",
+          "description": "Envio de Correos Arg",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110337",
+          "type": "Defecto",
+          "branch": "110337",
+          "description": "Cupones CCC - No se puede exportar varias solicitudes a SAP",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        }
+      ]
+    },
+    {
+      "version": "1.61.1.1",
+      "date": "29/01/2026",
+      "year": 2026,
+      "sprint": "Sprint 1",
+      "description": "",
+      "details": [
+        {
+          "id": "57520",
+          "type": "Requerimiento",
+          "branch": "57520",
+          "description": "Devoluciones: Observaciones Proveedores externos",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "101106",
+          "type": "Requerimiento",
+          "branch": "101106",
+          "description": "Pantalla de Pedidos V2 - Colombia",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "106402",
+          "type": "Requerimiento",
+          "branch": "106402",
+          "description": "BR - MB Mejoras en Integración y Notificaciones",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "Completado",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110118",
+          "type": "Defecto",
+          "branch": "110118",
+          "description": "Reporte Exportacion diario ERP",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "Completado",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110126",
+          "type": "Requerimiento",
+          "branch": "110126",
+          "description": "Subir SIR AKS Chile",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110146",
+          "type": "Requerimiento",
+          "branch": "110146",
+          "description": "Activación Módulo de Cupones de Dinero Argentina",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110603",
+          "type": "Requerimiento",
+          "branch": "110603",
+          "description": "BR - Cambio de costos en las compras para Martin Brower",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "Completado",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "113914",
+          "type": "Defecto",
+          "branch": "113914",
+          "description": "Integración de Pedido Carvajal",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        }
+      ]
+    },
+    {
+      "version": "1.62.1.1",
+      "date": "03/02/2026",
+      "year": 2026,
+      "sprint": "Sprint 1",
+      "description": "",
+      "details": [
+        {
+          "id": "57593",
+          "type": "Requerimiento",
+          "branch": "57593",
+          "description": "Refactorización Lista Total Activos Fijos + Reporte Consolidado",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "104597",
+          "type": "Requerimiento",
+          "branch": "104597",
+          "description": "Pantalla Administración de Rubros",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110340",
+          "type": "Requerimiento",
+          "branch": "110340",
+          "description": "Mejoras Cupones Digitales",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110610",
+          "type": "Requerimiento",
+          "branch": "110610",
+          "description": "Mejoras Metricas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
         }
       ]
     }

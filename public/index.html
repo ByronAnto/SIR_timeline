@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIR - Timeline de Versiones 2025</title>
+  <title>SIR - Timeline de Versiones</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png"
@@ -30,7 +30,7 @@
     </div>
 
     <div class="header-title">
-      <h1>Versiones SIR Regional 2025</h1>
+      <h1>Versiones SIR Regional <span id="year-header"></span></h1>
       <p class="header-subtitle">Sistema Integrado de Restaurantes</p>
       <div class="badge-sprint">CONTROL DE VERSIONES</div>
     </div>
@@ -106,11 +106,25 @@
       <strong>Grupo KFC</strong> | Departamento DSI | Mesa de Trabajo SIR
     </p>
     <p style="font-size: 12px; opacity: 0.8;">
-      Sistema de Control de Versiones - © 2025
+      Sistema de Control de Versiones - © <span id="year-footer"></span>
     </p>
   </footer>
 
   <!-- JavaScript -->
+  <script>
+    // Set current year dynamically
+    const currentYear = new Date().getFullYear();
+    document.title = `SIR - Timeline de Versiones ${currentYear}`;
+
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function () {
+      const yearHeader = document.getElementById('year-header');
+      const yearFooter = document.getElementById('year-footer');
+
+      if (yearHeader) yearHeader.textContent = currentYear;
+      if (yearFooter) yearFooter.textContent = currentYear;
+    });
+  </script>
   <script src="js/timeline.js"></script>
 
 </body>

@@ -564,7 +564,8 @@ const TimelineApp = (() => {
       // Title
       doc.setFontSize(20);
       doc.setFont(undefined, 'bold');
-      doc.text('Versiones SIR Regional 2025', pageWidth / 2, y, { align: 'center' });
+      const currentYear = new Date().getFullYear();
+      doc.text(`Versiones SIR Regional ${currentYear}`, pageWidth / 2, y, { align: 'center' });
 
       y += 8;
       doc.setFontSize(12);
