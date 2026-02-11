@@ -5133,6 +5133,55 @@
           "sprint": "Sprint 1"
         }
       ]
+    },
+    {
+      "version": "1.63.1.1",
+      "date": "11/02/2026",
+      "year": 2026,
+      "sprint": "Sprint 1",
+      "description": "",
+      "details": [
+        {
+          "id": "57569",
+          "type": "Requerimiento",
+          "branch": "57569",
+          "description": "Compras Planta, con artículos hijos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1"
+        },
+        {
+          "id": "110719",
+          "type": "Defecto",
+          "branch": "110719",
+          "description": "BR - Crear nuevo restaurante",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "113962",
+          "type": "Defecto",
+          "branch": "113962",
+          "description": "Solicitud de CCC V1 y V2- cupones digitales",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "114855",
+          "type": "Requerimiento",
+          "branch": "114855",
+          "description": "Diarios de Inventarios - CCO Internos",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        }
+      ]
     }
   ]
 }
