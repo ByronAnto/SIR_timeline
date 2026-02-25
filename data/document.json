@@ -5182,6 +5182,65 @@
           "sprint": "Sprint 2"
         }
       ]
+    },
+    {
+      "version": "1.64.1.1",
+      "date": "25/02/2026",
+      "year": 2026,
+      "sprint": "Sprint 2",
+      "description": "",
+      "details": [
+        {
+          "id": "105525",
+          "type": "Requerimiento",
+          "branch": "105525",
+          "description": "Refactorización Gastos Generales",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "112652",
+          "type": "Requerimiento",
+          "branch": "112652",
+          "description": "Proyección de Producción rangos de 30 minutos",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "113391",
+          "type": "Defecto",
+          "branch": "113391",
+          "description": "Control de Bidones de Aceite Quemado",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "114854",
+          "type": "Requerimiento",
+          "branch": "114854",
+          "description": "Correo Facturación Cupones - añadir campos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "115017",
+          "type": "Defecto",
+          "branch": "115017",
+          "description": "BR- Cierre de caja-Crédito sin Cupón",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        }
+      ]
     }
   ]
 }
