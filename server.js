@@ -6,18 +6,59 @@ const path = require('path');
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-// ─── Git: push solo document.json tras cada sync ──────────────────────────────
-function gitPushDocument(version, date) {
-  try {
-    execSync('git add data/document.json', { cwd: __dirname, stdio: 'pipe' });
-    execSync(`git commit -m "sync: v${version} - ${date}"`, { cwd: __dirname, stdio: 'pipe' });
-    execSync('git push', { cwd: __dirname, stdio: 'pipe' });
-    console.log(`✅ Git push OK: sync v${version} - ${date}`);
-    return { pushed: true };
-  } catch (e) {
-    const detail = e.stderr?.toString().trim() || e.message;
-    console.warn(`⚠️  Git push: ${detail}`);
-    return { pushed: false, pushError: detail };
+// ─── Push document.json tras cada sync ───────────────────────────────────────
+// Si GITHUB_TOKEN está definido → GitHub REST API (funciona en contenedor).
+// Si no                         → git push con SSH (funciona en local).
+async function gitPushDocument(version, date) {
+  const token = process.env.GITHUB_TOKEN;
+  const owner = process.env.GITHUB_OWNER || 'ByronAnto';
+  const repo  = process.env.GITHUB_REPO  || 'SIR_timeline';
+  const branch = process.env.GITHUB_BRANCH || 'main';
+  const filePath = 'data/document.json';
+  const commitMsg = `sync: v${version} - ${date}`;
+
+  if (token) {
+    // ── GitHub REST API ────────────────────────────────────────────────────
+    try {
+      const axios = require('axios');
+      const apiBase = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+      const headers = {
+        Authorization: `token ${token}`,
+        'User-Agent': 'SIR-Timeline-Server'
+      };
+
+      // 1. Obtener SHA actual del archivo en el repo
+      const { data: meta } = await axios.get(`${apiBase}?ref=${branch}`, { headers });
+
+      // 2. Subir el archivo actualizado
+      const content = fs.readFileSync(path.join(__dirname, filePath), 'utf8');
+      await axios.put(apiBase, {
+        message: commitMsg,
+        content: Buffer.from(content).toString('base64'),
+        sha: meta.sha,
+        branch
+      }, { headers });
+
+      console.log(`✅ GitHub API push OK: ${commitMsg}`);
+      return { pushed: true, method: 'api' };
+    } catch (e) {
+      const detail = e.response?.data?.message || e.message;
+      console.warn(`⚠️  GitHub API push falló: ${detail}`);
+      return { pushed: false, pushError: detail };
+    }
+  } else {
+    // ── Git local con SSH (desarrollo) ────────────────────────────────────
+    try {
+      execSync('git add data/document.json', { cwd: __dirname, stdio: 'pipe' });
+      execSync(`git commit -m "${commitMsg}"`, { cwd: __dirname, stdio: 'pipe' });
+      execSync('git push', { cwd: __dirname, stdio: 'pipe' });
+      console.log(`✅ Git push SSH OK: ${commitMsg}`);
+      return { pushed: true, method: 'ssh' };
+    } catch (e) {
+      const detail = e.stderr?.toString().trim() || e.message;
+      console.warn(`⚠️  Git push SSH: ${detail}`);
+      return { pushed: false, pushError: detail };
+    }
   }
 }
 
@@ -193,7 +234,7 @@ app.post('/api/sync', async (req, res) => {
     fs.writeFileSync(documentPath, JSON.stringify(document, null, 2), 'utf8');
 
     // Push automático de document.json
-    const gitResult = gitPushDocument(versionNumber, date);
+    const gitResult = await gitPushDocument(versionNumber, date);
 
     // Respuesta exitosa
     res.json({
