@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   sir-timeline:
     build: .
@@ -8,11 +6,18 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      # Azure DevOps
       - AZURE_DEVOPS_ORG=${AZURE_DEVOPS_ORG}
       - AZURE_DEVOPS_PROJECT=${AZURE_DEVOPS_PROJECT}
       - AZURE_DEVOPS_TOKEN=${AZURE_DEVOPS_TOKEN}
+      # GitHub: push automático de document.json tras cada sync
+      # Fine-grained token con Contents (Read & Write) sobre SIR_timeline
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GITHUB_OWNER=${GITHUB_OWNER:-ByronAnto}
+      - GITHUB_REPO=${GITHUB_REPO:-SIR_timeline}
+      - GITHUB_BRANCH=${GITHUB_BRANCH:-main}
     volumes:
-      # Persistir datos
+      # Persistir document.json localmente (la API también lo sube a GitHub)
       - ./data:/app/data
     restart: unless-stopped
     networks:

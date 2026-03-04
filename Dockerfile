@@ -1,31 +1,35 @@
 # Dockerfile para SIR Timeline
-FROM node:18-alpine
+FROM node:18-slim
 
-# Metadata
 LABEL maintainer="SIR Team"
 LABEL description="SIR Timeline - Sistema de control de versiones"
 
-# Crear directorio de trabajo
+# unrar-free: necesario para extraer adjuntos .rar de Azure DevOps
+# Provee el mismo comando "unrar x" que usa release-downloader.js
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends unrar-free \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-# Copiar package.json y package-lock.json
+# Instalar dependencias primero (capa cacheada mientras package.json no cambie)
 COPY package*.json ./
-
-# Instalar dependencias
 RUN npm ci --only=production
 
 # Copiar el resto de la aplicación
 COPY . .
 
-# Crear directorio para datos si no existe
+# Asegurar que el directorio de datos existe
 RUN mkdir -p /app/data
 
-# Exponer puerto
+# Usuario no-root para producción
+RUN groupadd -r appgroup && useradd -r -g appgroup appuser \
+    && chown -R appuser:appgroup /app
+
+USER appuser
+
 EXPOSE 3000
 
-# Variables de entorno por defecto
 ENV NODE_ENV=production
-ENV PORT=3000
 
-# Comando para iniciar la aplicación
 CMD ["node", "server.js"]
