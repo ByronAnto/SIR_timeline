@@ -315,6 +315,9 @@
             const [yyyy, mm, dd] = dateInput.split('-');
             const date = `${dd}/${mm}/${yyyy}`;
 
+            // Guardar datos del preview ANTES de que se reseteen (incluye tags para países)
+            const previewData = foundWorkItems;
+
             resultDiv.className = 'sync-result loading';
             resultDiv.innerHTML = '<span class="loading-spinner"></span> Sincronizando con el timeline...';
 
@@ -328,10 +331,17 @@
                 const result = await response.json();
 
                 if (response.ok) {
-                    resultDiv.className = 'sync-result success';
+                    // Reset state
+                    foundWorkItems = null;
+                    form.reset();
+                    document.getElementById('date').value = today;
+
+                    const gitBadge = result.gitPushed
+                        ? `<span style="background:#2e7d32;color:white;padding:2px 8px;border-radius:10px;font-size:11px;margin-left:6px;">⬆ Git push OK</span>`
+                        : `<span style="background:#e65100;color:white;padding:2px 8px;border-radius:10px;font-size:11px;margin-left:6px;" title="${result.gitError || ''}">⚠ Push pendiente</span>`;
 
                     let html = `
-            <strong>🎉 ¡Sincronización completada exitosamente!</strong><br><br>
+            <strong>🎉 ¡Sincronización completada exitosamente!</strong>${gitBadge}<br><br>
             📊 Versión: ${result.version}<br>
             📅 Fecha: ${result.date}<br>
             📈 Work items sincronizados: ${result.workItemsCount}<br>
@@ -348,14 +358,42 @@
                         html += '</div>';
                     }
 
-                    html += '<br><br><a href="/" class="btn btn-primary" style="background: var(--kfc-red); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: inline-block;">📊 Ver en Timeline →</a>';
+                    // Mostrar estado intermedio con spinner de descarga
+                    resultDiv.className = 'sync-result success';
+                    resultDiv.innerHTML = html +
+                        '<br><br><span class="loading-spinner"></span> <strong>Descargando adjuntos y generando Excel...</strong>';
 
+                    // ── Descargar adjuntos + Excel ────────────────────────────────────
+                    try {
+                        const wiData = previewData ? previewData.workItems : result.workItems;
+                        const dlResponse = await fetch('/api/download-release', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ version: result.version, workItems: wiData })
+                        });
+                        const dlResult = await dlResponse.json();
+
+                        if (dlResult.success) {
+                            html += `
+              <br><br>
+              <div style="background:#e8f5e9;border-left:4px solid #2e7d32;padding:12px;border-radius:4px;margin-top:8px;">
+                <strong>📁 Archivos descargados en:</strong><br>
+                <code style="word-break:break-all;font-size:12px">${dlResult.folderPath}</code><br><br>
+                <a href="/downloads/${result.version}/${dlResult.excelName}" download
+                   style="background:#2e7d32;color:white;padding:10px 20px;text-decoration:none;border-radius:4px;display:inline-block;font-weight:700;">
+                  📊 Descargar Excel — ${dlResult.excelName}
+                </a>
+              </div>`;
+                        } else {
+                            html += `<br><br>⚠️ Descarga no completada: ${dlResult.error || 'error desconocido'}`;
+                        }
+                    } catch (dlErr) {
+                        html += `<br><br>⚠️ Descarga no completada: ${dlErr.message}`;
+                    }
+
+                    html += '<br><br><a href="/" class="btn btn-primary" style="background: var(--kfc-red); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: inline-block;">📊 Ver en Timeline →</a>';
                     resultDiv.innerHTML = html;
 
-                    // Reset for next sync
-                    foundWorkItems = null;
-                    form.reset();
-                    document.getElementById('date').value = today;
                 } else {
                     throw new Error(result.error || 'Error desconocido');
                 }

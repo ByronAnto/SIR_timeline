@@ -4,6 +4,22 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
+const { execSync } = require('child_process');
+
+// ─── Git: push solo document.json tras cada sync ──────────────────────────────
+function gitPushDocument(version, date) {
+  try {
+    execSync('git add data/document.json', { cwd: __dirname, stdio: 'pipe' });
+    execSync(`git commit -m "sync: v${version} - ${date}"`, { cwd: __dirname, stdio: 'pipe' });
+    execSync('git push', { cwd: __dirname, stdio: 'pipe' });
+    console.log(`✅ Git push OK: sync v${version} - ${date}`);
+    return { pushed: true };
+  } catch (e) {
+    const detail = e.stderr?.toString().trim() || e.message;
+    console.warn(`⚠️  Git push: ${detail}`);
+    return { pushed: false, pushError: detail };
+  }
+}
 
 // Middleware para parsear JSON
 app.use(express.json());
@@ -176,6 +192,9 @@ app.post('/api/sync', async (req, res) => {
     // Guardar
     fs.writeFileSync(documentPath, JSON.stringify(document, null, 2), 'utf8');
 
+    // Push automático de document.json
+    const gitResult = gitPushDocument(versionNumber, date);
+
     // Respuesta exitosa
     res.json({
       success: true,
@@ -183,6 +202,8 @@ app.post('/api/sync', async (req, res) => {
       date: date,
       workItemsCount: workItems.length,
       detailsCount: newVersion.details.length,
+      gitPushed: gitResult.pushed,
+      gitError: gitResult.pushError,
       workItems: workItems.map(wi => ({
         id: wi.id,
         title: wi.fields['System.Title'],
@@ -201,6 +222,52 @@ app.post('/api/sync', async (req, res) => {
 // Servir el archivo HTML principal
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// ─── API: Descarga adjuntos + genera Excel ────────────────────────────────────
+app.post('/api/download-release', async (req, res) => {
+  try {
+    const { version, workItems } = req.body;
+
+    if (!version || !workItems || !workItems.length) {
+      return res.status(400).json({ error: 'Se requieren version y workItems' });
+    }
+
+    const { downloadRelease } = require('./release-downloader');
+    const result = await downloadRelease(version, workItems);
+
+    res.json({
+      success     : true,
+      version,
+      folderPath  : result.versionFolder,
+      excelName   : result.excelName,
+      branchesCount: result.branchesCount
+    });
+
+  } catch (error) {
+    console.error('Error en download-release:', error);
+    res.status(500).json({ error: error.message || 'Error al descargar adjuntos' });
+  }
+});
+
+// ─── Servir Excel generado para descarga por navegador ───────────────────────
+app.get('/downloads/:version/:file', (req, res) => {
+  try {
+    const { getDownloadsPath } = require('./release-downloader');
+    const filePath = path.join(
+      getDownloadsPath(),
+      `Version${req.params.version}`,
+      req.params.file
+    );
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'Archivo no encontrado' });
+    }
+
+    res.download(filePath);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 // Iniciar el servidor en el puerto 3000

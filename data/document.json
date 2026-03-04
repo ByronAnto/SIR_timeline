@@ -5241,6 +5241,65 @@
           "sprint": "Sprint 2"
         }
       ]
+    },
+    {
+      "version": "1.65.1.1",
+      "date": "04/03/2026",
+      "year": 2026,
+      "sprint": "Sprint 22",
+      "description": "",
+      "details": [
+        {
+          "id": "36635",
+          "type": "Requerimiento",
+          "branch": "36635",
+          "description": "Libro de Plus - cupones de descuento",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "63855",
+          "type": "Requerimiento",
+          "branch": "63855",
+          "description": "Plus y Recetas: Modificar Articulos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "111967",
+          "type": "Requerimiento",
+          "branch": "111967",
+          "description": "BR - Reportes Compras para Martin Brower",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "114036",
+          "type": "Requerimiento",
+          "branch": "114036",
+          "description": "Reporte de clientes, añadir varios clientes",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "115139",
+          "type": "Requerimiento",
+          "branch": "115139",
+          "description": "RE - Pantalla de Gastos: Añadir Canal",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        }
+      ]
     }
   ]
 }
