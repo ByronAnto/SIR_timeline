@@ -5300,6 +5300,55 @@
           "sprint": "Sprint 2"
         }
       ]
+    },
+    {
+      "version": "1.66.1.1",
+      "date": "13/03/2026",
+      "year": 2026,
+      "sprint": "Sprint 2",
+      "description": "",
+      "details": [
+        {
+          "id": "114585",
+          "type": "Requerimiento",
+          "branch": "114585",
+          "description": "BR - Cambio Costos (2) MB",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "114639",
+          "type": "Requerimiento",
+          "branch": "114639",
+          "description": "RE - Artículos Maestros Calculo de costo",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 2"
+        },
+        {
+          "id": "116755",
+          "type": "Defecto",
+          "branch": "116755",
+          "description": "BR - interfaz de ventas",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "119131",
+          "type": "Defecto",
+          "branch": "119131",
+          "description": "RE-Intermitencia SIR Integration",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        }
+      ]
     }
   ]
 }
