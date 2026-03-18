@@ -5349,6 +5349,45 @@
           "sprint": "Sprint 3"
         }
       ]
+    },
+    {
+      "version": "1.67.1.1",
+      "date": "18/03/2026",
+      "year": 2026,
+      "sprint": "Sprint 3",
+      "description": "",
+      "details": [
+        {
+          "id": "114739",
+          "type": "Requerimiento",
+          "branch": "114739",
+          "description": "EC - Mejoras en Pantalla de Cupones CCC V2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "117377",
+          "type": "Defecto",
+          "branch": "117377",
+          "description": "EC-Apertura de inventarios por área Mensual",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "117400",
+          "type": "Requerimiento",
+          "branch": "117400",
+          "description": "AR - Cierre de Cajas Bloquear Cuentas por Cobrar",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        }
+      ]
     }
   ]
 }
