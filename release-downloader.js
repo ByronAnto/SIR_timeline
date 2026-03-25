@@ -8,7 +8,8 @@ const fs       = require('fs');
 const path     = require('path');
 const os       = require('os');
 const { execSync } = require('child_process');
-const unzipper = require('unzipper');
+const unzipper      = require('unzipper');
+const { createExtractorFromFile } = require('node-unrar-js');
 const pdfParse = require('pdf-parse');
 const ExcelJS  = require('exceljs');
 
@@ -73,8 +74,11 @@ async function extractZip(archivePath, destDir) {
     .promise();
 }
 
-function extractRar(archivePath, destDir) {
-  execSync(`unrar x -y "${archivePath}" "${destDir}/"`, { stdio: 'pipe' });
+async function extractRar(archivePath, destDir) {
+  const extractor = await createExtractorFromFile({ filepath: archivePath, targetPath: destDir });
+  const { files } = extractor.extract();
+  // Consume the generator to actually extract all files
+  for (const file of files) { /* extracted */ }
 }
 
 function findFilesRecursive(dir, ext) {
@@ -96,14 +100,11 @@ function findFilesRecursive(dir, ext) {
 
 // ─── Parseo de PDFs ───────────────────────────────────────────────────────────
 
-// Proyectos conocidos (orden importa: más específicos primero).
-// Incluye typo "SirItegration" que aparece en algunos PDFs.
-const KNOWN_PROJECTS = [
-  'SirFront (Vue3)', 'SirIntegration', 'SirItegration',
-  'SIRFRONTV3', 'SirFrontV3', 'SirFront',
-  'SirCupones', 'SirLegacy', 'SirBack', 'SIRBACK', 'SIR', 'Sir'
-];
-const BRANCH_RE = /^\d{3,6}_\w+$/;
+// Patrón de rama: 6 dígitos + _ + nombre (ej: 117406_CuponesMejorasReportePorCadena)
+const BRANCH_RE      = /^\d{3,6}_\w+$/;
+const BRANCH_INLINE  = /(\d{3,6}_\w+)/;
+// Líneas que son cabeceras o decoración de tabla
+const HEADER_RE      = /^(Proyecto(\s+Rama)?|Rama|Detalle del proyecto|1\.\s*Detalle)$/i;
 
 /**
  * Encuentra el índice de la ÚLTIMA ocurrencia de un patrón en el texto.
@@ -164,29 +165,39 @@ async function extractBranchesFromPDF(pdfPath, wiId, wiTitle) {
 
     const lines = section.split('\n').map(l => l.trim()).filter(Boolean);
     const results = [];
+    let pendingProject = null;
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
+
       // Saltar cabeceras de tabla
-      if (/^Proyecto(\s+Rama)?$/.test(line) || line === 'Rama') continue;
+      if (HEADER_RE.test(line)) continue;
 
-      const project = KNOWN_PROJECTS.find(p =>
-        line === p ||
-        line.startsWith(p + ' ') ||
-        line.startsWith(p + '\t')
-      );
-
-      if (project) {
-        const rest = line.slice(project.length).trim();
-        if (BRANCH_RE.test(rest)) {
-          // "Sir 36635_LibroPlus"  → mismo renglón
-          results.push({ wiId, wiTitle, proyecto: project, rama: rest });
-        } else if (i + 1 < lines.length && BRANCH_RE.test(lines[i + 1])) {
-          // "Sir\n111967_ReportesCompraMB" → líneas separadas
-          results.push({ wiId, wiTitle, proyecto: project, rama: lines[i + 1] });
-          i++;
+      // Caso 1: la línea entera es una rama → emparejar con proyecto pendiente
+      if (BRANCH_RE.test(line)) {
+        if (pendingProject) {
+          results.push({ wiId, wiTitle, proyecto: pendingProject, rama: line });
+          pendingProject = null;
         }
+        continue;
       }
+
+      // Caso 2: la línea contiene proyecto + rama en la misma línea
+      const inlineMatch = line.match(BRANCH_INLINE);
+      if (inlineMatch) {
+        const proyecto = line.slice(0, inlineMatch.index).trim();
+        const rama = inlineMatch[1];
+        if (proyecto) {
+          results.push({ wiId, wiTitle, proyecto, rama });
+        } else if (pendingProject) {
+          results.push({ wiId, wiTitle, proyecto: pendingProject, rama });
+          pendingProject = null;
+        }
+        continue;
+      }
+
+      // Caso 3: línea sin rama → es un nombre de proyecto, guardarlo
+      pendingProject = line;
     }
 
     return results;
@@ -401,7 +412,7 @@ async function downloadRelease(version, workItems) {
           if (/\.zip$/i.test(archive.name)) {
             await extractZip(tmpPath, wiFolder);
           } else if (/\.rar$/i.test(archive.name)) {
-            extractRar(tmpPath, wiFolder);
+            await extractRar(tmpPath, wiFolder);
           }
 
           fs.unlinkSync(tmpPath);
