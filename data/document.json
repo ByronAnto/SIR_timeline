@@ -5388,6 +5388,115 @@
           "sprint": "Sprint 3"
         }
       ]
+    },
+    {
+      "version": "1.68.1.1",
+      "date": "25/03/2026",
+      "year": 2026,
+      "sprint": "Sprint 3",
+      "description": "",
+      "details": [
+        {
+          "id": "101086",
+          "type": "Requerimiento",
+          "branch": "101086",
+          "description": "Plus y Recetas: Reporte de Recetas - Imprimir Recetas",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "101086",
+          "type": "Requerimiento",
+          "branch": "101086",
+          "description": "Plus y Recetas: Reporte de Recetas - Imprimir Recetas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "115277",
+          "type": "Requerimiento",
+          "branch": "115277",
+          "description": "CL - Depósitos añadir denominación de monedas",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "117403",
+          "type": "Requerimiento",
+          "branch": "117403",
+          "description": "AR - Cupones de Empleado y Libro Plus",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "117406",
+          "type": "Requerimiento",
+          "branch": "117406",
+          "description": "EC - Cupones, mejoras en Reporte por Cadena",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "118154",
+          "type": "Requerimiento",
+          "branch": "118154",
+          "description": "BR - Mejora en reporte consolidado de compras",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "118155",
+          "type": "Requerimiento",
+          "branch": "118155",
+          "description": "BR - Aceite Quemado",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "118595",
+          "type": "Defecto",
+          "branch": "118595",
+          "description": "RE-Reporte 52 semanas v2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "119923",
+          "type": "Requerimiento",
+          "branch": "119923",
+          "description": "CO - Cupones de Nomina, eliminar bloqueo de Excel para Chile",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "120897",
+          "type": "Defecto",
+          "branch": "120897",
+          "description": "EC-Error en la creación de inventario diario, semanal",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        }
+      ]
     }
   ]
 }
