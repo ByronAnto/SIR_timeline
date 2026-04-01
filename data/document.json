@@ -5497,6 +5497,45 @@
           "sprint": "Sprint 3"
         }
       ]
+    },
+    {
+      "version": "1.69.1.1",
+      "date": "31/03/2026",
+      "year": 2026,
+      "sprint": "Sprint 3",
+      "description": "",
+      "details": [
+        {
+          "id": "105621",
+          "type": "Requerimiento",
+          "branch": "105621",
+          "description": "RE - Devoluciones Artículos Hijos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "117401",
+          "type": "Requerimiento",
+          "branch": "117401",
+          "description": "RE | Administración de Máximos por Artículo",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        },
+        {
+          "id": "118806",
+          "type": "Requerimiento",
+          "branch": "118806",
+          "description": "CO - Inventarios por Áreas Configurar toma semanal",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3"
+        }
+      ]
     }
   ]
 }
