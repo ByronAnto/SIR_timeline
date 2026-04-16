@@ -5536,6 +5536,94 @@
           "sprint": "Sprint 3"
         }
       ]
+    },
+    {
+      "version": "1.70.1.1",
+      "date": "13/04/2026",
+      "year": 2026,
+      "sprint": "Sprint 22",
+      "description": "",
+      "details": [
+        {
+          "id": "36635",
+          "type": "Requerimiento",
+          "branch": "36635",
+          "description": "Libro de Plus - cupones de descuento",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 22"
+        },
+        {
+          "id": "124317",
+          "type": "Requerimiento",
+          "branch": "124317",
+          "description": "RE | Gastos Generales V2 Bloquear Ingreso de IVA",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4"
+        },
+        {
+          "id": "124895",
+          "type": "Defecto",
+          "branch": "124895",
+          "description": "CL | Error al crear las logisticas Eventuales",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4"
+        }
+      ]
+    },
+    {
+      "version": "1.71.1.1",
+      "date": "16/04/2026",
+      "year": 2026,
+      "sprint": "Sprint 3-2026",
+      "description": "",
+      "details": [
+        {
+          "id": "114577",
+          "type": "Requerimiento",
+          "branch": "114577",
+          "description": "BR -Cambios en Hoja de proyección V2",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 3-2026"
+        },
+        {
+          "id": "121859",
+          "type": "Requerimiento",
+          "branch": "121859",
+          "description": "CO | Corrección Gastos de Caja Chica V2",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4-2026"
+        },
+        {
+          "id": "123205",
+          "type": "Requerimiento",
+          "branch": "123205",
+          "description": "CO | Activar Toma Inventario SIR Mobile",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4-2026"
+        },
+        {
+          "id": "125499",
+          "type": "Requerimiento",
+          "branch": "125499",
+          "description": "RE | Excel Máximos y Minimos - unidad compra",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4-2026"
+        }
+      ]
     }
   ]
 }
