@@ -5624,6 +5624,154 @@
           "sprint": "Sprint 4-2026"
         }
       ]
+    },
+    {
+      "version": "1.72.1.1",
+      "date": "22/04/2026",
+      "year": 2026,
+      "sprint": "Sprint 4_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "117408",
+          "type": "Requerimiento",
+          "branch": "117408",
+          "description": "CL | Recuperar Compras - Añadir Gavetas",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123206",
+          "type": "Requerimiento",
+          "branch": "123206",
+          "description": "RE | Correo de Exportación Pedidos SAP - Automático",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123208",
+          "type": "Requerimiento",
+          "branch": "123208",
+          "description": "EC | Reporte de Fondos de Cajas Chicas",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "126617",
+          "type": "Defecto",
+          "branch": "126617",
+          "description": "CL | Aumentar Buffer reporte recetas",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "129782",
+          "type": "Defecto",
+          "branch": "129782",
+          "description": "EC | Cupones no se muestran imágenes de la cadenas",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.73.1.1",
+      "date": "04/05/2026",
+      "year": 2026,
+      "sprint": "Sprint 4_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "117402",
+          "type": "Requerimiento",
+          "branch": "117402",
+          "description": "RE | Pedidos Sugeridos - Bloqueo Máximo",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "122829",
+          "type": "Requerimiento",
+          "branch": "122829",
+          "description": "AR | Creación de Pantalla Registro de Fondo de Caja Chica",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123211",
+          "type": "Requerimiento",
+          "branch": "123211",
+          "description": "RE | Cambios en Administración Artículos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123212",
+          "type": "Requerimiento",
+          "branch": "123212",
+          "description": "EC | Plus y Recetas: Ver Subrecetas",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123223",
+          "type": "Requerimiento",
+          "branch": "123223",
+          "description": "EC | Cupones Cumpleaños y Anulaciones",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "123336",
+          "type": "Requerimiento",
+          "branch": "123336",
+          "description": "EC | Módulo para asignación códigos Barra Artículos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "129104",
+          "type": "Defecto",
+          "branch": "129104",
+          "description": "RE | DEFECTO DUPLICIDAD LUNCH",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        },
+        {
+          "id": "130691",
+          "type": "Defecto",
+          "branch": "130691",
+          "description": "RE | URL - Administración Cupones",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 4_2026"
+        }
+      ]
     }
   ]
 }
