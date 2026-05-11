@@ -5785,7 +5785,7 @@
           "type": "Defecto",
           "branch": "131755",
           "description": "CL | Compras: No se puede ingresar art. hijos",
-          "observation": "No definido",
+          "observation": "Chile",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 5_2026"
@@ -5815,7 +5815,7 @@
           "type": "Defecto",
           "branch": "133802",
           "description": "BR |  Novedad en el cálculo de la hoja de proyección",
-          "observation": "No definido",
+          "observation": "Brasil",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 5_2026"
