@@ -5772,6 +5772,55 @@
           "sprint": "Sprint 4_2026"
         }
       ]
+    },
+    {
+      "version": "1.74.1.1",
+      "date": "12/05/2026",
+      "year": 2026,
+      "sprint": "Sprint 5_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "131755",
+          "type": "Defecto",
+          "branch": "131755",
+          "description": "CL | Compras: No se puede ingresar art. hijos",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "132251",
+          "type": "Defecto",
+          "branch": "132251",
+          "description": "EC - Degradado en administración de artículos",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "132367",
+          "type": "Defecto",
+          "branch": "132367",
+          "description": "RE | Devoluciones: revisar artículos hijos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "133802",
+          "type": "Defecto",
+          "branch": "133802",
+          "description": "BR |  Novedad en el cálculo de la hoja de proyección",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        }
+      ]
     }
   ]
 }
