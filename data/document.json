@@ -5890,6 +5890,45 @@
           "sprint": "Sprint 5_2026"
         }
       ]
+    },
+    {
+      "version": "1.76.1.1",
+      "date": "27/05/2026",
+      "year": 2026,
+      "sprint": "Sprint 5_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122880",
+          "type": "Requerimiento",
+          "branch": "122880",
+          "description": "EC | EndPoint para actualización de Categoria",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "130984",
+          "type": "Requerimiento",
+          "branch": "130984",
+          "description": "RE | Mejora en proceso de creacion de cabeceras",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "133567",
+          "type": "Defecto",
+          "branch": "133567",
+          "description": "EC | Venta bruta incorrecta en la respuesta del cupón",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        }
+      ]
     }
   ]
 }
