@@ -5821,6 +5821,75 @@
           "sprint": "Sprint 5_2026"
         }
       ]
+    },
+    {
+      "version": "1.75.1.1",
+      "date": "27/05/2026",
+      "year": 2026,
+      "sprint": "Sprint 5_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "117404",
+          "type": "Requerimiento",
+          "branch": "117404",
+          "description": "CL | Depositos Integración Brinks",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "122830",
+          "type": "Requerimiento",
+          "branch": "122830",
+          "description": "AR | Fondo de Caja - Creación de Reportes Consolidados",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "122853",
+          "type": "Requerimiento",
+          "branch": "122853",
+          "description": "EC | Botones Mayores Actualizar Ramas y Mejoras en Mayores",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "130815",
+          "type": "Defecto",
+          "branch": "130815",
+          "description": "EC | Mejoras en 52 Semanas v2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "130974",
+          "type": "Requerimiento",
+          "branch": "130974",
+          "description": "CL | Mejoras Proyección de Producción - 30 minutos",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "131618",
+          "type": "Requerimiento",
+          "branch": "131618",
+          "description": "EC | Endpoint clientes AX (MXPv2)",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        }
+      ]
     }
   ]
 }
