@@ -5929,6 +5929,55 @@
           "sprint": "Sprint 5_2026"
         }
       ]
+    },
+    {
+      "version": "1.77.1.1",
+      "date": "09/06/2026",
+      "year": 2026,
+      "sprint": "Sprint 6_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "123209",
+          "type": "Requerimiento",
+          "branch": "123209",
+          "description": "RE | Validación de Creación de Pedidos Sugeridos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "133765",
+          "type": "Defecto",
+          "branch": "133765",
+          "description": "RE | Devoluciones permite devolver un valor superior de la compra",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135116",
+          "type": "Defecto",
+          "branch": "135116",
+          "description": "CO | Cupones Dinero - Clientes",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135145",
+          "type": "Defecto",
+          "branch": "135145",
+          "description": "EC | Reporte Compras Consolidado",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        }
+      ]
     }
   ]
 }
