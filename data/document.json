@@ -5978,6 +5978,125 @@
           "sprint": "Sprint 6_2026"
         }
       ]
+    },
+    {
+      "version": "1.78.1.1",
+      "date": "16/06/2026",
+      "year": 2026,
+      "sprint": "Sprint 1_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "110587",
+          "type": "Requerimiento",
+          "branch": "110587",
+          "description": "RE | Integración Activos Fijos a SAP",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1_2026"
+        },
+        {
+          "id": "117405",
+          "type": "Requerimiento",
+          "branch": "117405",
+          "description": "CO | Pedidos V2 habilitar funcionalidades",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "122875",
+          "type": "Requerimiento",
+          "branch": "122875",
+          "description": "BR | Interfaz de Ventas Fire",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "123217",
+          "type": "Requerimiento",
+          "branch": "123217",
+          "description": "CL | Pedidos V2: Activar integraciones Externos",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "133267",
+          "type": "Defecto",
+          "branch": "133267",
+          "description": "EC | Exportación Ventas CN-BS",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135191",
+          "type": "Requerimiento",
+          "branch": "135191",
+          "description": "AR | Control Fondo Cajas Chicas - calculo diferencia",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135192",
+          "type": "Requerimiento",
+          "branch": "135192",
+          "description": "BR | Administración de Artículos añadir Cta Contable",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135198",
+          "type": "Requerimiento",
+          "branch": "135198",
+          "description": "BR | Mejoras Hoja de Proyección",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135270",
+          "type": "Requerimiento",
+          "branch": "135270",
+          "description": "RE | Artículos - Fecha Actualización y Creación",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135275",
+          "type": "Requerimiento",
+          "branch": "135275",
+          "description": "RE | Logistica - Fecha Actualización - Creación",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "135345",
+          "type": "Requerimiento",
+          "branch": "135345",
+          "description": "BR | S.I. End Point Depositos agregar numero papeleta y fecha",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        }
+      ]
     }
   ]
 }
