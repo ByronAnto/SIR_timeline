@@ -6097,6 +6097,115 @@
           "sprint": "Sprint 6_2026"
         }
       ]
+    },
+    {
+      "version": "1.79.1.1",
+      "date": "23/06/2026",
+      "year": 2026,
+      "sprint": "Sprint 6_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "119943",
+          "type": "Requerimiento",
+          "branch": "119943",
+          "description": "RE | Mitigración Fluid Attax - Inicial",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "123221",
+          "type": "Requerimiento",
+          "branch": "123221",
+          "description": "BR | Pantalla Artículos por Defecto Proyección",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "131754",
+          "type": "Requerimiento",
+          "branch": "131754",
+          "description": "BR | Mejora de Monitor de Interfaz de Ventas 3S",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "131757",
+          "type": "Requerimiento",
+          "branch": "131757",
+          "description": "EC | Mejoras en Inventarios SIR PDA (Español)",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "132315",
+          "type": "Requerimiento",
+          "branch": "132315",
+          "description": "EC | Inventario por Areas - Reconteo por área",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 5_2026"
+        },
+        {
+          "id": "133566",
+          "type": "Requerimiento",
+          "branch": "133566",
+          "description": "EC | Control para modificación de créditos sin cupón Deuna con clave de auditoría",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "133572",
+          "type": "Requerimiento",
+          "branch": "133572",
+          "description": "EC | CO | Control en el fin de día de MaxPoint",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "133572",
+          "type": "Requerimiento",
+          "branch": "133572",
+          "description": "EC | CO | Control en el fin de día de MaxPoint",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "133978",
+          "type": "Defecto",
+          "branch": "133978",
+          "description": "EC | Actualización Tipo de Toma",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        },
+        {
+          "id": "138671",
+          "type": "Defecto",
+          "branch": "138671",
+          "description": "RE | Duplicidad Mermas Y Compras-CCH",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 6_2026"
+        }
+      ]
     }
   ]
 }
