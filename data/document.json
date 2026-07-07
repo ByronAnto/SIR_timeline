@@ -6235,6 +6235,16 @@
           "sprint": "Sprint 7_2026"
         },
         {
+          "id": "139483",
+          "type": "Requerimiento",
+          "branch": "139483",
+          "description": "RE | Pedidos V2 - añadir observación, quitar botón ver",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
           "id": "140033",
           "type": "Defecto",
           "branch": "140033",
@@ -6245,11 +6255,31 @@
           "sprint": "Sprint 7_2026"
         },
         {
+          "id": "140330",
+          "type": "Defecto",
+          "branch": "140330",
+          "description": "RE | Cierre de Cajas - editar información de CSC",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
           "id": "142692",
           "type": "Defecto",
           "branch": "142692",
           "description": "AR | Cajas – Registro De Fondos Caja Chica y Cambio",
           "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "142693",
+          "type": "Defecto",
+          "branch": "142693",
+          "description": "BR | Defecto Proyección de Producción V2",
+          "observation": "Regional",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 7_2026"
