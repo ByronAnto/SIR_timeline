@@ -6206,6 +6206,55 @@
           "sprint": "Sprint 6_2026"
         }
       ]
+    },
+    {
+      "version": "1.80.1.1",
+      "date": "07/07/2026",
+      "year": 2026,
+      "sprint": "Sprint 7_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "106405",
+          "type": "Requerimiento",
+          "branch": "106405",
+          "description": "BR | Integración Compras SAP",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "137257",
+          "type": "Requerimiento",
+          "branch": "137257",
+          "description": "BR | Compras añadir código SAP en reproceso artículos no relacionados",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140033",
+          "type": "Defecto",
+          "branch": "140033",
+          "description": "RE | Logística de Pedidos",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "142692",
+          "type": "Defecto",
+          "branch": "142692",
+          "description": "AR | Cajas – Registro De Fondos Caja Chica y Cambio",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        }
+      ]
     }
   ]
 }
