@@ -6285,6 +6285,75 @@
           "sprint": "Sprint 7_2026"
         }
       ]
+    },
+    {
+      "version": "1.81.1.1",
+      "date": "14/07/2026",
+      "year": 2026,
+      "sprint": "Sprint 1_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "110587",
+          "type": "Requerimiento",
+          "branch": "110587",
+          "description": "RE | Integración Activos Fijos a SAP",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 1_2026"
+        },
+        {
+          "id": "123623",
+          "type": "Requerimiento",
+          "branch": "123623",
+          "description": "EC | SWT Partición de Tabla",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "133866",
+          "type": "Defecto",
+          "branch": "133866",
+          "description": "EC | Loyvers",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140331",
+          "type": "Requerimiento",
+          "branch": "140331",
+          "description": "RE | Mejoras Visuales en reporte de 52 Semanas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "142991",
+          "type": "Requerimiento",
+          "branch": "142991",
+          "description": "RE | Integración Activos Fijos SAP - Actualización Ramas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "144388",
+          "type": "Requerimiento",
+          "branch": "144388",
+          "description": "EC  Control en el fin de día de MaxPoint",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        }
+      ]
     }
   ]
 }
