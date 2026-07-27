@@ -6348,10 +6348,109 @@
           "type": "Requerimiento",
           "branch": "144388",
           "description": "EC  Control en el fin de día de MaxPoint",
-          "observation": "No definido",
+          "observation": "Ecuador",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 7_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.82.1.1",
+      "date": "27/07/2026",
+      "year": 2026,
+      "sprint": "Sprint 7_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122840",
+          "type": "Requerimiento",
+          "branch": "122840",
+          "description": "RE | Actualización de Administración de Artículos - Rubros",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "123218",
+          "type": "Requerimiento",
+          "branch": "123218",
+          "description": "AR | Pedidos V2: Activar Integraciones Proveedores externos",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "138663",
+          "type": "Requerimiento",
+          "branch": "138663",
+          "description": "RE | Admin Articulos - Artículo SAP",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "139735",
+          "type": "Requerimiento",
+          "branch": "139735",
+          "description": "RE | Rubros de PyG - Filtros Artículos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140332",
+          "type": "Requerimiento",
+          "branch": "140332",
+          "description": "RE | Gastos Cajas Chicas V2 añadir desglose de IVA",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140687",
+          "type": "Requerimiento",
+          "branch": "140687",
+          "description": "RE | Rubros de PyG - Filtros Inventarios",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140992",
+          "type": "Requerimiento",
+          "branch": "140992",
+          "description": "BR | Reproceso de Interfaz 3S - Dejar Asentado CC y MIX",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "140998",
+          "type": "Requerimiento",
+          "branch": "140998",
+          "description": "BR | Artículos añadir factor para proyección",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 7_2026"
+        },
+        {
+          "id": "145189",
+          "type": "Defecto",
+          "branch": "145189",
+          "description": "RE | Compras Caja Chica - IVA",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
         }
       ]
     }
