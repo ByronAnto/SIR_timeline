@@ -6453,6 +6453,85 @@
           "sprint": "Sprint 8_2026"
         }
       ]
+    },
+    {
+      "version": "1.83.1.1",
+      "date": "04/08/2026",
+      "year": 2026,
+      "sprint": "Sprint 8_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122818",
+          "type": "Requerimiento",
+          "branch": "122818",
+          "description": "EC | División de Reporte SWT",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "135305",
+          "type": "Requerimiento",
+          "branch": "135305",
+          "description": "EC | Impresión de Etiquetas",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "144725",
+          "type": "Defecto",
+          "branch": "144725",
+          "description": "CL | Control de Aceite",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "144762",
+          "type": "Defecto",
+          "branch": "144762",
+          "description": "RE | Ingreso Compras Proveedores Externos",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "145607",
+          "type": "Requerimiento",
+          "branch": "145607",
+          "description": "CL | Ajuste Depósitos Brinks",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "147174",
+          "type": "Defecto",
+          "branch": "147174",
+          "description": "CH | Guías de Despacho Genéricas",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "148761",
+          "type": "Defecto",
+          "branch": "148761",
+          "description": "EC | Cierre Cajas - Campaña Solidaria",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        }
+      ]
     }
   ]
 }
