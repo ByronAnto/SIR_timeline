@@ -6532,6 +6532,35 @@
           "sprint": "Sprint 8_2026"
         }
       ]
+    },
+    {
+      "version": "1.84.1.1",
+      "date": "12/08/2026",
+      "year": 2026,
+      "sprint": "Sprint 8_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "140997",
+          "type": "Requerimiento",
+          "branch": "140997",
+          "description": "EC | Diarios de Caja Chica incluir neto e IVA (Integración SAP)",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "145191",
+          "type": "Requerimiento",
+          "branch": "145191",
+          "description": "BR | Mejora en el ingreso de compras de Martin Brower vía integración.",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        }
+      ]
     }
   ]
 }
