@@ -6545,7 +6545,7 @@
           "type": "Requerimiento",
           "branch": "140997",
           "description": "EC | Diarios de Caja Chica incluir neto e IVA (Integración SAP)",
-          "observation": "No definido",
+          "observation": "Ecuador",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 8_2026"
@@ -6555,7 +6555,7 @@
           "type": "Requerimiento",
           "branch": "145191",
           "description": "BR | Mejora en el ingreso de compras de Martin Brower vía integración.",
-          "observation": "No definido",
+          "observation": "Brasil",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 8_2026"
