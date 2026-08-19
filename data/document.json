@@ -6561,6 +6561,55 @@
           "sprint": "Sprint 8_2026"
         }
       ]
+    },
+    {
+      "version": "1.85.1.1",
+      "date": "19/08/2026",
+      "year": 2026,
+      "sprint": "Sprint 8_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122827",
+          "type": "Requerimiento",
+          "branch": "122827",
+          "description": "RE | Refactorización pantalla Toma de Inventario",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "135211",
+          "type": "Requerimiento",
+          "branch": "135211",
+          "description": "RE | Refactorización Mayores Contables Tienda",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "145211",
+          "type": "Requerimiento",
+          "branch": "145211",
+          "description": "CO | Novedades creación y canje de cupones cortesía nomina",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        },
+        {
+          "id": "147171",
+          "type": "Requerimiento",
+          "branch": "147171",
+          "description": "CL | Pantalla de Pedidos - Habilitar botón cancelar",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 8_2026"
+        }
+      ]
     }
   ]
 }
