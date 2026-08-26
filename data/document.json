@@ -6623,7 +6623,7 @@
           "type": "Requerimiento",
           "branch": "140835",
           "description": "CL | Cambio Integración Guías de Despacho Transferencias de Inventario",
-          "observation": "No definido",
+          "observation": "Chile",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
@@ -6633,7 +6633,7 @@
           "type": "Requerimiento",
           "branch": "140836",
           "description": "CL | Cambio Integración Guías de Despacho Activos Fijos",
-          "observation": "No definido",
+          "observation": "Chile",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
@@ -6643,7 +6643,7 @@
           "type": "Requerimiento",
           "branch": "140837",
           "description": "CL | Cambio Integración Guías de Despacho Guías Genéricas",
-          "observation": "No definido",
+          "observation": "Chile",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
@@ -6653,7 +6653,7 @@
           "type": "Requerimiento",
           "branch": "144711",
           "description": "CL | Cambio Integración Guías de Despacho Harverts (Banco de alimentos)",
-          "observation": "No definido",
+          "observation": "Chile",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
