@@ -6610,6 +6610,85 @@
           "sprint": "Sprint 8_2026"
         }
       ]
+    },
+    {
+      "version": "1.86.1.1",
+      "date": "26/08/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "140835",
+          "type": "Requerimiento",
+          "branch": "140835",
+          "description": "CL | Cambio Integración Guías de Despacho Transferencias de Inventario",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "140836",
+          "type": "Requerimiento",
+          "branch": "140836",
+          "description": "CL | Cambio Integración Guías de Despacho Activos Fijos",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "140837",
+          "type": "Requerimiento",
+          "branch": "140837",
+          "description": "CL | Cambio Integración Guías de Despacho Guías Genéricas",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "144711",
+          "type": "Requerimiento",
+          "branch": "144711",
+          "description": "CL | Cambio Integración Guías de Despacho Harverts (Banco de alimentos)",
+          "observation": "No definido",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "148903",
+          "type": "Requerimiento",
+          "branch": "148903",
+          "description": "EC | Mejoras en SIR Mobile (APK) Inventarios",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151518",
+          "type": "Defecto",
+          "branch": "151518",
+          "description": "EC | Gastos Caja Chica V2 - Part 1",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151822",
+          "type": "Defecto",
+          "branch": "151822",
+          "description": "EC | Orden de Pedidos Error SQL",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
     }
   ]
 }
