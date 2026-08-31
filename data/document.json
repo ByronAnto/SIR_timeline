@@ -6689,6 +6689,55 @@
           "sprint": "Sprint 9_2026"
         }
       ]
+    },
+    {
+      "version": "1.87.1.1",
+      "date": "31/08/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "106405",
+          "type": "Requerimiento",
+          "branch": "106405",
+          "description": "BR | Integración Compras SAP",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "140851",
+          "type": "Requerimiento",
+          "branch": "140851",
+          "description": "EC | Creación de Gastos Mayores Contables",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "153032",
+          "type": "Defecto",
+          "branch": "153032",
+          "description": "RE | gastos caja chica  comprobante",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "153037",
+          "type": "Defecto",
+          "branch": "153037",
+          "description": "EC | Activos fijos transferencia",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
     }
   ]
 }
