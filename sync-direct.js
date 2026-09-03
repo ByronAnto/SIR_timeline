@@ -15,7 +15,7 @@ const COUNTRY_MAP = {
     'CO': 'Colombia', 'ECU': 'Ecuador', 'EC': 'Ecuador',
     'BR': 'Brasil', 'ES': 'España', 'ESP': 'España',
     'VE': 'Venezuela', 'VEN': 'Venezuela',
-    'CHI': 'Chile', 'CH': 'Chile',
+    'CHI': 'Chile', 'CH': 'Chile', 'CL': 'Chile',
     'AR': 'Argentina', 'RE': 'Regional'
 };
 

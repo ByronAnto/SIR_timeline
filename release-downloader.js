@@ -100,11 +100,22 @@ function findFilesRecursive(dir, ext) {
 
 // ─── Parseo de PDFs ───────────────────────────────────────────────────────────
 
-// Patrón de rama: 6 dígitos + _ + nombre (ej: 117406_CuponesMejorasReportePorCadena)
-const BRANCH_RE      = /^\d{3,6}_\w+$/;
-const BRANCH_INLINE  = /(\d{3,6}_\w+)/;
-// Líneas que son cabeceras o decoración de tabla
-const HEADER_RE      = /^(Proyecto(\s+Rama)?|Rama|Detalle del proyecto|1\.\s*Detalle)$/i;
+// Prefijos git que aparecen en los PDFs de paso a producción. Sirven para cortar
+// la columna Proyecto de la columna Rama, incluso cuando pdf-parse las pega sin
+// espacio ("Sir Mobile Backfeature/gastos-caja-chica-pda").
+const GIT_PREFIX      = 'features?|bugfix|hotfix|release|develop|support|chore|fix';
+// Rama con prefijo: feature/140835_Algo | feature/gastos-caja-chica-pda
+const BRANCH_PREFIXED = String.raw`(?:${GIT_PREFIX})\/[\w.\-\/]*\w`;
+// Rama sin prefijo, formato antiguo: 140835_Algo
+const BRANCH_PLAIN    = String.raw`\d{3,6}_[\w.-]*\w`;
+const BRANCH_ANY      = `(?:${BRANCH_PREFIXED}|${BRANCH_PLAIN})`;
+
+const BRANCH_RE      = new RegExp(`^${BRANCH_ANY}$`, 'i');
+const BRANCH_INLINE  = new RegExp(`(${BRANCH_ANY})`, 'i');
+// Prefijo git que el PDF dejó pegado al proyecto (ej: "SirLegacy feature/")
+const TRAILING_PREFIX_RE = new RegExp(`\\s*((?:${GIT_PREFIX})\\/)$`, 'i');
+// Líneas que son cabeceras o decoración de tabla ("ProyectoRama" viene sin espacio)
+const HEADER_RE      = /^(Proyecto(\s*Rama)?|Rama|Detalle del proyecto|1\.\s*Detalle)$/i;
 
 /**
  * Encuentra el índice de la ÚLTIMA ocurrencia de un patrón en el texto.
@@ -138,11 +149,11 @@ function extractTableSection(text) {
     const section = endSearch > 0
       ? text.slice(detIdx, detIdx + endSearch)
       : text.slice(detIdx, detIdx + 800);
-    if (section.search(/Proyecto\s+Rama/i) !== -1) return section;
+    if (section.search(/Proyecto\s*Rama/i) !== -1) return section;
   }
 
   // Intento 2: última ocurrencia de "Proyecto Rama" (ej: 115139 sin encabezado)
-  const prIdx = lastIndexOfPattern(text, /Proyecto\s+Rama/i);
+  const prIdx = lastIndexOfPattern(text, /Proyecto\s*Rama/i);
   if (prIdx !== -1) {
     const endSearch = text.slice(prIdx).search(
       /Configuraci[oó]n|\.Env\b|Scripts\b|CONFIGURACI|PROCEDIMIENTO|OBJETIVO/i
@@ -155,6 +166,62 @@ function extractTableSection(text) {
   return '';
 }
 
+/**
+ * Agrega una fila devolviendo al nombre de la rama el prefijo git que el PDF
+ * dejó pegado al proyecto:
+ * ("SirLegacy feature/", "140835_Algo") → ("SirLegacy", "feature/140835_Algo")
+ */
+function pushRow(results, wiId, wiTitle, proyecto, rama) {
+  const stray = rama.includes('/') ? null : proyecto.match(TRAILING_PREFIX_RE);
+  if (stray) {
+    proyecto = proyecto.slice(0, stray.index).trim();
+    rama     = stray[1] + rama;
+  }
+  results.push({ wiId, wiTitle, proyecto, rama });
+}
+
+/**
+ * Recorre las líneas de la tabla "Proyecto | Rama" y devuelve una fila por rama.
+ */
+function parseBranchRows(section, wiId, wiTitle) {
+  const lines = section.split('\n').map(l => l.trim()).filter(Boolean);
+  const results = [];
+  let pendingProject = null;
+
+  for (const line of lines) {
+    // Saltar cabeceras de tabla
+    if (HEADER_RE.test(line)) continue;
+
+    // Caso 1: la línea entera es una rama → emparejar con proyecto pendiente
+    if (BRANCH_RE.test(line)) {
+      if (pendingProject) {
+        pushRow(results, wiId, wiTitle, pendingProject, line);
+        pendingProject = null;
+      }
+      continue;
+    }
+
+    // Caso 2: proyecto + rama en la misma línea (con o sin espacio entre columnas)
+    const inlineMatch = line.match(BRANCH_INLINE);
+    if (inlineMatch) {
+      const rama     = inlineMatch[1];
+      const proyecto = line.slice(0, inlineMatch.index).trim();
+      if (proyecto) {
+        pushRow(results, wiId, wiTitle, proyecto, rama);
+      } else if (pendingProject) {
+        pushRow(results, wiId, wiTitle, pendingProject, rama);
+        pendingProject = null;
+      }
+      continue;
+    }
+
+    // Caso 3: línea sin rama → es un nombre de proyecto, guardarlo
+    pendingProject = line;
+  }
+
+  return results;
+}
+
 async function extractBranchesFromPDF(pdfPath, wiId, wiTitle) {
   try {
     const buffer = fs.readFileSync(pdfPath);
@@ -163,44 +230,7 @@ async function extractBranchesFromPDF(pdfPath, wiId, wiTitle) {
     const section = extractTableSection(text);
     if (!section) return [];
 
-    const lines = section.split('\n').map(l => l.trim()).filter(Boolean);
-    const results = [];
-    let pendingProject = null;
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-
-      // Saltar cabeceras de tabla
-      if (HEADER_RE.test(line)) continue;
-
-      // Caso 1: la línea entera es una rama → emparejar con proyecto pendiente
-      if (BRANCH_RE.test(line)) {
-        if (pendingProject) {
-          results.push({ wiId, wiTitle, proyecto: pendingProject, rama: line });
-          pendingProject = null;
-        }
-        continue;
-      }
-
-      // Caso 2: la línea contiene proyecto + rama en la misma línea
-      const inlineMatch = line.match(BRANCH_INLINE);
-      if (inlineMatch) {
-        const proyecto = line.slice(0, inlineMatch.index).trim();
-        const rama = inlineMatch[1];
-        if (proyecto) {
-          results.push({ wiId, wiTitle, proyecto, rama });
-        } else if (pendingProject) {
-          results.push({ wiId, wiTitle, proyecto: pendingProject, rama });
-          pendingProject = null;
-        }
-        continue;
-      }
-
-      // Caso 3: línea sin rama → es un nombre de proyecto, guardarlo
-      pendingProject = line;
-    }
-
-    return results;
+    return parseBranchRows(section, wiId, wiTitle);
   } catch (e) {
     console.error(`  ⚠️  No se pudo parsear PDF ${path.basename(pdfPath)}: ${e.message}`);
     return [];
@@ -222,7 +252,7 @@ const COUNTRY_MAP = {
   CO: 'Colombia', ECU: 'Ecuador', EC: 'Ecuador',
   BR: 'Brasil',   ES: 'España',   ESP: 'España',
   VE: 'Venezuela', VEN: 'Venezuela',
-  CHI: 'Chile',   CH: 'Chile',
+  CHI: 'Chile',   CH: 'Chile',   CL: 'Chile',
   AR: 'Argentina', RE: 'Regional'
 };
 
@@ -326,7 +356,7 @@ async function generateExcel(version, workItems, allBranches, outputPath) {
   }
 
   // Anchos y freeze
-  [10, 44, 14, 24, 50, 10].forEach((w, i) => { ws1.getColumn(i + 1).width = w; });
+  [10, 44, 14, 24, 60, 10].forEach((w, i) => { ws1.getColumn(i + 1).width = w; });
   ws1.views = [{ state: 'frozen', xSplit: 0, ySplit: 3 }];
 
   // ════════════════════════════════════════════════════════════════════════════
@@ -448,4 +478,4 @@ async function downloadRelease(version, workItems) {
   return { versionFolder, excelName, excelPath, branches: allBranches, branchesCount: allBranches.length };
 }
 
-module.exports = { downloadRelease, getDownloadsPath };
+module.exports = { downloadRelease, getDownloadsPath, extractTableSection, parseBranchRows };

@@ -35,6 +35,7 @@ const COUNTRY_MAP = {
     'VEN': 'Venezuela',
     'CHI': 'Chile',
     'CH': 'Chile',
+    'CL': 'Chile',
     'AR': 'Argentina',
     'RE': 'Regional'
 };
