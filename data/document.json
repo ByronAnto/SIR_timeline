@@ -6692,7 +6692,7 @@
     },
     {
       "version": "1.87.1.1",
-      "date": "03/09/2026",
+      "date": "28/08/2026",
       "year": 2026,
       "sprint": "Sprint 9_2026",
       "description": "",
@@ -6761,7 +6761,7 @@
           "type": "Requerimiento",
           "branch": "144726",
           "description": "EC | SAP Integration Suite - Token de Autenticación",
-          "observation": "No definido",
+          "observation": "Regional",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 8_2026"
@@ -6771,7 +6771,7 @@
           "type": "Requerimiento",
           "branch": "145257",
           "description": "EC | SAP Integration Suite - Ajuste URL",
-          "observation": "No definido",
+          "observation": "Regional",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 8_2026"
@@ -6781,7 +6781,7 @@
           "type": "Requerimiento",
           "branch": "151271",
           "description": "EC | Mejoras en la integración SAP Integration Suite ",
-          "observation": "No definido",
+          "observation": "Regional",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
