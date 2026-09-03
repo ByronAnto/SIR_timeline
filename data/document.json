@@ -6692,7 +6692,7 @@
     },
     {
       "version": "1.87.1.1",
-      "date": "31/08/2026",
+      "date": "03/09/2026",
       "year": 2026,
       "sprint": "Sprint 9_2026",
       "description": "",
@@ -6713,6 +6713,16 @@
           "branch": "140851",
           "description": "EC | Creación de Gastos Mayores Contables",
           "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150650",
+          "type": "Requerimiento",
+          "branch": "150650",
+          "description": "BR | Mejora en el flujo de integración SAP - SIR ",
+          "observation": "No definido",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 9_2026"
