@@ -6846,6 +6846,16 @@
           "sprint": "Sprint 9_2026"
         },
         {
+          "id": "152929",
+          "type": "Defecto",
+          "branch": "152929",
+          "description": "RE | MOVINV - ERROR EDI_CONFIRMATION NOT NULL",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
           "id": "153314",
           "type": "Requerimiento",
           "branch": "153314",
