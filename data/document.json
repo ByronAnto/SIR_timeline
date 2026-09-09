@@ -6787,6 +6787,75 @@
           "sprint": "Sprint 9_2026"
         }
       ]
+    },
+    {
+      "version": "1.89.1.1",
+      "date": "09/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "147124",
+          "type": "Requerimiento",
+          "branch": "147124",
+          "description": "EC | Correo de pedidos tesalia",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "148757",
+          "type": "Defecto",
+          "branch": "148757",
+          "description": "EC | Cupones Digitales",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150365",
+          "type": "Requerimiento",
+          "branch": "150365",
+          "description": "CL | Aprovisionamiento de folios Chile",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151677",
+          "type": "Requerimiento",
+          "branch": "151677",
+          "description": "BR | Mejora en hoja de proyección",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151821",
+          "type": "Requerimiento",
+          "branch": "151821",
+          "description": "EC | Gastos Caja Chica V2 - Part 2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "153314",
+          "type": "Requerimiento",
+          "branch": "153314",
+          "description": "BR | Orden de Pedido V2 – Campos Subtotal y Total no visibles",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
     }
   ]
 }
