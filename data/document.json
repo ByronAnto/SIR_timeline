@@ -6866,6 +6866,125 @@
           "sprint": "Sprint 9_2026"
         }
       ]
+    },
+    {
+      "version": "1.90.1.1",
+      "date": "15/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "140984",
+          "type": "Requerimiento",
+          "branch": "140984",
+          "description": "RE | Toma Física V2 - agregar opciones de imprimir y reportes",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "148758",
+          "type": "Defecto",
+          "branch": "148758",
+          "description": "RE | Ordenes de Pedido V2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150032",
+          "type": "Defecto",
+          "branch": "150032",
+          "description": "CO | Cupones de dinero",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150373",
+          "type": "Requerimiento",
+          "branch": "150373",
+          "description": "RE | Incorporar imagen de respaldo en Compras de caja Chica",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150375",
+          "type": "Requerimiento",
+          "branch": "150375",
+          "description": "AR | Actualización en el reporte de transferencias positivas",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150651",
+          "type": "Requerimiento",
+          "branch": "150651",
+          "description": "RE | Reporte de requerimientos de Cajas Chicas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151019",
+          "type": "Requerimiento",
+          "branch": "151019",
+          "description": "EC | Integración FIRE Ecuador",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151224",
+          "type": "Requerimiento",
+          "branch": "151224",
+          "description": "RE | Aprobación requerimientos de Cajas Chicas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151281",
+          "type": "Requerimiento",
+          "branch": "151281",
+          "description": "CO | Integración FIRE Colombia",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151282",
+          "type": "Requerimiento",
+          "branch": "151282",
+          "description": "VE | Integración FIRE Venezuela",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "155185",
+          "type": "Requerimiento",
+          "branch": "155185",
+          "description": "BR Mejora en reproceso MB",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
     }
   ]
 }
