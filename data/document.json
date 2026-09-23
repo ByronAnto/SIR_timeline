@@ -6985,6 +6985,55 @@
           "sprint": "Sprint 9_2026"
         }
       ]
+    },
+    {
+      "version": "1.91.1.1",
+      "date": "23/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122822",
+          "type": "Requerimiento",
+          "branch": "122822",
+          "description": "AR | Creación de Pantalla para programación de Costos Artículos",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "122823",
+          "type": "Requerimiento",
+          "branch": "122823",
+          "description": "AR | Proceso de Actualización de Costos",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "140840",
+          "type": "Requerimiento",
+          "branch": "140840",
+          "description": "AR | Recalculo de Costos - Añadir costos por fecha",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "154185",
+          "type": "Defecto",
+          "branch": "154185",
+          "description": "CL | Órdenes de Pedidos V2- Asentado Automático Y Código ERP",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
     }
   ]
 }
