@@ -7034,6 +7034,25 @@
           "sprint": "Sprint 10_2026"
         }
       ]
+    },
+    {
+      "version": "1.92.1.1",
+      "date": "29/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "153647",
+          "type": "Defecto",
+          "branch": "153647",
+          "description": "RE | Ordenes de Pedidos V2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
     }
   ]
 }
