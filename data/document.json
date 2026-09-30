@@ -7037,7 +7037,7 @@
     },
     {
       "version": "1.92.1.1",
-      "date": "29/09/2026",
+      "date": "30/09/2026",
       "year": 2026,
       "sprint": "Sprint 10_2026",
       "description": "",
@@ -7048,6 +7048,16 @@
           "branch": "153647",
           "description": "RE | Ordenes de Pedidos V2",
           "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "154604",
+          "type": "Requerimiento",
+          "branch": "154604",
+          "description": "BR | Correo  de la Orden de Pedido V2",
+          "observation": "Brasil",
           "proyect": "Sir Legacy",
           "qaRegional": "",
           "sprint": "Sprint 10_2026"
