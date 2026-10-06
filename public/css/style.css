@@ -290,6 +290,16 @@ body {
     transform: translateY(-2px);
 }
 
+.btn + .btn {
+    margin-left: var(--spacing-sm);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
 /* ================================================
    Timeline Container
    ================================================ */

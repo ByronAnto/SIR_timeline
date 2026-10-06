@@ -121,6 +121,7 @@ class AzureDevOpsClient {
                 'System.Title',
                 'System.WorkItemType',
                 'System.Tags',
+                'Custom.Country',
                 'System.State',
                 'System.IterationPath',
                 'System.Parent',
@@ -146,15 +147,30 @@ class AzureDevOpsClient {
 // ================================================
 
 /**
- * Extraer países de los tags
+ * Normalizar el valor del campo Country de DevOps ("Brasil ", "CO", "colombia")
  */
-function extractCountries(tags) {
+function normalizeCountry(value) {
+    const raw = (value || '').trim();
+    if (!raw) return null;
+    const byCode = COUNTRY_MAP[raw.toUpperCase()];
+    if (byCode) return byCode;
+    const byName = Object.values(COUNTRY_MAP).find(name => name.toLowerCase() === raw.toLowerCase());
+    return byName || raw;
+}
+
+/**
+ * Extraer países: primero el campo Country (Custom.Country); si está vacío, desde los tags
+ */
+function extractCountries(tags, countryField) {
+    const fromField = normalizeCountry(countryField);
+    if (fromField) return [fromField];
+
     if (!tags) return ['No definido'];
 
     const tagArray = tags.split(';').map(t => t.trim());
-    const countries = tagArray
+    const countries = [...new Set(tagArray
         .map(tag => COUNTRY_MAP[tag.toUpperCase()])
-        .filter(Boolean);
+        .filter(Boolean))];
 
     return countries.length > 0 ? countries : ['No definido'];
 }
@@ -198,7 +214,7 @@ function determineProject(areaPath, tags) {
  */
 function transformWorkItem(workItem) {
     const fields = workItem.fields;
-    const countries = extractCountries(fields['System.Tags']);
+    const countries = extractCountries(fields['System.Tags'], fields['Custom.Country']);
     const type = TYPE_MAP[fields['System.WorkItemType']] || 'Requerimiento';
     const sprint = extractSprint(fields['System.IterationPath']);
     const project = determineProject(fields['System.AreaPath'], fields['System.Tags']);
@@ -424,4 +440,4 @@ if (require.main === module) {
     main();
 }
 
-module.exports = { AzureDevOpsClient, transformWorkItem, transformToVersion };
+module.exports = { AzureDevOpsClient, transformWorkItem, transformToVersion, extractCountries };

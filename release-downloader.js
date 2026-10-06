@@ -12,6 +12,7 @@ const unzipper      = require('unzipper');
 const { createExtractorFromFile } = require('node-unrar-js');
 const pdfParse = require('pdf-parse');
 const ExcelJS  = require('exceljs');
+const { extractCountries } = require('./devops-sync');
 
 // ─── Configuración ────────────────────────────────────────────────────────────
 
@@ -248,14 +249,6 @@ const HU_COLORS = [
   'FFF9C4', 'E8F5E9', 'E3F2FD', 'FBE9E7', 'F3E5F5'
 ];
 
-const COUNTRY_MAP = {
-  CO: 'Colombia', ECU: 'Ecuador', EC: 'Ecuador',
-  BR: 'Brasil',   ES: 'España',   ESP: 'España',
-  VE: 'Venezuela', VEN: 'Venezuela',
-  CHI: 'Chile',   CH: 'Chile',   CL: 'Chile',
-  AR: 'Argentina', RE: 'Regional'
-};
-
 function applyBorder(cell) {
   const side = { style: 'thin', color: { argb: 'CCCCCC' } };
   cell.border = { top: side, bottom: side, left: side, right: side };
@@ -283,16 +276,10 @@ async function generateExcel(version, workItems, allBranches, outputPath) {
   const huColorMap = {};
   huIds.forEach((id, idx) => { huColorMap[id] = HU_COLORS[idx % HU_COLORS.length]; });
 
-  // ── Mapa de país por HU (desde tags) ───────────────────────────────────────
+  // ── Mapa de país por HU (campo Country; si no hay, desde tags) ─────────────
   const wiCountryMap = {};
   workItems.forEach(wi => {
-    if (wi.tags) {
-      const parts = wi.tags.split(';').map(t => t.trim().toUpperCase());
-      const country = parts.map(p => COUNTRY_MAP[p]).find(Boolean) || 'No definido';
-      wiCountryMap[wi.id] = country;
-    } else {
-      wiCountryMap[wi.id] = 'No definido';
-    }
+    wiCountryMap[wi.id] = extractCountries(wi.tags, wi.country)[0];
   });
 
   // ── Mapa de ramas por WI ───────────────────────────────────────────────────

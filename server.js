@@ -143,7 +143,8 @@ app.post('/api/sync/preview', async (req, res) => {
         title: wi.fields['System.Title'],
         type: wi.fields['System.WorkItemType'],
         state: wi.fields['System.State'],
-        tags: wi.fields['System.Tags']
+        tags: wi.fields['System.Tags'],
+        country: wi.fields['Custom.Country']
       }))
     });
 
@@ -248,7 +249,9 @@ app.post('/api/sync', async (req, res) => {
       workItems: workItems.map(wi => ({
         id: wi.id,
         title: wi.fields['System.Title'],
-        type: wi.fields['System.WorkItemType']
+        type: wi.fields['System.WorkItemType'],
+        tags: wi.fields['System.Tags'],
+        country: wi.fields['Custom.Country']
       }))
     });
 
@@ -288,6 +291,62 @@ app.post('/api/download-release', async (req, res) => {
   } catch (error) {
     console.error('Error en download-release:', error);
     res.status(500).json({ error: error.message || 'Error al descargar adjuntos' });
+  }
+});
+
+// ─── Descargar la carpeta completa de una versión como .zip ──────────────────
+// Si la carpeta no existe en el servidor, se regenera desde Azure DevOps.
+app.get('/api/version-folder/:version', async (req, res) => {
+  try {
+    const versionNumber = req.params.version.trim().replace(/^V\./i, '');
+    if (!/^\d+(\.\d+)+$/.test(versionNumber)) {
+      return res.status(400).json({ error: 'Versión inválida' });
+    }
+
+    const { downloadRelease, getDownloadsPath } = require('./release-downloader');
+    const versionFolder = path.join(getDownloadsPath(), `Version${versionNumber}`);
+
+    if (!fs.existsSync(versionFolder)) {
+      const { AzureDevOpsClient } = require('./devops-sync.js');
+      const client = new AzureDevOpsClient({
+        organization: process.env.AZURE_DEVOPS_ORG || 'Grupo-KFC',
+        project: process.env.AZURE_DEVOPS_PROJECT || 'SIR',
+        token: process.env.AZURE_DEVOPS_TOKEN,
+        apiVersion: '7.0'
+      });
+
+      const workItems = await client.getWorkItemsByVersion(`V.${versionNumber}`);
+      if (workItems.length === 0) {
+        return res.status(404).json({ error: `No se encontraron work items con tag V.${versionNumber}` });
+      }
+
+      await downloadRelease(versionNumber, workItems.map(wi => ({
+        id: wi.id,
+        title: wi.fields['System.Title'],
+        type: wi.fields['System.WorkItemType'],
+        state: wi.fields['System.State'],
+        tags: wi.fields['System.Tags'],
+        country: wi.fields['Custom.Country']
+      })));
+    }
+
+    const archiver = require('archiver');
+    const archive = archiver('zip', { zlib: { level: 6 } });
+
+    res.attachment(`Version${versionNumber}.zip`);
+    archive.on('error', (err) => {
+      console.error('Error al comprimir carpeta:', err);
+      res.destroy(err);
+    });
+    archive.pipe(res);
+    archive.directory(versionFolder, `Version${versionNumber}`);
+    await archive.finalize();
+
+  } catch (error) {
+    console.error('Error en version-folder:', error);
+    if (!res.headersSent) {
+      res.status(500).json({ error: error.message || 'Error al preparar la carpeta' });
+    }
   }
 });
 

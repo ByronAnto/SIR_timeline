@@ -521,6 +521,46 @@ const TimelineApp = (() => {
   };
 
   /**
+   * Download the full version folder (attachments + Excel) as .zip
+   */
+  const downloadFolder = async () => {
+    if (!state.selectedVersion) {
+      alert('Por favor, selecciona una versión primero');
+      return;
+    }
+
+    const btn = document.getElementById('download-folder');
+    const originalText = btn.textContent;
+    const version = state.selectedVersion.version;
+    btn.disabled = true;
+    btn.textContent = '⏳ Preparando carpeta...';
+
+    try {
+      const response = await fetch(`/api/version-folder/${encodeURIComponent(version)}`);
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || `Error ${response.status}`);
+      }
+
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `Version${version}.zip`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading folder:', error);
+      alert(`No se pudo descargar la carpeta: ${error.message}`);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  };
+
+  /**
    * Export to PDF - Modern Version
    */
   const exportToPDF = async () => {
@@ -919,6 +959,12 @@ const TimelineApp = (() => {
     if (exportBtn) {
       exportBtn.addEventListener('click', exportToPDF);
     }
+
+    // Download full version folder
+    const folderBtn = document.getElementById('download-folder');
+    if (folderBtn) {
+      folderBtn.addEventListener('click', downloadFolder);
+    }
   };
 
   // Public API
@@ -926,7 +972,8 @@ const TimelineApp = (() => {
     init,
     selectVersion,
     filterByCountry,
-    exportToPDF
+    exportToPDF,
+    downloadFolder
   };
 })();
 

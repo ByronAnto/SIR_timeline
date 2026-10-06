@@ -6787,6 +6787,321 @@
           "sprint": "Sprint 9_2026"
         }
       ]
+    },
+    {
+      "version": "1.89.1.1",
+      "date": "09/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "147124",
+          "type": "Requerimiento",
+          "branch": "147124",
+          "description": "EC | Correo de pedidos tesalia",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "148757",
+          "type": "Defecto",
+          "branch": "148757",
+          "description": "EC | Cupones Digitales",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150365",
+          "type": "Requerimiento",
+          "branch": "150365",
+          "description": "CL | Aprovisionamiento de folios Chile",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151677",
+          "type": "Requerimiento",
+          "branch": "151677",
+          "description": "BR | Mejora en hoja de proyección",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151821",
+          "type": "Requerimiento",
+          "branch": "151821",
+          "description": "EC | Gastos Caja Chica V2 - Part 2",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "152929",
+          "type": "Defecto",
+          "branch": "152929",
+          "description": "RE | MOVINV - ERROR EDI_CONFIRMATION NOT NULL",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "153314",
+          "type": "Requerimiento",
+          "branch": "153314",
+          "description": "BR | Orden de Pedido V2 – Campos Subtotal y Total no visibles",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.90.1.1",
+      "date": "15/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 9_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "140984",
+          "type": "Requerimiento",
+          "branch": "140984",
+          "description": "RE | Toma Física V2 - agregar opciones de imprimir y reportes",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "148758",
+          "type": "Defecto",
+          "branch": "148758",
+          "description": "RE | Ordenes de Pedido V2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150032",
+          "type": "Defecto",
+          "branch": "150032",
+          "description": "CO | Cupones de dinero",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150373",
+          "type": "Requerimiento",
+          "branch": "150373",
+          "description": "RE | Incorporar imagen de respaldo en Compras de caja Chica",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150375",
+          "type": "Requerimiento",
+          "branch": "150375",
+          "description": "AR | Actualización en el reporte de transferencias positivas",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "150651",
+          "type": "Requerimiento",
+          "branch": "150651",
+          "description": "RE | Reporte de requerimientos de Cajas Chicas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151019",
+          "type": "Requerimiento",
+          "branch": "151019",
+          "description": "EC | Integración FIRE Ecuador",
+          "observation": "Ecuador",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151224",
+          "type": "Requerimiento",
+          "branch": "151224",
+          "description": "RE | Aprobación requerimientos de Cajas Chicas",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151281",
+          "type": "Requerimiento",
+          "branch": "151281",
+          "description": "CO | Integración FIRE Colombia",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "151282",
+          "type": "Requerimiento",
+          "branch": "151282",
+          "description": "VE | Integración FIRE Venezuela",
+          "observation": "Venezuela",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        },
+        {
+          "id": "155185",
+          "type": "Requerimiento",
+          "branch": "155185",
+          "description": "BR Mejora en reproceso MB",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 9_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.91.1.1",
+      "date": "23/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "122822",
+          "type": "Requerimiento",
+          "branch": "122822",
+          "description": "AR | Creación de Pantalla para programación de Costos Artículos",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "122823",
+          "type": "Requerimiento",
+          "branch": "122823",
+          "description": "AR | Proceso de Actualización de Costos",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "140840",
+          "type": "Requerimiento",
+          "branch": "140840",
+          "description": "AR | Recalculo de Costos - Añadir costos por fecha",
+          "observation": "Argentina",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "154185",
+          "type": "Defecto",
+          "branch": "154185",
+          "description": "CL | Órdenes de Pedidos V2- Asentado Automático Y Código ERP",
+          "observation": "Chile",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.92.1.1",
+      "date": "30/09/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "153647",
+          "type": "Defecto",
+          "branch": "153647",
+          "description": "RE | Ordenes de Pedidos V2",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "154604",
+          "type": "Requerimiento",
+          "branch": "154604",
+          "description": "BR | Correo  de la Orden de Pedido V2",
+          "observation": "Brasil",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
+    },
+    {
+      "version": "1.93.1.1",
+      "date": "06/10/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "151433",
+          "type": "Requerimiento",
+          "branch": "151433",
+          "description": "CO | Novedades creación y canje de cupones cortesía nomina (2)",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "152856",
+          "type": "Defecto",
+          "branch": "152856",
+          "description": "CO | Cupones de Nómina",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "158186",
+          "type": "Defecto",
+          "branch": "158186",
+          "description": "RE | Reporte de mix por departamentos excel",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
     }
   ]
 }
