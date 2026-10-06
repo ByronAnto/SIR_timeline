@@ -7063,6 +7063,45 @@
           "sprint": "Sprint 10_2026"
         }
       ]
+    },
+    {
+      "version": "1.93.1.1",
+      "date": "06/10/2026",
+      "year": 2026,
+      "sprint": "Sprint 10_2026",
+      "description": "",
+      "details": [
+        {
+          "id": "151433",
+          "type": "Requerimiento",
+          "branch": "151433",
+          "description": "CO | Novedades creación y canje de cupones cortesía nomina (2)",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "152856",
+          "type": "Defecto",
+          "branch": "152856",
+          "description": "CO | Cupones de Nómina",
+          "observation": "Colombia",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        },
+        {
+          "id": "158186",
+          "type": "Defecto",
+          "branch": "158186",
+          "description": "RE | Reporte de mix por departamentos excel",
+          "observation": "Regional",
+          "proyect": "Sir Legacy",
+          "qaRegional": "",
+          "sprint": "Sprint 10_2026"
+        }
+      ]
     }
   ]
 }
